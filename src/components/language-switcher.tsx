@@ -2,7 +2,18 @@
 
 import { Languages } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
-import { localeLabels, routing, type Locale } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
+
+const localeLabels = {
+  en: "English",
+  de: "Deutsch",
+  "es-es": "Español (España)",
+  fr: "Français",
+  ja: "日本語",
+  ko: "한국어",
+  pl: "Polski",
+  "pt-br": "Português (Brasil)",
+} satisfies Record<Locale, string>;
 
 function pathWithoutLocale(pathname: string) {
   for (const locale of routing.locales) {

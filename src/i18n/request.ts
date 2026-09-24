@@ -1,9 +1,25 @@
 import { getRequestConfig } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { routing } from "./routing";
+import de from "@/locales/de.json";
 import en from "@/locales/en.json";
+import esEs from "@/locales/es-es.json";
+import fr from "@/locales/fr.json";
+import ja from "@/locales/ja.json";
+import ko from "@/locales/ko.json";
+import pl from "@/locales/pl.json";
+import ptBr from "@/locales/pt-br.json";
 
-const messages = { en } as const;
+const messages = {
+  "de": de,
+  "en": en,
+  "es-es": esEs,
+  "fr": fr,
+  "ja": ja,
+  "ko": ko,
+  "pl": pl,
+  "pt-br": ptBr,
+} as const;
 
 export function deepMerge<T extends Record<string, unknown>>(fallback: T, localized: Partial<T>): T {
   const result = { ...fallback } as Record<string, unknown>;
