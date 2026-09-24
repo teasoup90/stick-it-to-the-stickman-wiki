@@ -1,0 +1,105 @@
+{
+  "site": {
+    "name": "{{GAME_NAME}}",
+    "wikiName": "{{GAME_NAME}} Wiki",
+    "shortName": "{{GAME_NAME}}",
+    "tagline": "Fan-Made Community Wiki",
+    "description": "An independent fan-made guide for {{GAME_NAME}} players.",
+    "logoAlt": "{{GAME_NAME}} Wiki emblem",
+    "heroAlt": "{{GAME_NAME}} gameplay preview",
+    "artworkAlt": "{{GAME_NAME}} game artwork",
+    "bossesArtworkAlt": "{{GAME_NAME}} game artwork"
+  },
+  "nav": {
+    "language": "Language",
+    "menu": "Open navigation",
+    "toggleTheme": "Toggle theme"
+  },
+  "home": {
+    "meta": {
+      "title": "{{GAME_NAME}} Wiki",
+      "description": "An independent fan-made guide for {{GAME_NAME}} players."
+    },
+    "hero": {
+      "title": "{{GAME_NAME}} Wiki",
+      "eyebrow": "Fan-Made Community Guide",
+      "description": "Add verified game information before publishing this site.",
+      "stats": [],
+      "media": { "asset": "hero", "label": "Official media" },
+      "actions": []
+    },
+    "updates": { "title": "Latest Game Updates", "all": "Browse all updates" },
+    "start": { "eyebrow": "Start Here", "title": "Your {{GAME_NAME}} Journey", "cards": [] },
+    "popular": { "eyebrow": "Popular Pages", "title": "Trending Now" },
+    "about": {
+      "title": "What is {{GAME_NAME}}?",
+      "artworkAsset": "hero",
+      "paragraphs": ["Add independently verified information about the game, its creator, and its core systems."],
+      "facts": []
+    },
+    "explore": {
+      "eyebrow": "Reference Library",
+      "title": "Explore {{GAME_NAME}} Guides",
+      "description": "Content modules are added after keyword research and source verification.",
+      "modules": []
+    },
+    "faq": { "title": "Frequently Asked Questions", "items": [] },
+    "finalCta": { "title": "Ready to Explore {{GAME_NAME}}?", "description": "Verified guides will appear here once the site is prepared.", "actions": [] },
+    "sidebarFeature": { "title": "Latest Information", "badge": "Coming soon", "description": "Check back after verified game data has been added.", "linkLabel": "" }
+  },
+  "shared": {
+    "home": "Home",
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "wikiNavigation": "Wiki Navigation",
+    "tableOfContents": "Table of Contents",
+    "officialMedia": "Official media",
+    "advertisement": "Advertisement",
+    "emptySection": "No published guides in this section yet.",
+    "translationFallback": "This article is not translated yet, so the English version is displayed.",
+    "listDescriptionFallback": "Browse {category} guides for {game}.",
+    "availableGuides": "Available Guides",
+    "relatedArticles": "Related Articles",
+    "continueReading": "Continue Reading",
+    "breadcrumb": "Breadcrumb",
+    "notFoundTitle": "Not Found",
+    "categoryTitleFallback": "{category} Guides"
+  },
+  "footer": {
+    "description": "Independent fan-made game guide. Add the final game description before publishing.",
+    "guidesTitle": "Guides",
+    "legalTitle": "Legal",
+    "notice": "Independent fan-made guide. Not affiliated with the game publisher or platform.",
+    "copyright": "Copyright {{YEAR}} {{GAME_NAME}} Wiki. Independent fan-made guide."
+  },
+  "legal": {
+    "backToHome": "Back to home",
+    "lastUpdated": "Last updated: {date}",
+    "about": {
+      "eyebrow": "Independent community reference",
+      "title": "About {{GAME_NAME}} Wiki",
+      "paragraphs": ["This template becomes an independent game reference after verified game data and original editorial content are added."]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "{{CURRENT_DATE}}",
+      "sections": [{ "title": "Information we collect", "body": "Replace this placeholder with a site-specific privacy policy before publishing." }]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "updated": "{{CURRENT_DATE}}",
+      "sections": [{ "title": "Fan-made reference", "body": "Replace this placeholder with site-specific terms before publishing." }]
+    },
+    "copyright": {
+      "title": "Copyright Notice",
+      "updated": "{{CURRENT_DATE}}",
+      "sections": [{ "title": "Ownership", "body": "Replace this placeholder with the game-specific copyright notice before publishing." }]
+    }
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Guide not found",
+    "description": "The requested guide is not published in this content library.",
+    "returnHome": "Return home"
+  }
+}
