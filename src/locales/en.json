@@ -1,14 +1,15 @@
 {
   "site": {
-    "name": "{{GAME_NAME}}",
-    "wikiName": "{{GAME_NAME}} Wiki",
-    "shortName": "{{GAME_NAME}}",
-    "tagline": "Fan-Made Community Wiki",
-    "description": "An independent fan-made guide for {{GAME_NAME}} players.",
-    "logoAlt": "{{GAME_NAME}} Wiki emblem",
-    "heroAlt": "{{GAME_NAME}} gameplay preview",
-    "artworkAlt": "{{GAME_NAME}} game artwork",
-    "bossesArtworkAlt": "{{GAME_NAME}} game artwork"
+    "name": "Stick It to the Stickman",
+    "wikiName": "Stick It to the Stickman Wiki",
+    "shortName": "Stick It to the Stickman",
+    "tagline": "Guides & Facts",
+    "description": "Independent guide hub for Stick It to the Stickman with official-source facts, beginner tips, combat systems, modes, co-op, platforms, and code status.",
+    "legalNotice": "Independent fan-made wiki. Not affiliated with or endorsed by Free Lives or Devolver Digital.",
+    "logoAlt": "Stick It to the Stickman Wiki emblem",
+    "heroAlt": "Stick It to the Stickman gameplay preview",
+    "artworkAlt": "Stick It to the Stickman game artwork",
+    "bossesArtworkAlt": "Stick It to the Stickman game artwork"
   },
   "nav": {
     "language": "Language",
@@ -17,16 +18,25 @@
   },
   "home": {
     "meta": {
-      "title": "{{GAME_NAME}} Wiki",
-      "description": "An independent fan-made guide for {{GAME_NAME}} players."
+      "title": "Stick It to the Stickman Wiki",
+      "description": "Independent guide hub for Stick It to the Stickman with official-source facts, beginner tips, combat systems, modes, co-op, platforms, and code status."
     },
     "hero": {
-      "title": "{{GAME_NAME}} Wiki",
-      "eyebrow": "Fan-Made Community Guide",
-      "description": "Add verified game information before publishing this site.",
-      "stats": [],
-      "media": { "asset": "hero", "label": "Official media" },
-      "actions": []
+      "title": "Stick It to the Stickman Wiki",
+      "eyebrow": "Independent Fan-Made Wiki",
+      "description": "Fight through a hostile workplace in Stick It to the Stickman, the rogue-lite physics brawler from Free Lives and Devolver Digital. Build your own combat combinations, unlock workers and game modes, and climb the corporate ladder to become CEO.",
+      "stats": [
+        "Developer: Free Lives",
+        "Publisher: Devolver Digital",
+        "Windows · macOS",
+        "Released Sep 23, 2026"
+      ],
+      "media": { "asset": "hero", "externalLink": "youtube", "label": "Official reveal trailer" },
+      "actions": [
+        { "label": "Play on Steam", "externalLink": "steam", "variant": "primary" },
+        { "label": "Official Website", "externalLink": "officialGame", "variant": "secondary" },
+        { "label": "Watch Trailer", "externalLink": "youtube", "variant": "secondary" }
+      ]
     },
     "updates": { "title": "Latest Game Updates", "all": "Browse all updates" },
     "start": { "eyebrow": "Start Here", "title": "Your {{GAME_NAME}} Journey", "cards": [] },
@@ -44,7 +54,14 @@
       "modules": []
     },
     "faq": { "title": "Frequently Asked Questions", "items": [] },
-    "finalCta": { "title": "Ready to Explore {{GAME_NAME}}?", "description": "Verified guides will appear here once the site is prepared.", "actions": [] },
+    "finalCta": {
+      "title": "Ready to Stick It to the Stickman?",
+      "description": "Grab the game on Steam and climb the corporate ladder. Prefer to read first? Start with our beginner guide, combat systems, game modes, and co-op references.",
+      "actions": [
+        { "label": "Play on Steam", "externalLink": "steam", "variant": "primary" },
+        { "label": "Official Website", "externalLink": "officialGame", "variant": "secondary" }
+      ]
+    },
     "sidebarFeature": { "title": "Latest Information", "badge": "Coming soon", "description": "Check back after verified game data has been added.", "linkLabel": "" }
   },
   "shared": {
@@ -66,34 +83,61 @@
     "categoryTitleFallback": "{category} Guides"
   },
   "footer": {
-    "description": "Independent fan-made game guide. Add the final game description before publishing.",
+    "description": "Independent fan-made wiki for Stick It to the Stickman: official-source facts, beginner tips, combat systems, modes, co-op, platforms, and code status.",
     "guidesTitle": "Guides",
     "legalTitle": "Legal",
-    "notice": "Independent fan-made guide. Not affiliated with the game publisher or platform.",
-    "copyright": "Copyright {{YEAR}} {{GAME_NAME}} Wiki. Independent fan-made guide."
+    "officialLinksTitle": "Official",
+    "playGame": "Play on Steam",
+    "officialSite": "Official Website",
+    "officialYoutube": "Official Trailer",
+    "officialPublisher": "Devolver Digital",
+    "notice": "Stick It to the Stickman is developed by Free Lives and published by Devolver Digital. This wiki is an independent fan-made project and is not affiliated with or endorsed by Free Lives or Devolver Digital.",
+    "copyright": "Copyright 2026 Stick It to the Stickman Wiki. Independent fan-made guide."
   },
   "legal": {
     "backToHome": "Back to home",
     "lastUpdated": "Last updated: {date}",
     "about": {
       "eyebrow": "Independent community reference",
-      "title": "About {{GAME_NAME}} Wiki",
-      "paragraphs": ["This template becomes an independent game reference after verified game data and original editorial content are added."]
+      "title": "About Stick It to the Stickman Wiki",
+      "paragraphs": [
+        "Stick It to the Stickman Wiki is an independent, fan-made reference hub for Stick It to the Stickman, the rogue-lite physics brawler developed by Free Lives and published by Devolver Digital.",
+        "In the game you fight your way through a hostile workplace: chain combat moves, grab weapons and superpowers, unlock new workers and game modes, and climb the corporate ladder toward becoming CEO.",
+        "Our guides are built from official sources — the Steam store page, the official game website, and Devolver Digital — with an independent editorial voice. We are not affiliated with or endorsed by Free Lives, Devolver Digital, or Valve."
+      ]
     },
     "privacy": {
       "title": "Privacy Policy",
-      "updated": "{{CURRENT_DATE}}",
-      "sections": [{ "title": "Information we collect", "body": "Replace this placeholder with a site-specific privacy policy before publishing." }]
+      "updated": "September 24, 2026",
+      "sections": [
+        { "title": "Who we are", "body": "Stick It to the Stickman Wiki (stickittothestickmanwiki.space) is an independent, fan-made information site about the video game Stick It to the Stickman. We are not affiliated with the game's developer Free Lives or its publisher Devolver Digital." },
+        { "title": "Information we collect", "body": "We do not require accounts and do not ask you to submit personal information. Like most websites, our hosting provider may record standard technical logs (such as IP address, browser type, and pages visited) used for security and aggregate statistics." },
+        { "title": "Cookies and third-party advertising", "body": "This site may display third-party advertising that uses cookies or similar technologies to serve and measure ads. Ad providers operate under their own privacy policies; you can manage cookies through your browser settings." },
+        { "title": "External links", "body": "Pages on this site link to external websites such as the Steam store, the official game website, and Devolver Digital. We are not responsible for the content or privacy practices of third-party sites." },
+        { "title": "Children", "body": "This site is a general-audience game reference and is not directed at children under 13." },
+        { "title": "Changes", "body": "We may update this policy as the site evolves. Material changes will be reflected on this page with a new date." },
+        { "title": "Contact", "body": "For privacy questions about this site, contact the site operator through the public contact channels for stickittothestickmanwiki.space." }
+      ]
     },
     "terms": {
       "title": "Terms of Service",
-      "updated": "{{CURRENT_DATE}}",
-      "sections": [{ "title": "Fan-made reference", "body": "Replace this placeholder with site-specific terms before publishing." }]
+      "updated": "September 24, 2026",
+      "sections": [
+        { "title": "Acceptance", "body": "By accessing Stick It to the Stickman Wiki you agree to these terms. If you do not agree, please do not use the site." },
+        { "title": "Fan-made reference", "body": "This is an independent, fan-made informational site. We are not affiliated with, endorsed by, or connected to Free Lives, Devolver Digital, Valve, or Steam. The game's name, logos, and artwork belong to their respective owners." },
+        { "title": "No warranty", "body": "Content is provided for informational purposes on an as-is basis. Game details such as features, prices, and availability can change; always verify against the official Steam store page or the game's official website." },
+        { "title": "Acceptable use", "body": "Do not misuse the site, attempt to disrupt or reverse-engineer it, or republish substantial portions of its original content without permission. Short attributed quotations are welcome." },
+        { "title": "Changes", "body": "We may revise these terms at any time. Continued use of the site after changes are posted constitutes acceptance of the revised terms." }
+      ]
     },
     "copyright": {
       "title": "Copyright Notice",
-      "updated": "{{CURRENT_DATE}}",
-      "sections": [{ "title": "Ownership", "body": "Replace this placeholder with the game-specific copyright notice before publishing." }]
+      "updated": "September 24, 2026",
+      "sections": [
+        { "title": "Game content", "body": "Stick It to the Stickman is developed by Free Lives and published by Devolver Digital. The game, its name, logo, artwork, and related materials are the property of their respective owners and are referenced here for identification and commentary only." },
+        { "title": "Site content", "body": "Original text, structure, and editorial content on stickittothestickmanwiki.space are © 2026 Stick It to the Stickman Wiki unless otherwise noted." },
+        { "title": "Use of content", "body": "You may quote short excerpts with attribution and a link back to the source page. Reproduction of substantial portions of this site requires prior written permission." }
+      ]
     }
   },
   "notFound": {

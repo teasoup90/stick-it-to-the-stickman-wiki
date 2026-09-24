@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const image = absoluteUrl(BRAND_ASSETS.hero);
   return {
     metadataBase: new URL(SITE_URL),
-    title: { default: messages.site.wikiName, template: `%s — ${messages.site.wikiName}` },
+    title: { default: messages.site.wikiName || "Stick It to the Stickman Wiki", template: `%s — ${messages.site.wikiName || "Stick It to the Stickman Wiki"}` },
     description: messages.site.description,
     manifest: "/manifest.webmanifest",
     icons: { icon: [{ url: "/favicon.ico" }, { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" }], apple: "/apple-touch-icon.png" },
@@ -44,8 +44,8 @@ export default async function LocaleLayout({ children, params }: { children: Rea
     "@type": "Organization",
     name: typedMessages.site.wikiName,
     url: SITE_URL,
-    logo: absoluteUrl(BRAND_ASSETS.logo),
-    image: absoluteUrl(BRAND_ASSETS.hero)
+    "logo": absoluteUrl(BRAND_ASSETS.logo),
+    "image": absoluteUrl(BRAND_ASSETS.hero)
   };
 
   return (
