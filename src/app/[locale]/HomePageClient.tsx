@@ -9,6 +9,9 @@ import { AD_CONFIG } from "@/config/ads";
 import { AdsterraBanner, AdsterraNativeBanner } from "@/components/ads";
 import { compactGameTitle } from "@/lib/utils";
 
+/** Official reveal trailer (Stick It to the Stickman), from game-dev-info-v2 official_sources.official-reveal-trailer. */
+const YOUTUBE_VIDEO_ID = "SNSIB_4V0EA";
+
 type HomeCopy = {
   hero: { title: string; eyebrow: string; description: string; stats: string[]; media: { asset: keyof typeof BRAND_ASSETS; externalLink?: keyof typeof EXTERNAL_LINKS; label: string }; actions: HomeAction[] };
   updates: { title: string; all: string; href?: string };
@@ -52,7 +55,7 @@ export function HomePageClient({ home, locale, categories, recent, popular }: { 
   const t = useTranslations();
   const gameName = t("site.shortName");
   const exploreIcons = [Shield, Swords, Map, ScrollText, Trophy, Flame];
-  const heroMediaHref = home.hero.media.externalLink ? EXTERNAL_LINKS[home.hero.media.externalLink] : undefined;
+  const heroMediaHref = home.hero.media.externalLink && EXTERNAL_LINKS[home.hero.media.externalLink] ? EXTERNAL_LINKS[home.hero.media.externalLink] : `https://www.youtube.com/watch?v=${YOUTUBE_VIDEO_ID}`;
   const heroMedia = <><Image src={BRAND_ASSETS[home.hero.media.asset]} alt={t("site.heroAlt")} fill sizes="(max-width: 768px) 100vw, 600px" className="object-cover transition duration-300 group-hover:scale-[1.015] group-hover:brightness-75" priority /><span className="absolute inset-0 grid place-items-center"><span className="grid size-16 place-items-center rounded-full bg-background/75 text-foreground backdrop-blur"><Play className="ml-1 size-6 fill-current" /></span></span><span className="absolute bottom-3 right-3 rounded bg-background/80 px-2 py-1 text-[10px] font-semibold backdrop-blur">{home.hero.media.label}</span></>;
 
   return (

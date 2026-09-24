@@ -12,8 +12,8 @@
     --muted-foreground: 0 0% 40%;
     --border: 0 0% 84%;
     --primary-foreground: 0 0% 98%;
-    --nav-theme: 0 72% 48%;
-    --nav-theme-light: 0 72% 58%;
+    --nav-theme: 1 77% 48%;
+    --nav-theme-light: 1 77% 58%;
     --ad-background: 0 0% 100%;
     --media-background: 0 0% 0%;
     --media-foreground: 0 0% 100%;
@@ -29,8 +29,8 @@
     --muted-foreground: 0 0% 63%;
     --border: 0 0% 16%;
     --primary-foreground: 0 0% 98%;
-    --nav-theme: 0 72% 48%;
-    --nav-theme-light: 0 72% 58%;
+    --nav-theme: 1 77% 55%;
+    --nav-theme-light: 1 77% 65%;
   }
 
   * { @apply border-border; }
