@@ -2,6 +2,13 @@ name: Deploy Cloudflare Workers
 
 on:
   workflow_dispatch:
+    inputs:
+      release_id:
+        description: Auditable GameOps release identifier
+        required: true
+        type: string
+
+run-name: GameOps ${{ inputs.release_id }}
 
 permissions:
   contents: read
