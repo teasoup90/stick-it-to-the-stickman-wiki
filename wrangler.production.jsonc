@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "stick-it-to-the-stickman-wiki-production",
+  "name": "gameops-stick-it-to-the-stickman-production",
   "compatibility_date": "2026-09-25",
   "workers_dev": false,
   "preview_urls": false,
