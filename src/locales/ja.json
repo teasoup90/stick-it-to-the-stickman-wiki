@@ -1,1 +1,592 @@
-{}
+{
+  "site": {
+    "name": "Stick It to the Stickman",
+    "wikiName": "Stick It to the Stickman Wiki",
+    "shortName": "Stick It to the Stickman",
+    "tagline": "ガイド＆ファクト",
+    "description": "Stick It to the Stickmanの独立系ガイドハブ。公式ソースに基づく事実、初心者向けヒント、戦闘システム、モード、協力プレイ、対応プラットフォーム、コードの状況を掲載しています。",
+    "legalNotice": "非公式のファンWikiです。Free LivesおよびDevolver Digitalとは提携しておらず、承認も受けていません。",
+    "logoAlt": "Stick It to the Stickman Wikiのエンブレム",
+    "heroAlt": "Stick It to the Stickmanのゲームプレイプレビュー",
+    "artworkAlt": "ゲーム「Stick It to the Stickman」のアートワーク",
+    "bossesArtworkAlt": "ゲーム「Stick It to the Stickman」のアートワーク"
+  },
+  "nav": {
+    "language": "言語",
+    "menu": "ナビゲーションを開く",
+    "toggleTheme": "テーマを切り替え",
+    "characters": "キャラクター",
+    "community": "コミュニティ",
+    "guide": "ガイド",
+    "multiplayer": "マルチプレイ",
+    "platforms": "プラットフォーム",
+    "progression": "進行",
+    "resources": "リソース",
+    "updates": "アップデート"
+  },
+  "characters": {
+    "title": "キャラクター",
+    "overviewTitle": "キャラクター",
+    "description": "Stick It to the Stickmanの全プレイアブルキャラクター。フルロスターから隠しキャラクターまで、アンロック方法と各アーキタイプがランをどう変えるかを解説します。",
+    "overviewDescription": "Stick It to the Stickmanの全プレイアブルキャラクター。フルロスターから隠しキャラクターまで、アンロック方法と各アーキタイプがランをどう変えるかを解説します。",
+    "intro": "キャラクターライブラリでは、Stick It to the Stickmanで記録されているロスターと隠しキャラクターに加え、各ランのプレイ感を変えるアーキタイプを取り上げます。",
+    "guidesTitle": "キャラクターガイド"
+  },
+  "community": {
+    "title": "コミュニティ",
+    "overviewTitle": "コミュニティ",
+    "description": "Stick It to the Stickmanのコミュニティページ。公式Discord、Redditスレッド、アナウンスやプレイヤーの議論が行われる場所をまとめています。",
+    "overviewDescription": "Stick It to the Stickmanのコミュニティページ。公式Discord、Redditスレッド、アナウンスやプレイヤーの議論が行われる場所をまとめています。",
+    "intro": "コミュニティページでは、Stick It to the Stickmanの公式およびプレイヤー運営の拠点を追跡し、アナウンスや議論をすぐ見つけられるようにしています。",
+    "guidesTitle": "コミュニティページ"
+  },
+  "guide": {
+    "title": "ガイド",
+    "overviewTitle": "ガイド",
+    "description": "Stick It to the Stickmanの遊び方：初心者ガイド、技リスト、実績、キー設定、ヒント、トラブルシューティング。",
+    "overviewDescription": "Stick It to the Stickmanの遊び方：初心者ガイド、技リスト、実績、キー設定、ヒント、トラブルシューティング。",
+    "intro": "ガイドセクションにはStick It to the Stickmanのハウツーページを集約。初回ランから全技リスト、実績、キー設定、よくある対処法までカバーします。",
+    "guidesTitle": "ハウツーガイド"
+  },
+  "multiplayer": {
+    "title": "マルチプレイ",
+    "overviewTitle": "マルチプレイ",
+    "description": "Stick It to the Stickmanのマルチプレイ情報：プレイヤー数、ローカル協力プレイ、Remote Playの仕組み。",
+    "overviewDescription": "Stick It to the Stickmanのマルチプレイ情報：プレイヤー数、ローカル協力プレイ、Remote Playの仕組み。",
+    "intro": "マルチプレイページでは、Stick It to the Stickmanのプレイ可能人数、ローカル協力プレイの設定方法、Remote Playの仕組みに答えます。",
+    "guidesTitle": "マルチプレイガイド"
+  },
+  "platforms": {
+    "title": "プラットフォーム",
+    "overviewTitle": "プラットフォーム",
+    "description": "Stick It to the Stickmanを遊べる環境：PC、コンソール、モバイル、Steam Deckでの展開状況。",
+    "overviewDescription": "Stick It to the Stickmanを遊べる環境：PC、コンソール、モバイル、Steam Deckでの展開状況。",
+    "intro": "プラットフォームページでは、Stick It to the Stickmanが公式に配信されている場所と、各プラットフォームの対応内容をまとめています。",
+    "guidesTitle": "プラットフォームガイド"
+  },
+  "progression": {
+    "title": "進行",
+    "overviewTitle": "進行",
+    "description": "Stick It to the Stickmanの進行システム：アンロック要素、ランク、ブラックマーケット、Finance Towerの強化。",
+    "overviewDescription": "Stick It to the Stickmanの進行システム：アンロック要素、ランク、ブラックマーケット、Finance Towerの強化。",
+    "intro": "進行ページでは、Stick It to the Stickmanのランを動かすアンロック要素、ランク、強化システムを解説します。",
+    "guidesTitle": "進行ガイド"
+  },
+  "resources": {
+    "title": "リソース",
+    "overviewTitle": "リソース",
+    "description": "Stick It to the Stickmanの通貨とリソース：血、汗、水、そしてそれぞれの稼ぎ方。",
+    "overviewDescription": "Stick It to the Stickmanの通貨とリソース：血、汗、水、そしてそれぞれの稼ぎ方。",
+    "intro": "リソースページでは、Stick It to the Stickmanの通貨と、最もよく知られた稼ぎ方を整理しています。",
+    "guidesTitle": "リソースガイド"
+  },
+  "updates": {
+    "title": "アップデート",
+    "overviewTitle": "アップデート",
+    "description": "Stick It to the Stickmanのニュースとアップデート情報：発売日、デモ、最新アップデート、ロードマップ。",
+    "overviewDescription": "Stick It to the Stickmanのニュースとアップデート情報：発売日、デモ、最新アップデート、ロードマップ。",
+    "intro": "アップデートページでは、Stick It to the Stickmanの発売時期、デモの提供状況、発表済みの計画を追跡します。",
+    "guidesTitle": "ニュース＆アップデート"
+  },
+  "home": {
+    "meta": {
+      "title": "Stick It to the Stickman Wiki",
+      "description": "Stick It to the Stickmanの独立系ガイドハブ。公式ソースに基づく事実、初心者向けヒント、戦闘システム、モード、協力プレイ、対応プラットフォーム、コードの状況を掲載しています。"
+    },
+    "hero": {
+      "title": "Stick It to the Stickman Wiki",
+      "eyebrow": "非公式ファンWiki",
+      "description": "Free LivesとDevolver Digitalによるローグライト物理乱闘ゲーム「Stick It to the Stickman」で、敵意に満ちた職場を戦い抜きましょう。自分だけのコンバットコンビネーションを組み立て、ワーカーとゲームモードをアンロックし、出世の階段を上ってCEOを目指します。",
+      "stats": [
+        "開発：Free Lives",
+        "パブリッシャー：Devolver Digital",
+        "Windows · macOS",
+        "2026年9月23日発売"
+      ],
+      "media": {
+        "asset": "hero",
+        "externalLink": "youtube",
+        "label": "公式発表トレーラー"
+      },
+      "actions": [
+        {
+          "label": "Steamでプレイ",
+          "externalLink": "steam",
+          "variant": "primary"
+        },
+        {
+          "label": "公式サイト",
+          "externalLink": "officialGame",
+          "variant": "secondary"
+        },
+        {
+          "label": "トレーラーを見る",
+          "externalLink": "youtube",
+          "variant": "secondary"
+        }
+      ]
+    },
+    "updates": {
+      "title": "最新のゲームアップデート",
+      "all": "すべてのアップデートを見る",
+      "href": "/updates"
+    },
+    "start": {
+      "eyebrow": "ここから始める",
+      "title": "あなたのStick It to the Stickmanジャーニー",
+      "cards": [
+        {
+          "number": "1",
+          "title": "初心者ガイド",
+          "description": "基本ループを学ぶ：オフィスを戦い抜き、技・武器・超能力から自分だけのコンバットコンビネーションを組み立て、出世の階段を上ってCEOポジションを目指す。"
+        },
+        {
+          "number": "2",
+          "title": "戦闘の基本",
+          "description": "パンチ、キック、突き、ホチキス、チェーンソー攻撃を物理ベースのコンボにつなげ、同僚、重役、ボスと戦う。"
+        },
+        {
+          "number": "3",
+          "title": "ワーカーアーキタイプ",
+          "description": "派遣社員、カフェイン中毒、エゴマニアはプレイ感が異なる。最初にアンロックすべきアーキタイプと、ランへの影響を確認しよう。"
+        },
+        {
+          "number": "4",
+          "title": "コード",
+          "description": "引き換えコードの公式状況を確認し、今後のコード情報を公開前にどこで検証すべきかを把握する。"
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "人気ページ",
+      "title": "今注目の記事"
+    },
+    "about": {
+      "title": "Stick It to the Stickmanとは？",
+      "artworkAsset": "hero",
+      "paragraphs": [
+        "Stick It to the Stickmanは、Free Livesが開発しDevolver Digitalが発売するローグライト物理乱闘ゲームです。敵意に満ちた職場を戦い抜き、パンチ、キック、突き、ホチキス、チェーンソー攻撃を自分だけのコンバットコンビネーションにつなげながら、出世の階段を上ってCEOを目指します。",
+        "各ランで新しいワーカー、派遣社員・カフェイン中毒・エゴマニアなどのアーキタイプ、Foreign ManufacturingやNeurolinkといった追加ゲームモードがアンロックされます。カウチ協力プレイやRemote Play Togetherで友達と遊ぶか、最初の完全攻略の前に無料デモを試してみましょう。"
+      ],
+      "facts": [
+        {
+          "label": "開発元",
+          "value": "Free Lives"
+        },
+        {
+          "label": "パブリッシャー",
+          "value": "Devolver Digital"
+        },
+        {
+          "label": "ジャンル",
+          "value": "ローグライト物理乱闘ゲーム"
+        },
+        {
+          "label": "プラットフォーム",
+          "value": "Windows・macOS"
+        },
+        {
+          "label": "発売日",
+          "value": "2026年9月23日"
+        },
+        {
+          "label": "協力プレイ",
+          "value": "対応 — カウチ協力＆Remote Play"
+        }
+      ]
+    },
+    "explore": {
+      "eyebrow": "リファレンスライブラリ",
+      "title": "Stick It to the Stickmanガイドを探す",
+      "description": "コード、戦闘、ゲームモード、ワーカー、協力プレイ、プラットフォーム、発売情報の検証済みリファレンスに飛び込みましょう。",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Stick It to the Stickman コード",
+          "description": "未検証のコード情報を公開せずに、引き換えコードの公式状況を追跡します。",
+          "href": "/updates",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "検証済みコード状況",
+              "detail": "確認した公式ソースでは、公式のコード引き換えシステムや公式コードリストは確認されていません。",
+              "badge": "検証済みコードなし"
+            },
+            {
+              "label": "公式による検証",
+              "detail": "今後のコード情報は、公式ゲームサイト、Steamストアページ、パブリッシャーページ、開発者アナウンスと照合して確認する必要があります。"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://www.stickittothestickman.com/",
+            "https://www.devolverdigital.com/games/stick-it-to-the-stickman",
+            "https://steamcommunity.com/app/2085540/announcements/"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Stick It to the Stickman 初心者ガイド",
+          "description": "公式に記録された目的、戦闘ループ、進行の前提、基本的な遊び方を学びます。",
+          "href": "/guide/stick-it-to-the-stickman-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "会社を上り詰める — 同僚や上司と戦いながら、企業ヒエラルキーを進んでCEOポジションを目指す。"
+            },
+            {
+              "label": "2",
+              "detail": "戦闘スタイルを構築 — ランを進めながら技、武器、超能力を選んで組み合わせる。"
+            },
+            {
+              "label": "3",
+              "detail": "ローグライト進行を想定 — 公式説明では、アンロック可能なワーカーとゲームモードを備えたローグライト物理乱闘ゲームとされている。"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://www.devolverdigital.com/games/stick-it-to-the-stickman"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Stick It to the Stickman 戦闘ガイド",
+          "description": "物理ベースの戦闘コンセプトと、公式に説明された技・武器・コンボ・超能力システムを探ります。",
+          "href": "/guide/stick-it-to-the-stickman-all-moves",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "物理ベースの戦い",
+              "detail": "戦闘は、同僚、重役、敵、ボスに対するインパクトの強い物理インタラクションを中心に構築されています。"
+            },
+            {
+              "label": "豊富な技の選択肢",
+              "detail": "公式資料では、多数の技から選んでコンバットコンビネーションを構築すると説明されています。"
+            },
+            {
+              "label": "武器とパワー",
+              "detail": "公式ストア説明には、パンチ、キック、突き、ホチキス、チェーンソー攻撃に加えて武器と超能力が含まれます。"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://www.devolverdigital.com/games/stick-it-to-the-stickman",
+            "https://www.youtube.com/watch?v=SNSIB_4V0EA"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Stick It to the Stickman ゲームモード",
+          "description": "未検証のコミュニティ情報ではなく、公式に発表されたモードと拡張を追いかけます。",
+          "href": "/updates/stick-it-to-the-stickman-latest-update",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Neurolink",
+              "detail": "Free Livesは、Neurolinkを1.0のモードラインナップの一部として公式に発表しました。"
+            },
+            {
+              "label": "Foreign Manufacturing",
+              "detail": "公式Steamアナウンスでは、Foreign Manufacturingは新しいアーキタイプ、敵、ロケーション、ビルドクラフトを備えたゲームモードと説明されています。"
+            },
+            {
+              "label": "拡大するモードラインナップ",
+              "detail": "公式ストアでは、進行によって新しいワーカーに加えて新しいゲームモードもアンロックされるとされています。"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://steamcommunity.com/app/2085540/announcements/"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Stick It to the Stickman ワーカー＆アーキタイプ",
+          "description": "公式に命名されたワーカーアーキタイプと、アンロック可能なキャラクタースタイルが戦闘進行に果たす役割を整理します。",
+          "href": "/characters",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "アンロック可能なワーカー",
+              "detail": "公式Steam説明では、新しいワーカーが進行の一部であると明記されています。"
+            },
+            {
+              "label": "オフィスアーキタイプ",
+              "detail": "公式の例には派遣社員、カフェイン中毒、エゴマニアが含まれます。"
+            },
+            {
+              "label": "モード固有アーキタイプ",
+              "detail": "公式アップデートノートでは、ゲームモードの拡張に伴って追加されたアーキタイプが記録されています。"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://steamcommunity.com/app/2085540/announcements/"
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Stick It to the Stickman 協力プレイ",
+          "description": "公式Steamストアページが確認しているStick It to the Stickmanの協力機能を理解します。",
+          "href": "/multiplayer/stick-it-to-the-stickman-local-coop",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "カウチ協力プレイ — 公式ゲーム説明では、カウチ協力プレイで友達をアクションに加えられるとされています。"
+            },
+            {
+              "label": "2",
+              "detail": "共有・分割画面 — Steamは対応機能として共有/分割画面の協力プレイと共有/分割画面を記載しています。"
+            },
+            {
+              "label": "3",
+              "detail": "Remote Play Together — SteamはRemote Play Together対応を公式に記載しています。"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/"
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Stick It to the Stickman プラットフォーム＆要件",
+          "description": "ゲームをインストールする前に、公式に記載されたOSと最低ハードウェア要件を確認します。",
+          "href": "/platforms",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Windows",
+              "detail": "SteamはWindows対応を記載し、最低OSはWindows 10 x64としています。"
+            },
+            {
+              "label": "macOS",
+              "detail": "SteamはmacOS対応を記載し、最低要件にmacOS 13.3.1 VenturaとApple M1 Maxを挙げています。"
+            },
+            {
+              "label": "ストレージ",
+              "detail": "現在の公式Steam要件では、6 GBの空き容量が必要とされています。"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/"
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Stick It to the Stickman 言語＆発売情報",
+          "description": "公式のローカライズ対応、発売時期、その他ストアに基づく提供情報を参照します。",
+          "href": "/updates/stick-it-to-the-stickman-release-date",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "正式リリース",
+              "detail": "Steamには1.0の発売日が2026年9月23日、早期アクセス開始日が2025年8月18日と記録されています。"
+            },
+            {
+              "label": "12言語対応",
+              "detail": "現在の公式Steamページでは、インターフェースと字幕で12言語の対応が記載されています。"
+            },
+            {
+              "label": "英語対応",
+              "detail": "英語はインターフェースと字幕の両方で公式に対応しています。"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://steamcommunity.com/app/2085540/announcements/"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "よくある質問",
+      "description": "Stick It to the Stickmanについて最も多い質問への簡潔な回答。",
+      "items": [
+        {
+          "question": "Stick It to the Stickmanはどんなゲームですか？",
+          "answer": "Stick It to the Stickmanは、同僚や重役との戦い、戦闘技の連結、武器と超能力の使用、出世の階段を上ることを中心にしたローグライト物理乱闘ゲームです。"
+        },
+        {
+          "question": "Stick It to the Stickmanの開発元と発売元は？",
+          "answer": "Stick It to the StickmanはFree Livesが開発し、Devolver Digitalが発売しました。"
+        },
+        {
+          "question": "Stick It to the Stickmanの正式リリースはいつですか？",
+          "answer": "Stick It to the Stickmanの完全版1.0は2026年9月23日に発売されました。それ以前の2025年8月18日にSteam早期アクセスが開始されています。"
+        },
+        {
+          "question": "Stick It to the Stickmanに公式対応しているプラットフォームは？",
+          "answer": "Stick It to the Stickmanの公式Steamページには、WindowsとmacOSのシステム要件が記載されています。"
+        },
+        {
+          "question": "Stick It to the Stickmanは協力プレイに対応していますか？",
+          "answer": "対応しています。Stick It to the StickmanのSteamページには共有・分割画面の協力プレイとRemote Play Togetherが記載されており、ゲーム説明ではカウチ協力プレイが明記されています。"
+        },
+        {
+          "question": "Stick It to the Stickmanには複数のゲームモードがありますか？",
+          "answer": "あります。Stick It to the StickmanにはForeign ManufacturingやNeurolinkを含む複数のゲームモードがあり、開発中および1.0への移行時にモードとコンテンツが追加されました。"
+        },
+        {
+          "question": "Stick It to the Stickmanの公式デモはありますか？",
+          "answer": "あります。Stick It to the Stickmanの公式Steamストアページではデモをダウンロードでき、公式ゲームサイトでもデモを宣伝しています。"
+        },
+        {
+          "question": "Stick It to the Stickmanに公式の引き換えコードはありますか？",
+          "answer": "確認した公式ゲームサイト、Steamストア、パブリッシャーページ、公式Steamアナウンスでは、Stick It to the Stickmanの公式コード引き換えシステムや検証済みコードリストは確認されていません。そのため、このサイトではコードを掲載していません。"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Stick It to the Stickmanを始める準備はいいですか？",
+      "description": "Steamでゲームを入手して出世の階段を上りましょう。まず読みたい方は、初心者ガイド、戦闘システム、ゲームモード、協力プレイのリファレンスからどうぞ。",
+      "actions": [
+        {
+          "label": "Steamでプレイ",
+          "externalLink": "steam",
+          "variant": "primary"
+        },
+        {
+          "label": "公式サイト",
+          "externalLink": "officialGame",
+          "variant": "secondary"
+        }
+      ]
+    },
+    "sidebarFeature": {
+      "title": "最新情報",
+      "badge": "検証済みソース",
+      "description": "ガイドは公式ソースに基づいて作成され、ソースの変化に合わせて更新されます。最新の検証済み情報をチェックしに定期的にお戻りください。",
+      "linkLabel": "アップデートを見る",
+      "href": "/updates"
+    }
+  },
+  "shared": {
+    "home": "ホーム",
+    "readMore": "続きを読む",
+    "viewAll": "すべて見る",
+    "wikiNavigation": "Wikiナビゲーション",
+    "tableOfContents": "目次",
+    "officialMedia": "公式メディア",
+    "advertisement": "広告",
+    "emptySection": "このセクションにはまだ公開済みガイドがありません。",
+    "translationFallback": "この記事はまだ翻訳されていないため、英語版を表示しています。",
+    "listDescriptionFallback": "{game}の{category}ガイドを閲覧できます。",
+    "availableGuides": "利用可能なガイド",
+    "relatedArticles": "関連記事",
+    "continueReading": "読み続ける",
+    "breadcrumb": "パンくずリスト",
+    "notFoundTitle": "見つかりません",
+    "categoryTitleFallback": "{category}ガイド"
+  },
+  "footer": {
+    "description": "Stick It to the Stickmanの非公式ファンWiki：公式ソースに基づく事実、初心者向けヒント、戦闘システム、モード、協力プレイ、プラットフォーム、コードの状況。",
+    "guidesTitle": "ガイド",
+    "legalTitle": "法的事項",
+    "officialLinksTitle": "公式",
+    "playGame": "Steamでプレイ",
+    "officialSite": "公式サイト",
+    "officialYoutube": "公式トレーラー",
+    "officialPublisher": "Devolver Digital",
+    "notice": "Stick It to the StickmanはFree Livesが開発し、Devolver Digitalが発売しています。このWikiは非公式のファンプロジェクトであり、Free LivesおよびDevolver Digitalとは提携しておらず、承認も受けていません。",
+    "copyright": "Copyright 2026 Stick It to the Stickman Wiki。非公式ファンガイド。"
+  },
+  "legal": {
+    "backToHome": "ホームに戻る",
+    "lastUpdated": "最終更新日：{date}",
+    "about": {
+      "eyebrow": "独立系コミュニティリファレンス",
+      "title": "Stick It to the Stickman Wikiについて",
+      "paragraphs": [
+        "Stick It to the Stickman Wikiは、Free Livesが開発しDevolver Digitalが発売するローグライト物理乱闘ゲーム「Stick It to the Stickman」の非公式ファン制作リファレンスハブです。",
+        "ゲームでは敵意に満ちた職場を戦い抜きます。戦闘技をつなぎ、武器と超能力を手に入れ、新しいワーカーとゲームモードをアンロックし、出世の階段を上ってCEOを目指します。",
+        "当サイトのガイドは、Steamストアページ、公式ゲームサイト、Devolver Digitalといった公式ソースに基づき、独立した編集方針で作成しています。Free Lives、Devolver Digital、Valveとは提携しておらず、承認も受けていません。"
+      ]
+    },
+    "privacy": {
+      "title": "プライバシーポリシー",
+      "updated": "2026年9月24日",
+      "sections": [
+        {
+          "title": "私たちについて",
+          "body": "Stick It to the Stickman Wiki（stickittothestickmanwiki.space）は、ゲーム「Stick It to the Stickman」に関する非公式のファン制作情報サイトです。開発元のFree Lives、発売元のDevolver Digitalとは提携していません。"
+        },
+        {
+          "title": "収集する情報",
+          "body": "アカウント登録は不要で、個人情報の提供も求めません。多くのウェブサイトと同様に、ホスティングプロバイダーがセキュリティと集計統計のために標準的な技術ログ（IPアドレス、ブラウザの種類、閲覧ページなど）を記録する場合があります。"
+        },
+        {
+          "title": "Cookieと第三者広告",
+          "body": "このサイトでは、広告の配信と測定にCookieまたは類似技術を使用する第三者広告を表示する場合があります。広告プロバイダーは独自のプライバシーポリシーに従って運営されており、Cookieはブラウザ設定で管理できます。"
+        },
+        {
+          "title": "外部リンク",
+          "body": "このサイトのページには、Steamストア、公式ゲームサイト、Devolver Digitalなどの外部サイトへのリンクが含まれます。第三者サイトのコンテンツやプライバシー慣行について、当サイトは責任を負いません。"
+        },
+        {
+          "title": "子どもについて",
+          "body": "このサイトは一般向けのゲーム情報サイトであり、13歳未満の子どもを対象としていません。"
+        },
+        {
+          "title": "変更について",
+          "body": "サイトの発展に伴い、本ポリシーを更新する場合があります。重要な変更は、このページに新しい日付とともに反映されます。"
+        },
+        {
+          "title": "お問い合わせ",
+          "body": "このサイトのプライバシーに関するご質問は、stickittothestickmanwiki.spaceの公開連絡チャネルを通じてサイト運営者までご連絡ください。"
+        }
+      ]
+    },
+    "terms": {
+      "title": "利用規約",
+      "updated": "2026年9月24日",
+      "sections": [
+        {
+          "title": "同意",
+          "body": "Stick It to the Stickman Wikiにアクセスすることで、本規約に同意したものとみなされます。同意いただけない場合は、本サイトを利用しないでください。"
+        },
+        {
+          "title": "ファン制作リファレンス",
+          "body": "本サイトは非公式のファン制作情報サイトです。Free Lives、Devolver Digital、Valve、Steamとは提携・承認・関連関係にありません。ゲームの名称、ロゴ、アートワークはそれぞれの権利者に帰属します。"
+        },
+        {
+          "title": "無保証",
+          "body": "コンテンツは情報提供のみを目的として現状有姿で提供されます。機能、価格、提供状況などのゲーム詳細は変更される可能性があります。必ず公式Steamストアページまたはゲームの公式サイトでご確認ください。"
+        },
+        {
+          "title": "利用上の注意",
+          "body": "サイトを不正に利用したり、妨害・リバースエンジニアリングを試みたり、許可なくオリジナルコンテンツの大部分を再公開したりしないでください。出典を明記した短い引用は歓迎します。"
+        },
+        {
+          "title": "変更について",
+          "body": "本規約はいつでも改定される場合があります。変更の公開後もサイトを利用し続けた場合、改定後の規約に同意したものとみなされます。"
+        }
+      ]
+    },
+    "copyright": {
+      "title": "著作権表示",
+      "updated": "2026年9月24日",
+      "sections": [
+        {
+          "title": "ゲームコンテンツ",
+          "body": "Stick It to the StickmanはFree Livesが開発し、Devolver Digitalが発売しています。ゲーム、その名称、ロゴ、アートワークおよび関連資料はそれぞれの権利者に帰属し、本サイトでは識別と解説の目的でのみ参照しています。"
+        },
+        {
+          "title": "サイトコンテンツ",
+          "body": "stickittothestickmanwiki.space上のオリジナルテキスト、構成、編集コンテンツは、特記のない限り © 2026 Stick It to the Stickman Wiki に帰属します。"
+        },
+        {
+          "title": "コンテンツの利用",
+          "body": "出典の明記とソースページへのリンク付きで短い抜粋を引用できます。本サイトの大部分の複製には、事前の書面による許可が必要です。"
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "ガイドが見つかりません",
+    "description": "リクエストされたガイドはこのコンテンツライブラリに公開されていません。",
+    "returnHome": "ホームに戻る"
+  }
+}

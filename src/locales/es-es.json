@@ -1,1 +1,592 @@
-{}
+{
+  "site": {
+    "name": "Stick It to the Stickman",
+    "wikiName": "Stick It to the Stickman Wiki",
+    "shortName": "Stick It to the Stickman",
+    "tagline": "Guías y datos",
+    "description": "Centro de guías independiente de Stick It to the Stickman con datos de fuentes oficiales, consejos para principiantes, sistemas de combate, modos, cooperativo, plataformas y estado de los códigos.",
+    "legalNotice": "Wiki independiente hecho por fans. No está afiliado ni respaldado por Free Lives ni Devolver Digital.",
+    "logoAlt": "Emblema del wiki de Stick It to the Stickman",
+    "heroAlt": "Vista previa del gameplay de Stick It to the Stickman",
+    "artworkAlt": "Arte del juego Stick It to the Stickman",
+    "bossesArtworkAlt": "Arte del juego Stick It to the Stickman"
+  },
+  "nav": {
+    "language": "Idioma",
+    "menu": "Abrir navegación",
+    "toggleTheme": "Cambiar tema",
+    "characters": "Personajes",
+    "community": "Comunidad",
+    "guide": "Guías",
+    "multiplayer": "Multijugador",
+    "platforms": "Plataformas",
+    "progression": "Progresión",
+    "resources": "Recursos",
+    "updates": "Actualizaciones"
+  },
+  "characters": {
+    "title": "Personajes",
+    "overviewTitle": "Personajes",
+    "description": "Todos los personajes jugables de Stick It to the Stickman, desde el plantel completo hasta los personajes secretos, con los métodos de desbloqueo y cómo cada arquetipo cambia tu partida.",
+    "overviewDescription": "Todos los personajes jugables de Stick It to the Stickman, desde el plantel completo hasta los personajes secretos, con los métodos de desbloqueo y cómo cada arquetipo cambia tu partida.",
+    "intro": "La biblioteca de personajes cubre el plantel y los personajes secretos documentados de Stick It to the Stickman, además de los arquetipos que cambian cómo se juega cada partida.",
+    "guidesTitle": "Guías de personajes"
+  },
+  "community": {
+    "title": "Comunidad",
+    "overviewTitle": "Comunidad",
+    "description": "Páginas de la comunidad de Stick It to the Stickman: el Discord oficial, los hilos de Reddit y dónde ocurren los anuncios y las discusiones entre jugadores.",
+    "overviewDescription": "Páginas de la comunidad de Stick It to the Stickman: el Discord oficial, los hilos de Reddit y dónde ocurren los anuncios y las discusiones entre jugadores.",
+    "intro": "Las páginas de la comunidad recopilan los espacios oficiales y gestionados por jugadores de Stick It to the Stickman, para que los anuncios y las discusiones sean fáciles de encontrar.",
+    "guidesTitle": "Páginas de la comunidad"
+  },
+  "guide": {
+    "title": "Guías",
+    "overviewTitle": "Guías",
+    "description": "Cómo jugar a Stick It to the Stickman: guía para principiantes, listas de movimientos, logros, atajos de teclado, consejos y solución de problemas.",
+    "overviewDescription": "Cómo jugar a Stick It to the Stickman: guía para principiantes, listas de movimientos, logros, atajos de teclado, consejos y solución de problemas.",
+    "intro": "La sección de guías reúne páginas prácticas de Stick It to the Stickman, desde la primera partida hasta listas completas de movimientos, logros, atajos de teclado y soluciones habituales.",
+    "guidesTitle": "Guías prácticas"
+  },
+  "multiplayer": {
+    "title": "Multijugador",
+    "overviewTitle": "Multijugador",
+    "description": "Datos del multijugador de Stick It to the Stickman: número de jugadores, cooperativo local y cómo funciona Remote Play.",
+    "overviewDescription": "Datos del multijugador de Stick It to the Stickman: número de jugadores, cooperativo local y cómo funciona Remote Play.",
+    "intro": "Las páginas multijugador responden cuántos jugadores pueden participar, cómo configurar el cooperativo local y cómo funciona Remote Play en Stick It to the Stickman.",
+    "guidesTitle": "Guías multijugador"
+  },
+  "platforms": {
+    "title": "Plataformas",
+    "overviewTitle": "Plataformas",
+    "description": "Dónde puedes jugar a Stick It to the Stickman: disponibilidad en PC, consolas, móvil y Steam Deck.",
+    "overviewDescription": "Dónde puedes jugar a Stick It to the Stickman: disponibilidad en PC, consolas, móvil y Steam Deck.",
+    "intro": "Las páginas de plataformas documentan dónde está disponible oficialmente Stick It to the Stickman y qué admite cada plataforma.",
+    "guidesTitle": "Guías de plataformas"
+  },
+  "progression": {
+    "title": "Progresión",
+    "overviewTitle": "Progresión",
+    "description": "Sistemas de progresión de Stick It to the Stickman: desbloqueables, rangos, el mercado negro y las mejoras de la Torre de Finanzas.",
+    "overviewDescription": "Sistemas de progresión de Stick It to the Stickman: desbloqueables, rangos, el mercado negro y las mejoras de la Torre de Finanzas.",
+    "intro": "Las páginas de progresión explican los desbloqueables, los rangos y los sistemas de mejoras que impulsan las partidas de Stick It to the Stickman.",
+    "guidesTitle": "Guías de progresión"
+  },
+  "resources": {
+    "title": "Recursos",
+    "overviewTitle": "Recursos",
+    "description": "Monedas y recursos de Stick It to the Stickman: sangre, sudor y agua, y cómo conseguir cada uno.",
+    "overviewDescription": "Monedas y recursos de Stick It to the Stickman: sangre, sudor y agua, y cómo conseguir cada uno.",
+    "intro": "Las páginas de recursos desglosan las monedas de Stick It to the Stickman y las formas más conocidas de conseguirlas.",
+    "guidesTitle": "Guías de recursos"
+  },
+  "updates": {
+    "title": "Actualizaciones",
+    "overviewTitle": "Actualizaciones",
+    "description": "Noticias y cobertura de actualizaciones de Stick It to the Stickman: fecha de lanzamiento, demo, última actualización y la hoja de ruta.",
+    "overviewDescription": "Noticias y cobertura de actualizaciones de Stick It to the Stickman: fecha de lanzamiento, demo, última actualización y la hoja de ruta.",
+    "intro": "Las páginas de actualizaciones siguen la fecha de lanzamiento, la disponibilidad de la demo y los planes anunciados de Stick It to the Stickman.",
+    "guidesTitle": "Noticias y actualizaciones"
+  },
+  "home": {
+    "meta": {
+      "title": "Stick It to the Stickman Wiki",
+      "description": "Centro de guías independiente de Stick It to the Stickman con datos de fuentes oficiales, consejos para principiantes, sistemas de combate, modos, cooperativo, plataformas y estado de los códigos."
+    },
+    "hero": {
+      "title": "Stick It to the Stickman Wiki",
+      "eyebrow": "Wiki independiente hecho por fans",
+      "description": "Ábrete paso por un lugar de trabajo hostil en Stick It to the Stickman, el peleador de físicas roguelite de Free Lives y Devolver Digital. Construye tus propias combinaciones de combate, desbloquea trabajadores y modos de juego, y sube por la escalera corporativa hasta convertirte en director ejecutivo.",
+      "stats": [
+        "Desarrollador: Free Lives",
+        "Editor: Devolver Digital",
+        "Windows · macOS",
+        "Lanzado el 23 de septiembre de 2026"
+      ],
+      "media": {
+        "asset": "hero",
+        "externalLink": "youtube",
+        "label": "Tráiler de presentación oficial"
+      },
+      "actions": [
+        {
+          "label": "Jugar en Steam",
+          "externalLink": "steam",
+          "variant": "primary"
+        },
+        {
+          "label": "Sitio web oficial",
+          "externalLink": "officialGame",
+          "variant": "secondary"
+        },
+        {
+          "label": "Ver tráiler",
+          "externalLink": "youtube",
+          "variant": "secondary"
+        }
+      ]
+    },
+    "updates": {
+      "title": "Últimas actualizaciones del juego",
+      "all": "Ver todas las actualizaciones",
+      "href": "/updates"
+    },
+    "start": {
+      "eyebrow": "Empieza aquí",
+      "title": "Tu viaje por Stick It to the Stickman",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guía para principiantes",
+          "description": "Aprende el bucle principal: lucha a través de la oficina, construye tus propias combinaciones de combate con movimientos, armas y superpoderes, y sube por la escalera corporativa hacia el puesto de director ejecutivo."
+        },
+        {
+          "number": "2",
+          "title": "Conceptos básicos de combate",
+          "description": "Encadena puñetazos, patadas, puñaladas, grapadoras y ataques de motosierra en combos basados en físicas contra compañeros, ejecutivos y jefes."
+        },
+        {
+          "number": "3",
+          "title": "Arquetipos de trabajador",
+          "description": "Los Temporales, los Adictos a la Cafeína y los Egománicos se juegan distinto. Descubre qué arquetipos desbloquear primero y cómo cambian tus partidas."
+        },
+        {
+          "number": "4",
+          "title": "Códigos",
+          "description": "Consulta el estado oficial de los códigos canjeables y dónde deberían verificarse las futuras afirmaciones sobre códigos antes de publicar nada."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Páginas populares",
+      "title": "Tendencias ahora"
+    },
+    "about": {
+      "title": "¿Qué es Stick It to the Stickman?",
+      "artworkAsset": "hero",
+      "paragraphs": [
+        "Stick It to the Stickman es un peleador de físicas roguelite desarrollado por Free Lives y publicado por Devolver Digital. Te abres paso por un lugar de trabajo hostil, encadenando puñetazos, patadas, puñaladas, grapadoras y ataques de motosierra en tus propias combinaciones de combate mientras subes por la escalera corporativa hasta convertirte en director ejecutivo.",
+        "Cada partida desbloquea nuevos trabajadores, arquetipos como los Temporales, los Adictos a la Cafeína y los Egománicos, y modos de juego adicionales como Foreign Manufacturing y Neurolink. Trae a un amigo con el cooperativo de sofá o Remote Play Together, o prueba la demo gratuita antes de tu primera escalada completa."
+      ],
+      "facts": [
+        {
+          "label": "Desarrollador",
+          "value": "Free Lives"
+        },
+        {
+          "label": "Editor",
+          "value": "Devolver Digital"
+        },
+        {
+          "label": "Género",
+          "value": "Peleador de físicas roguelite"
+        },
+        {
+          "label": "Plataformas",
+          "value": "Windows y macOS"
+        },
+        {
+          "label": "Fecha de lanzamiento",
+          "value": "23 de septiembre de 2026"
+        },
+        {
+          "label": "Cooperativo",
+          "value": "Sí: coop de sofá y Remote Play"
+        }
+      ]
+    },
+    "explore": {
+      "eyebrow": "Biblioteca de referencia",
+      "title": "Explora las guías de Stick It to the Stickman",
+      "description": "Sumérgete en referencias verificadas sobre códigos, combate, modos de juego, trabajadores, cooperativo, plataformas y detalles de lanzamiento.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Códigos de Stick It to the Stickman",
+          "description": "Sigue el estado oficial de los códigos canjeables sin publicar afirmaciones de códigos sin verificar.",
+          "href": "/updates",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Estado de códigos verificado",
+              "detail": "No se confirmó ningún sistema oficial de códigos canjeables ni ninguna lista oficial de códigos en las fuentes oficiales revisadas.",
+              "badge": "Sin códigos verificados"
+            },
+            {
+              "label": "Verificación oficial",
+              "detail": "Las futuras afirmaciones sobre códigos deben verificarse contra el sitio oficial del juego, la página de Steam, la página del editor o los anuncios del desarrollador."
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://www.stickittothestickman.com/",
+            "https://www.devolverdigital.com/games/stick-it-to-the-stickman",
+            "https://steamcommunity.com/app/2085540/announcements/"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Guía para principiantes de Stick It to the Stickman",
+          "description": "Aprende el objetivo documentado oficialmente, el bucle de combate, la premisa de progresión y las formas básicas de jugar.",
+          "href": "/guide/stick-it-to-the-stickman-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Asciende en la empresa: lucha contra compañeros y supervisores mientras avanzas por la jerarquía corporativa hacia el puesto de director ejecutivo."
+            },
+            {
+              "label": "2",
+              "detail": "Construye tu estilo de combate: elige y combina movimientos, armas y superpoderes a medida que avanzas en las partidas."
+            },
+            {
+              "label": "3",
+              "detail": "Espera progresión roguelite: la descripción oficial identifica el juego como un peleador de físicas roguelite con trabajadores y modos de juego desbloqueables."
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://www.devolverdigital.com/games/stick-it-to-the-stickman"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Guía de combate de Stick It to the Stickman",
+          "description": "Explora los conceptos de combate basados en físicas y los sistemas de movimientos, armas, combos y superpoderes descritos oficialmente.",
+          "href": "/guide/stick-it-to-the-stickman-all-moves",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Pelea basada en físicas",
+              "detail": "El combate se construye alrededor de interacciones físicas de alto impacto contra compañeros, ejecutivos, enemigos y jefes."
+            },
+            {
+              "label": "Gran selección de movimientos",
+              "detail": "Los materiales oficiales describen elegir entre una gran selección de movimientos para construir combinaciones de combate."
+            },
+            {
+              "label": "Armas y poderes",
+              "detail": "La descripción oficial de la tienda incluye armas y superpoderes junto a puñetazos, patadas, puñaladas, grapadoras y ataques de motosierra."
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://www.devolverdigital.com/games/stick-it-to-the-stickman",
+            "https://www.youtube.com/watch?v=SNSIB_4V0EA"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Modos de juego de Stick It to the Stickman",
+          "description": "Sigue los modos y expansiones anunciados oficialmente en lugar de confiar en afirmaciones comunitarias sin documentar.",
+          "href": "/updates/stick-it-to-the-stickman-latest-update",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Neurolink",
+              "detail": "Free Lives anunció oficialmente Neurolink como parte del plantel de modos de la 1.0."
+            },
+            {
+              "label": "Foreign Manufacturing",
+              "detail": "Los anuncios oficiales de Steam describen Foreign Manufacturing como un modo de juego con nuevos arquetipos, enemigos, ubicaciones y construcción de builds."
+            },
+            {
+              "label": "Plantel de modos en expansión",
+              "detail": "La tienda oficial indica que la progresión desbloquea nuevos modos de juego además de nuevos trabajadores."
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://steamcommunity.com/app/2085540/announcements/"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Trabajadores y arquetipos de Stick It to the Stickman",
+          "description": "Cataloga los arquetipos de trabajador con nombre oficial y el papel de los estilos de personaje desbloqueables en la progresión de combate.",
+          "href": "/characters",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Trabajadores desbloqueables",
+              "detail": "La descripción oficial de Steam identifica explícitamente a los nuevos trabajadores como parte de la progresión."
+            },
+            {
+              "label": "Arquetipos de oficina",
+              "detail": "Los ejemplos oficiales incluyen Temporales, Adictos a la Cafeína y Egománicos."
+            },
+            {
+              "label": "Arquetipos específicos por modo",
+              "detail": "Las notas de actualización oficiales documentan arquetipos adicionales introducidos al expandirse los modos de juego."
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://steamcommunity.com/app/2085540/announcements/"
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Cooperativo de Stick It to the Stickman",
+          "description": "Entiende las funciones cooperativas que la página oficial de Steam confirma para Stick It to the Stickman.",
+          "href": "/multiplayer/stick-it-to-the-stickman-local-coop",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Cooperativo de sofá: la descripción oficial del juego dice que los amigos pueden unirse a la acción mediante el cooperativo de sofá."
+            },
+            {
+              "label": "2",
+              "detail": "Pantalla compartida y dividida: Steam lista el cooperativo de pantalla compartida/dividida y la pantalla compartida/dividida entre las funciones admitidas."
+            },
+            {
+              "label": "3",
+              "detail": "Remote Play Together: Steam lista oficialmente la compatibilidad con Remote Play Together."
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/"
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Plataformas y requisitos de Stick It to the Stickman",
+          "description": "Consulta los sistemas operativos oficialmente listados y los requisitos de hardware mínimos antes de instalar el juego.",
+          "href": "/platforms",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Windows",
+              "detail": "Steam lista la compatibilidad con Windows, con Windows 10 x64 como sistema operativo mínimo."
+            },
+            {
+              "label": "macOS",
+              "detail": "Steam lista la compatibilidad con macOS, con macOS 13.3.1 Ventura y Apple M1 Max en los requisitos mínimos."
+            },
+            {
+              "label": "Almacenamiento",
+              "detail": "Los requisitos oficiales actuales de Steam especifican 6 GB de almacenamiento disponible."
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/"
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Idiomas y lanzamiento de Stick It to the Stickman",
+          "description": "Consulta la compatibilidad oficial de idiomas, el calendario de lanzamiento y otra información de disponibilidad respaldada por la tienda.",
+          "href": "/updates/stick-it-to-the-stickman-release-date",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Lanzamiento completo",
+              "detail": "Steam registra la fecha de lanzamiento de la 1.0 como el 23 de septiembre de 2026 y la fecha de acceso anticipado como el 18 de agosto de 2025."
+            },
+            {
+              "label": "12 idiomas compatibles",
+              "detail": "La página oficial de Steam identifica actualmente 12 idiomas compatibles para la interfaz y los subtítulos."
+            },
+            {
+              "label": "Compatibilidad con inglés",
+              "detail": "El inglés es compatible oficialmente tanto para la interfaz como para los subtítulos."
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/",
+            "https://steamcommunity.com/app/2085540/announcements/"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "description": "Respuestas rápidas a las preguntas más comunes sobre Stick It to the Stickman.",
+      "items": [
+        {
+          "question": "¿Qué tipo de juego es Stick It to the Stickman?",
+          "answer": "Stick It to the Stickman es un peleador de físicas roguelite construido alrededor de pelear contra compañeros y ejecutivos, encadenar movimientos de combate, usar armas y superpoderes, y subir por la escalera corporativa."
+        },
+        {
+          "question": "¿Quién desarrolló y publicó Stick It to the Stickman?",
+          "answer": "Stick It to the Stickman fue desarrollado por Free Lives y publicado por Devolver Digital."
+        },
+        {
+          "question": "¿Cuándo se lanzó la versión completa de Stick It to the Stickman?",
+          "answer": "El lanzamiento completo 1.0 de Stick It to the Stickman salió el 23 de septiembre de 2026. El juego había entrado previamente en acceso anticipado de Steam el 18 de agosto de 2025."
+        },
+        {
+          "question": "¿Qué plataformas admiten oficialmente Stick It to the Stickman?",
+          "answer": "La página oficial de Steam de Stick It to the Stickman proporciona requisitos del sistema para Windows y macOS."
+        },
+        {
+          "question": "¿Stick It to the Stickman admite cooperativo?",
+          "answer": "Sí. La página de Steam de Stick It to the Stickman identifica el cooperativo de pantalla compartida y dividida, así como Remote Play Together, y la descripción del juego menciona específicamente el cooperativo de sofá."
+        },
+        {
+          "question": "¿Stick It to the Stickman tiene varios modos de juego?",
+          "answer": "Sí. Stick It to the Stickman tiene varios modos de juego, incluidos Foreign Manufacturing y Neurolink, con modos y contenido adicionales añadidos durante el desarrollo y el paso a la 1.0."
+        },
+        {
+          "question": "¿Hay una demo oficial de Stick It to the Stickman?",
+          "answer": "Sí. La página oficial de la tienda de Steam de Stick It to the Stickman ofrece una demo descargable, y el sitio web oficial del juego también promociona la demo."
+        },
+        {
+          "question": "¿Hay códigos oficiales canjeables para Stick It to the Stickman?",
+          "answer": "No se estableció ningún sistema oficial de códigos canjeables ni ninguna lista de códigos verificada para Stick It to the Stickman en el sitio oficial del juego, la tienda de Steam, la página del editor o los anuncios oficiales de Steam revisados, así que aquí no se afirma ningún código."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "¿Listo para Stick It to the Stickman?",
+      "description": "Consigue el juego en Steam y sube por la escalera corporativa. ¿Prefieres leer primero? Empieza con nuestra guía para principiantes, los sistemas de combate, los modos de juego y las referencias de cooperativo.",
+      "actions": [
+        {
+          "label": "Jugar en Steam",
+          "externalLink": "steam",
+          "variant": "primary"
+        },
+        {
+          "label": "Sitio web oficial",
+          "externalLink": "officialGame",
+          "variant": "secondary"
+        }
+      ]
+    },
+    "sidebarFeature": {
+      "title": "Información más reciente",
+      "badge": "Fuentes verificadas",
+      "description": "Las guías se construyen a partir de fuentes oficiales y se actualizan cuando esas fuentes cambian. Vuelve con regularidad para ver los últimos datos verificados.",
+      "linkLabel": "Ver actualizaciones",
+      "href": "/updates"
+    }
+  },
+  "shared": {
+    "home": "Inicio",
+    "readMore": "Leer más",
+    "viewAll": "Ver todo",
+    "wikiNavigation": "Navegación del wiki",
+    "tableOfContents": "Tabla de contenidos",
+    "officialMedia": "Medios oficiales",
+    "advertisement": "Publicidad",
+    "emptySection": "Todavía no hay guías publicadas en esta sección.",
+    "translationFallback": "Este artículo aún no está traducido, así que se muestra la versión en inglés.",
+    "listDescriptionFallback": "Explora guías de {category} para {game}.",
+    "availableGuides": "Guías disponibles",
+    "relatedArticles": "Artículos relacionados",
+    "continueReading": "Seguir leyendo",
+    "breadcrumb": "Miga de pan",
+    "notFoundTitle": "No encontrado",
+    "categoryTitleFallback": "Guías de {category}"
+  },
+  "footer": {
+    "description": "Wiki independiente hecho por fans de Stick It to the Stickman: datos de fuentes oficiales, consejos para principiantes, sistemas de combate, modos, cooperativo, plataformas y estado de los códigos.",
+    "guidesTitle": "Guías",
+    "legalTitle": "Legal",
+    "officialLinksTitle": "Oficial",
+    "playGame": "Jugar en Steam",
+    "officialSite": "Sitio web oficial",
+    "officialYoutube": "Tráiler oficial",
+    "officialPublisher": "Devolver Digital",
+    "notice": "Stick It to the Stickman está desarrollado por Free Lives y publicado por Devolver Digital. Este wiki es un proyecto independiente hecho por fans y no está afiliado ni respaldado por Free Lives ni Devolver Digital.",
+    "copyright": "Copyright 2026 Stick It to the Stickman Wiki. Guía independiente hecha por fans."
+  },
+  "legal": {
+    "backToHome": "Volver al inicio",
+    "lastUpdated": "Última actualización: {date}",
+    "about": {
+      "eyebrow": "Referencia comunitaria independiente",
+      "title": "Acerca del wiki de Stick It to the Stickman",
+      "paragraphs": [
+        "El wiki de Stick It to the Stickman es un centro de referencia independiente, hecho por fans, para Stick It to the Stickman, el peleador de físicas roguelite desarrollado por Free Lives y publicado por Devolver Digital.",
+        "En el juego te abres paso por un lugar de trabajo hostil: encadena movimientos de combate, coge armas y superpoderes, desbloquea nuevos trabajadores y modos de juego, y sube por la escalera corporativa hasta convertirte en director ejecutivo.",
+        "Nuestras guías se construyen a partir de fuentes oficiales — la página de la tienda de Steam, el sitio web oficial del juego y Devolver Digital — con una voz editorial independiente. No estamos afiliados ni respaldados por Free Lives, Devolver Digital o Valve."
+      ]
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "updated": "24 de septiembre de 2026",
+      "sections": [
+        {
+          "title": "Quiénes somos",
+          "body": "El wiki de Stick It to the Stickman (stickittothestickmanwiki.space) es un sitio de información independiente, hecho por fans, sobre el videojuego Stick It to the Stickman. No estamos afiliados al desarrollador del juego, Free Lives, ni a su editor, Devolver Digital."
+        },
+        {
+          "title": "Información que recopilamos",
+          "body": "No exigimos cuentas ni te pedimos información personal. Como la mayoría de los sitios web, nuestro proveedor de alojamiento puede registrar registros técnicos estándar (como la dirección IP, el tipo de navegador y las páginas visitadas) utilizados para seguridad y estadísticas agregadas."
+        },
+        {
+          "title": "Cookies y publicidad de terceros",
+          "body": "Este sitio puede mostrar publicidad de terceros que utiliza cookies o tecnologías similares para servir y medir anuncios. Los proveedores de anuncios operan bajo sus propias políticas de privacidad; puedes gestionar las cookies desde la configuración de tu navegador."
+        },
+        {
+          "title": "Enlaces externos",
+          "body": "Las páginas de este sitio enlazan a sitios web externos como la tienda de Steam, el sitio web oficial del juego y Devolver Digital. No somos responsables del contenido ni de las prácticas de privacidad de los sitios de terceros."
+        },
+        {
+          "title": "Niños",
+          "body": "Este sitio es una referencia de juegos para público general y no está dirigido a niños menores de 13 años."
+        },
+        {
+          "title": "Cambios",
+          "body": "Podemos actualizar esta política a medida que el sitio evoluciona. Los cambios importantes se reflejarán en esta página con una nueva fecha."
+        },
+        {
+          "title": "Contacto",
+          "body": "Para preguntas de privacidad sobre este sitio, contacta con el operador del sitio a través de los canales de contacto públicos de stickittothestickmanwiki.space."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Términos del servicio",
+      "updated": "24 de septiembre de 2026",
+      "sections": [
+        {
+          "title": "Aceptación",
+          "body": "Al acceder al wiki de Stick It to the Stickman aceptas estos términos. Si no estás de acuerdo, por favor no uses el sitio."
+        },
+        {
+          "title": "Referencia hecha por fans",
+          "body": "Este es un sitio informativo independiente hecho por fans. No estamos afiliados, respaldados ni conectados con Free Lives, Devolver Digital, Valve o Steam. El nombre del juego, sus logotipos y su arte pertenecen a sus respectivos propietarios."
+        },
+        {
+          "title": "Sin garantía",
+          "body": "El contenido se proporciona con fines informativos y tal cual. Los detalles del juego, como funciones, precios y disponibilidad, pueden cambiar; verifica siempre la página oficial de la tienda de Steam o el sitio web oficial del juego."
+        },
+        {
+          "title": "Uso aceptable",
+          "body": "No hagas un mal uso del sitio, no intentes interrumpirlo ni aplicar ingeniería inversa, y no republices porciones sustanciales de su contenido original sin permiso. Las citas breves con atribución son bienvenidas."
+        },
+        {
+          "title": "Cambios",
+          "body": "Podemos revisar estos términos en cualquier momento. El uso continuado del sitio después de publicarse los cambios constituye la aceptación de los términos revisados."
+        }
+      ]
+    },
+    "copyright": {
+      "title": "Aviso de derechos de autor",
+      "updated": "24 de septiembre de 2026",
+      "sections": [
+        {
+          "title": "Contenido del juego",
+          "body": "Stick It to the Stickman está desarrollado por Free Lives y publicado por Devolver Digital. El juego, su nombre, logotipo, arte y materiales relacionados son propiedad de sus respectivos dueños y se referencian aquí solo con fines de identificación y comentario."
+        },
+        {
+          "title": "Contenido del sitio",
+          "body": "El texto original, la estructura y el contenido editorial de stickittothestickmanwiki.space son © 2026 Stick It to the Stickman Wiki, salvo que se indique lo contrario."
+        },
+        {
+          "title": "Uso del contenido",
+          "body": "Puedes citar extractos breves con atribución y un enlace a la página de origen. La reproducción de porciones sustanciales de este sitio requiere permiso previo por escrito."
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Guía no encontrada",
+    "description": "La guía solicitada no está publicada en esta biblioteca de contenido.",
+    "returnHome": "Volver al inicio"
+  }
+}
