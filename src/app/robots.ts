@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/config/site";
 
+export const dynamic = "force-static";
+
 /**
  * Indexing gate: a project copied from this template stays unindexable until
  * the launch validator passes and NEXT_PUBLIC_INDEXABLE=true is set for the

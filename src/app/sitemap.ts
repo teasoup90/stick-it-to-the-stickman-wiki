@@ -4,6 +4,8 @@ import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/config/site";
 import { CONTENT_TYPES } from "@/config/navigation";
 
+export const dynamic = "force-static";
+
 /**
  * Content types whose entries change often enough to hint weekly recrawls.
  * Keyed by content-type semantics — never hardcode a game-specific category.

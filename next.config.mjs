@@ -11,5 +11,7 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 export default withNextIntl(withMDX({
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
-  images: { formats: ["image/avif", "image/webp"] }
+  output: "export",
+  trailingSlash: true,
+  images: { formats: ["image/avif", "image/webp"], unoptimized: true }
 }));

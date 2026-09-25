@@ -1,0 +1,71 @@
+name: Deploy Cloudflare Workers
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 20
+    env:
+      NEXT_PUBLIC_SITE_URL: https://stickittothestickmanwiki.space
+      NEXT_PUBLIC_INDEXABLE: "true"
+      NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: G-G3FQCN10G3
+      NEXT_PUBLIC_MICROSOFT_CLARITY_ID: ynizhnx86x
+      NEXT_PUBLIC_GOOGLE_ADSENSE_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ADSENSE_ID }}
+      NEXT_PUBLIC_AD_NATIVE_BANNER: ${{ secrets.NEXT_PUBLIC_AD_NATIVE_BANNER }}
+      NEXT_PUBLIC_AD_BANNER_728X90: ${{ secrets.NEXT_PUBLIC_AD_BANNER_728X90 }}
+      NEXT_PUBLIC_AD_BANNER_300X250: ${{ secrets.NEXT_PUBLIC_AD_BANNER_300X250 }}
+      NEXT_PUBLIC_AD_BANNER_468X60: ${{ secrets.NEXT_PUBLIC_AD_BANNER_468X60 }}
+      NEXT_PUBLIC_AD_MOBILE_320X50: ${{ secrets.NEXT_PUBLIC_AD_MOBILE_320X50 }}
+      NEXT_PUBLIC_AD_SIDEBAR_160X600: ${{ secrets.NEXT_PUBLIC_AD_SIDEBAR_160X600 }}
+      NEXT_PUBLIC_AD_SIDEBAR_160X300: ${{ secrets.NEXT_PUBLIC_AD_SIDEBAR_160X300 }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Check out production source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Audit production dependencies
+        run: npm audit --omit=dev
+
+      - name: Type-check
+        run: npm run type-check
+
+      - name: Validate SEO
+        run: npm run validate:seo
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Deploy to Cloudflare Workers
+        run: npx wrangler deploy --config wrangler.production.jsonc
+
+      - name: Verify production surface
+        shell: bash
+        run: |
+          set -euo pipefail
+          html="$(curl --fail --silent --show-error --location --max-time 20 https://stickittothestickmanwiki.space/en/)"
+          grep -q 'G-G3FQCN10G3' <<<"${html}"
+          grep -q 'ynizhnx86x' <<<"${html}"
+          curl --fail --silent --show-error --location --max-time 20 https://stickittothestickmanwiki.space/robots.txt \
+            | grep -q 'Allow: /'
+          curl --fail --silent --show-error --location --max-time 20 https://stickittothestickmanwiki.space/sitemap.xml \
+            | grep -q 'https://stickittothestickmanwiki.space'

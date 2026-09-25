@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BookOpen, ChevronRight, Swords } from "lucide-react";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { JsonLd } from "@/components/json-ld";
 import { routing, type Locale } from "@/i18n/routing";
 import { getAllContent, getAllContentPaths, getContent, getContentCategories, getContentNavigation, getRelatedContent, type ContentNavigationCategory } from "@/lib/content";
@@ -73,6 +73,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 
 export default async function SlugPage({ params }: { params: Promise<{ locale: Locale; slug: string[] }> }) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
   if (slug.length === 1) return <NavigationPage locale={locale} contentType={slug[0]} />;
   return <DetailPage locale={locale} contentType={slug[0]} slug={slug.slice(1)} />;
 }
