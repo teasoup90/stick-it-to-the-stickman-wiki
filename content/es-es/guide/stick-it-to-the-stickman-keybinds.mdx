@@ -1,0 +1,103 @@
+export const metadata = {
+  title: "Controles de Stick It to the Stickman: lista de teclas 2026",
+  description: "Nuestra referencia de controles de Stick It to the Stickman lista cada tecla, su función y los ajustes de remapeo y cooperativo a revisar primero.",
+  category: "guide",
+  date: "2026-09-24",
+}
+
+Una pregunta de controles de Stick It to the Stickman suele venir de dos sitios: un jugador nuevo confundido con las escaleras, o un anfitrión cooperativo que quiere dar un mando al jugador dos. Las respuestas son más simples de lo que parecen, porque el diseño por defecto es pequeño y los problemas de entrada tienen arreglos comunitarios conocidos. Ninguno exige reinstalar el juego.
+
+Esta referencia de controles de Stick It to the Stickman se construye desde la página Controles de la wiki comunitaria, con la página itch.io oficial del desarrollador para contrastar lo básico. Todo lo demás, sobre todo los arreglos cooperativos, va marcado como experiencia comunitaria.
+
+La página de controles lista A y D para moverse, W para escaleras y saltar, S para bajar el cuerpo, Espacio o Z para atacar y X para la cámara lenta. Cinco teclas cubren todo el juego, por eso el remapeo rara vez es el problema real cuando las entradas se sienten mal.
+
+## El diseño de teclado por defecto
+
+La página Controles dice que S baja el cuerpo para bajar escaleras, W sube escaleras y salta, A y D mueven, Espacio o Z ataca y X activa la cámara lenta tras desbloquearla en mejoras. Ese es el diseño por defecto completo, y coincide con la lista itch.io oficial: flechas para moverse, Espacio para atacar, Enter para interactuar y X para la cámara lenta.
+
+Las pequeñas diferencias entre ambas páginas merecen notarse. La wiki describe WASD, la página itch.io describe flechas: el juego acepta ambos estilos de movimiento según la preferencia, y ambos funcionan a la vez, por eso son comunes los setups mixtos de teclado y mando. Las dos páginas coinciden en lo esencial, lo que tranquiliza a cualquiera que arme una chuleta de controles de Stick It to the Stickman.
+
+La página de la wiki también implica que algunos controles solo tienen sentido tras ciertas mejoras, forma educada de decir que la cámara lenta está bloqueada. La página oficial lista las mismas cuatro bases más Enter, confirmando que el diseño es estable desde la era de la demo.
+
+| Tecla | Acción |
+| --- | --- |
+| A / D o flechas | Moverse a izquierda y derecha |
+| W o flecha arriba | Saltar y subir escaleras |
+| S o flecha abajo | Bajar el cuerpo, descender escaleras |
+| Espacio o Z | Atacar |
+
+La referencia guardada completa está en la [página Controles de la wiki comunitaria](https://stick-it-to-the-stick-man.fandom.com/wiki/Controls), y la página itch.io oficial es el sitio para revérificar lo básico si un parche lo cambia.
+
+## Qué hace cada tecla en realidad
+
+El movimiento es solo la mitad de la historia. Las teclas de escalera importan porque varias salas y atajos dependen de trepar, y quienes nunca aprenden S se atascan en secciones verticales simples. Saltar con W se siente raro al principio pero se vuelve natural cuando dejas de esperar una tecla de salto dedicada, igual que atacar con Espacio.
+
+Los reportes comunitarios añaden una nota práctica: el juego lee distinto los toques rápidos y las pulsaciones largas en escaleras, así que mantén la dirección en lugar de teclear. Quienes teclean S resbalan pasado el final de la escalera, mientras que mantener baja limpiamente siempre.
+
+Atacar con Espacio o Z significa que ambas manos tienen una opción al alcance, lo que importa en cooperativo cuando uno juega con mando y otro con teclado. Enter es la tecla de interacción para menús, puertas y las indicaciones que la página itch.io lista.
+
+| Entrada | Cuándo la usas |
+| --- | --- |
+| Espacio / Z | Cada ataque, ligero o pesado |
+| W o arriba | Llegar a pisos superiores y escapar |
+| S o abajo | Bajar escaleras con seguridad |
+| Enter | Menús, indicaciones y entrar en salas |
+
+## La cámara lenta y el bloqueo de mejora
+
+La página de controles nota que la cámara lenta solo funciona una vez desbloqueada en mejoras. Quienes pulsan X pronto y no obtienen nada suelen creer que la tecla está rota, pero el bloqueo es de progresión, no de entrada.
+
+Los hilos confirman que el desbloqueo es permanente una vez comprado, así que el arreglo es gastar en la mejora de cámara lenta y probar X de inmediato. Si X sigue sin hacer nada tras el desbloqueo, la siguiente sección cubre los conflictos de entrada que lo causan.
+
+Una pregunta recurrente de controles de Stick It to the Stickman es si la cámara lenta funciona en mandos. Los reportes dicen que sí, se mapea al mismo desbloqueo, y la única diferencia es qué botón usa tu pad. Mira la pantalla de ajustes de entrada para el mapeo actual.
+
+| Situación | Qué suele significar |
+| --- | --- |
+| X no hace nada pronto | Cámara lenta aún no desbloqueada |
+| X funciona y luego para | Revisa conflictos de entrada o remapeo |
+| Teclas de escalera sin respuesta | Mantén S o W, no las teclees |
+| Tecla de ataque con retraso | Prueba Espacio contra Z, una puede ser más limpia |
+
+## Remapeo y configuración cooperativa
+
+El remapeo vive en las opciones del juego, y la razón más común para tocarlo es el cooperativo. Las versiones antiguas solo reconocían teclados como jugador uno, así que los anfitriones usaban trucos para dar mandos al jugador dos.
+
+El arreglo del hilo guardado era desconectar y reconectar el mando después de que el primer jugador entrara, lo que forzaba al juego a tomarlo como segundo dispositivo. Los reportes dicen que una actualización posterior añadió la asignación correcta de dispositivos por jugador, así que revisa primero los ajustes de entrada y reserva el truco de reconexión para versiones antiguas.
+
+Para jugadores en solitario, el remapeo cambia poco, pero un consejo destaca en cada hilo de controles de Stick It to the Stickman: si atacas con Z, mantener W para saltar funciona bien, y dejar Enter libre de atajos personalizados evita rarezas de menú. La mayoría de los problemas de remapeo reportados vienen de dos acciones en la misma tecla.
+
+| Problema cooperativo | Arreglo comunitario |
+| --- | --- |
+| El mando se lee como jugador uno | Reasignar dispositivos en ajustes |
+| Segundo mando invisible | Desconectarlo y reconectarlo tras entrar |
+| Dos teclados separados | Usar Steam Remote Play o Parsec |
+| Mando viejo se porta mal | Cambiar a un pad más nuevo; los viejos fallan |
+
+## Probar tus entradas antes de un run
+
+Una comprobación de dos minutos antes de un run serio ahorra mucha confusión. Los jugadores prueban las teclas de escalera, la de ataque y X en el primer piso, y reinician si algo se siente raro. Un setup de controles de Stick It to the Stickman verificado gana a un diseño personalizado vistoso que nunca practicaste.
+
+| Comprobación | Esperado |
+| --- | --- |
+| Bajar escalera | Mantén S, desciende suave |
+| Salto | W te sube un piso |
+| Ataque | Espacio y Z golpean ambos |
+| Cámara lenta | X funciona si la mejora está comprada |
+
+## FAQ
+
+### ¿Cuáles son los controles de Stick It to the Stickman en teclado?
+
+A y D mueven, W trepa y salta, S baja el cuerpo, Espacio o Z ataca, Enter interactúa y X activa la cámara lenta tras desbloquearla en mejoras.
+
+### ¿Por qué no funciona la cámara lenta?
+
+La página de controles nota que la cámara lenta solo funciona tras desbloquearla en mejoras, así que compra la mejora primero y vuelve a probar X antes de creer la tecla rota. Si sigue fallando, revisa conflictos de remapeo.
+
+### ¿Cómo doy un mando al jugador dos?
+
+Usa la asignación de dispositivos en ajustes en versiones actuales, o el truco de reconexión en las antiguas: entra con teclado primero y luego desconecta y reconecta el mando. El truco importa sobre todo en versiones antiguas.
+
+### ¿Pueden dos jugadores jugar con teclados a distancia?
+
+Sí. El hilo guardado recomienda Steam Remote Play o Parsec, con el anfitrión invitando al amigo por la superposición Shift y Tab o el cliente Parsec. Ambos necesitan conexión estable, y conviene probar la superposición primero.

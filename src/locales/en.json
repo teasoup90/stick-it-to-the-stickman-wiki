@@ -14,7 +14,79 @@
   "nav": {
     "language": "Language",
     "menu": "Open navigation",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "characters": "Characters",
+    "community": "Community",
+    "guide": "Guide",
+    "multiplayer": "Multiplayer",
+    "platforms": "Platforms",
+    "progression": "Progression",
+    "resources": "Resources",
+    "updates": "Updates"
+  },
+  "characters": {
+    "title": "Characters",
+    "overviewTitle": "Characters",
+    "description": "Every playable character in Stick It to the Stickman, from the full roster to secret characters, with unlock methods and how each archetype changes your run.",
+    "overviewDescription": "Every playable character in Stick It to the Stickman, from the full roster to secret characters, with unlock methods and how each archetype changes your run.",
+    "intro": "The character library covers the roster and secret characters documented for Stick It to the Stickman, plus the archetypes that change how each run plays.",
+    "guidesTitle": "Character Guides"
+  },
+  "community": {
+    "title": "Community",
+    "overviewTitle": "Community",
+    "description": "Community pages for Stick It to the Stickman: the official Discord, Reddit threads, and where announcements and player discussion happen.",
+    "overviewDescription": "Community pages for Stick It to the Stickman: the official Discord, Reddit threads, and where announcements and player discussion happen.",
+    "intro": "Community pages track the official and player-run surfaces for Stick It to the Stickman, so announcements and discussion are easy to find.",
+    "guidesTitle": "Community Pages"
+  },
+  "guide": {
+    "title": "Guides",
+    "overviewTitle": "Guides",
+    "description": "How to play Stick It to the Stickman: beginner guide, move lists, achievements, keybinds, tips, and troubleshooting.",
+    "overviewDescription": "How to play Stick It to the Stickman: beginner guide, move lists, achievements, keybinds, tips, and troubleshooting.",
+    "intro": "The guide section collects how-to pages for Stick It to the Stickman — from first run to full move lists, achievements, keybinds, and common fixes.",
+    "guidesTitle": "How-to Guides"
+  },
+  "multiplayer": {
+    "title": "Multiplayer",
+    "overviewTitle": "Multiplayer",
+    "description": "Multiplayer facts for Stick It to the Stickman: player counts, local co-op, and how Remote Play works.",
+    "overviewDescription": "Multiplayer facts for Stick It to the Stickman: player counts, local co-op, and how Remote Play works.",
+    "intro": "Multiplayer pages answer how many players, local co-op setup, and Remote Play for Stick It to the Stickman.",
+    "guidesTitle": "Multiplayer Guides"
+  },
+  "platforms": {
+    "title": "Platforms",
+    "overviewTitle": "Platforms",
+    "description": "Where you can play Stick It to the Stickman: availability on PC, consoles, mobile, and Steam Deck.",
+    "overviewDescription": "Where you can play Stick It to the Stickman: availability on PC, consoles, mobile, and Steam Deck.",
+    "intro": "Platform pages document where Stick It to the Stickman is officially available and what each platform supports.",
+    "guidesTitle": "Platform Guides"
+  },
+  "progression": {
+    "title": "Progression",
+    "overviewTitle": "Progression",
+    "description": "Progression systems in Stick It to the Stickman: unlockables, ranks, the Black Market, and Finance Tower upgrades.",
+    "overviewDescription": "Progression systems in Stick It to the Stickman: unlockables, ranks, the Black Market, and Finance Tower upgrades.",
+    "intro": "Progression pages explain the unlockables, ranks, and upgrade systems that drive Stick It to the Stickman runs.",
+    "guidesTitle": "Progression Guides"
+  },
+  "resources": {
+    "title": "Resources",
+    "overviewTitle": "Resources",
+    "description": "Currencies and resources in Stick It to the Stickman: Blood, Sweat, Water, and how to earn each.",
+    "overviewDescription": "Currencies and resources in Stick It to the Stickman: Blood, Sweat, Water, and how to earn each.",
+    "intro": "Resource pages break down the currencies in Stick It to the Stickman and the best-known ways to earn them.",
+    "guidesTitle": "Resource Guides"
+  },
+  "updates": {
+    "title": "Updates",
+    "overviewTitle": "Updates",
+    "description": "News and update coverage for Stick It to the Stickman: release date, demo, latest update, and the roadmap.",
+    "overviewDescription": "News and update coverage for Stick It to the Stickman: release date, demo, latest update, and the roadmap.",
+    "intro": "Update pages track release timing, demo availability, and announced plans for Stick It to the Stickman.",
+    "guidesTitle": "News & Updates"
   },
   "home": {
     "meta": {

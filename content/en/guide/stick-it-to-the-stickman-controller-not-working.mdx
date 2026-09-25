@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Stick It to the Stickman Controller Not Working: Fixes",
+  description: "Stick It to the Stickman controller not working? Try these player-tested fixes for player two, dead pads, and co-op input conflicts before new pads now.",
+  category: "guide",
+  date: "2026-09-24",
+}
+
+When Stick It to the Stickman controller not working posts appear on the forums, the actual problem is rarely the game. Most reports trace back to three things: the controller got picked up as the wrong player, the pad itself is old and flaky, or the player is trying to join a distant friend without the right tool. The fixes below cover all three cases.
+
+This Stick It to the Stickman controller not working guide collects the fixes the community threads actually use, in the order you should try them. It is built from the saved Steam discussion and its replies, with every workaround labeled as community experience, and it skips advice nobody in the thread could verify.
+
+The good news: a developer reply in the saved thread confirms the community's fixes are seen and appreciated, and the input system has since added proper device assignment. Most controller trouble now has a settings-screen solution, and the days of arcane reconnect rituals are mostly over.
+
+## Start With the Obvious Checks
+
+Before anything clever, rule out the basics. Community threads list the same first steps every time: reconnect the pad, check the input device selection, and test the pad in another game to confirm it works at all.
+
+If the controller works elsewhere but not here, the problem is assignment, not hardware. If it fails everywhere, you are looking at a pad problem and should skip to the hardware section below. Either way, the answer takes five minutes to find, and this page is the checklist, so work through it top to bottom without skipping steps.
+
+A Stick It to the Stickman controller not working checklist saves time because the fixes are ordered by likelihood: connection, assignment, hardware. Community reports say most cases end at step two.
+
+| Check | What it rules out |
+| --- | --- |
+| Reconnect the controller | Loose connection or sleep state |
+| Test in another game | Dead pad versus game issue |
+| Look at input settings | Wrong device assignment |
+| Restart the game | Stale input state after updates |
+
+## The Player Two Workaround
+
+The guide thread's workaround was to make the controller player two, since the game originally read keyboards as player one. Hosts would join the session on keyboard first, then connect the controller so the game picked it up as the second device.
+
+One reply adds the practical version: join with the keyboard, disconnect the connected controller for a bit, go to the tab, and put it back in. Community reports describe that exact sequence working on builds from before the input assignment update, and failing silently on builds that already have it, which is why the build type matters before you start unplugging things.
+
+| Setup step | Why it matters |
+| --- | --- |
+| Join on keyboard first | Keyboard claims player one |
+| Connect the controller second | Game assigns it player two |
+| Reconnect if ignored | Forces re-detection |
+| Verify both inputs respond | Confirms the assignment stuck |
+
+## Input Assignment on Current Builds
+
+A later reply from the thread author notes that the game now lets you assign input devices to each player, making the old workaround unnecessary. The thread author says the guide was written for the beta, and the current builds handle this properly through the settings screen.
+
+If your build shows input assignment options, use them and skip the reconnect trick entirely. The trick remains useful for older versions, but on current builds it can create the very conflict it once solved, so treat the two methods as alternatives, never as a combined ritual.
+
+If the settings screen shows the pad but the game ignores it, the community fix is to remove the device, restart the game, and add it back cleanly. Re-adding mid-session is the part that causes most assignment confusion.
+
+| Build type | What to do |
+| --- | --- |
+| Current build | Assign each device in input settings |
+| Older beta build | Use the keyboard-first reconnect trick |
+| Any build, solo play | Confirm your pad is device one |
+| Any build, co-op | Confirm each player has a unique device |
+
+## Bad Pads and Hardware Fixes
+
+One commenter in the saved thread put it bluntly: old controllers are a bit problematic. The community recommendation is to swap to a newer pad, with an Xbox-style Logitech controller named as a cheap option that works well with the game.
+
+Before buying anything, update the controller's firmware and try a different USB port or cable. Community reports say a surprising share of dead controller cases in this game are actually dead cables, and a wired connection also removes Bluetooth drops from the equation during co-op. If a Stick It to the Stickman controller not working report includes drifting sticks, that is hardware, not the game.
+
+| Hardware issue | Community fix |
+| --- | --- |
+| Old or worn pad | Replace it; old pads are reported flaky |
+| Loose cable or port | Try another port and cable first |
+| Firmware problems | Update through the pad's software |
+| Bluetooth drops | Switch to wired during co-op sessions |
+
+## Distant Friends: Remote Play and Parsec
+
+When the friend is far away, the thread's answer is one of two tools: Parsec or Steam Remote Play, reached through the Shift and Tab overlay. Both stream the host's game to the friend, which turns online play into local co-op from the game's point of view.
+
+Community reports favor the overlay for simplicity and Parsec for connection quality on weaker internet. Either way, only the host needs the controller working; the guest sends inputs through the stream, which is why a Stick It to the Stickman controller not working report from the host matters more than one from the guest. Read the full exchange on the [saved discussion thread](https://steamcommunity.com/app/2085540/discussions/0/4410795530130381483/).
+
+One last community tip for remote sessions: keep both players on the same input style when possible, because mixed keyboard and controller streams occasionally confuse the game's assignment logic. If weirdness appears mid-session, have the guest reconnect through the overlay rather than restarting the whole game.
+
+| Remote option | Best for |
+| --- | --- |
+| Steam Remote Play | Fast setup through the overlay |
+| Parsec | Better stability on weak internet |
+| Wired host setup | Fewer stream hiccups |
+| Voice chat alongside | Coordinating who resets when |
+
+## FAQ
+
+### Why is my controller not working in Stick It to the Stickman?
+
+The most common cause is device assignment: the pad is read as the wrong player. Check input settings on current builds, or use the keyboard-first reconnect trick on older ones, and test the pad in another game before blaming the hardware. Most reports resolve at this step.
+
+### How do I make my controller player two?
+
+Join the session on keyboard first, then connect the controller so the game assigns it player two. Current builds let you assign devices directly in settings, and the reconnect trick is mainly for older beta builds. One more note: a Stick It to the Stickman controller not working thread from the beta era may describe tricks that current builds have replaced with settings options, so prefer recent threads.
+
+### Does Stick It to the Stickman controller not working mean the pad is dead?
+
+Not usually. Test the pad in another game first. If it works there, the issue is assignment, and the settings-screen fix applies. Old pads are reported flaky, so replace hardware only after those checks fail, and try a different cable before you do.
+
+### Can I play with a friend far away?
+
+Yes. The community recommends Steam Remote Play or Parsec, which stream the host's game so a distant friend plays as if they were local. As long as the host's inputs work, the guest's stream is usually fine, which makes remote sessions simpler to troubleshoot than local ones.

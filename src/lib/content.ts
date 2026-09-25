@@ -3,7 +3,7 @@ import "server-only";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import type { ComponentType } from "react";
-import type { Locale } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
 import { CONTENT_TYPES, NAVIGATION_CONFIG, type ContentType } from "@/config/navigation";
 import en from "@/locales/en.json";
 
@@ -44,18 +44,37 @@ type ContentGroupConfig = {
   order: number;
 };
 
-const LEGACY_CONTENT_GROUPS = {
-  races: { titles: { en: "Race Guides", zh: "种族指南" }, order: 1 },
-  bosses: { titles: { en: "Bosses Overview", zh: "Boss 概览" }, order: 2 },
-  guides: { titles: { en: "Getting Started", zh: "新手入门" }, order: 3 },
-  codes: { titles: { en: "Codes Snapshot", zh: "兑换码速查" }, order: 4 },
-  "tier-list": { titles: { en: "Tier Lists", zh: "强度榜" }, order: 5 },
-  updates: { titles: { en: "Game Updates", zh: "游戏更新" }, order: 6 }
+/**
+ * Content group titles keyed by content type slug. Slugs must match the
+ * NAVIGATION_CONFIG keys and the article subdirectories under content/<locale>/
+ * one-to-one. The order field drives sidebar and listing order.
+ */
+export const GROUP_TITLES: Record<ContentType, ContentGroupConfig> = {
+  characters: { titles: { en: "Characters", de: "Charaktere", "es-es": "Personajes", fr: "Personnages", ja: "キャラクター", ko: "캐릭터", pl: "Postacie", "pt-br": "Personagens" }, order: 1 },
+  community: { titles: { en: "Community", de: "Community", "es-es": "Comunidad", fr: "Communauté", ja: "コミュニティ", ko: "커뮤니티", pl: "Społeczność", "pt-br": "Comunidade" }, order: 2 },
+  guide: { titles: { en: "Guides", de: "Anleitungen", "es-es": "Guías", fr: "Guides", ja: "ガイド", ko: "가이드", pl: "Poradniki", "pt-br": "Guias" }, order: 3 },
+  multiplayer: { titles: { en: "Multiplayer", de: "Mehrspieler", "es-es": "Multijugador", fr: "Multijoueur", ja: "マルチプレイ", ko: "멀티플레이", pl: "Multiplayer", "pt-br": "Multijogador" }, order: 4 },
+  platforms: { titles: { en: "Platforms", de: "Plattformen", "es-es": "Plataformas", fr: "Plateformes", ja: "プラットフォーム", ko: "플랫폼", pl: "Platformy", "pt-br": "Plataformas" }, order: 5 },
+  progression: { titles: { en: "Progression", de: "Fortschritt", "es-es": "Progresión", fr: "Progression", ja: "進行", ko: "진행", pl: "Postęp", "pt-br": "Progressão" }, order: 6 },
+  resources: { titles: { en: "Resources", de: "Ressourcen", "es-es": "Recursos", fr: "Ressources", ja: "リソース", ko: "리소스", pl: "Zasoby", "pt-br": "Recursos" }, order: 7 },
+  updates: { titles: { en: "Updates", de: "Updates", "es-es": "Actualizaciones", fr: "Mises à jour", ja: "アップデート", ko: "업데이트", pl: "Aktualizacje", "pt-br": "Atualizações" }, order: 8 }
 };
 
-export const CONTENT_GROUPS: Record<ContentType, ContentGroupConfig> = {};
+/** Content type slugs in display order; mirrors NAVIGATION_CONFIG ordering. */
+export const GROUP_ORDER: ContentType[] = (Object.keys(GROUP_TITLES) as ContentType[]).sort(
+  (a, b) => (GROUP_TITLES[a].order ?? Number.MAX_SAFE_INTEGER) - (GROUP_TITLES[b].order ?? Number.MAX_SAFE_INTEGER)
+);
 
-const MESSAGES = { en } as const;
+/** Locale-first sidebar titles derived from GROUP_TITLES, falling back to English. */
+export const GROUP_TITLES_BY_LOCALE: Record<Locale, Record<ContentType, string>> = Object.fromEntries(
+  routing.locales.map((locale) => [
+    locale,
+    Object.fromEntries(GROUP_ORDER.map((slug) => [slug, GROUP_TITLES[slug].titles[locale] ?? GROUP_TITLES[slug].titles.en]))
+  ])
+) as Record<Locale, Record<ContentType, string>>;
+
+/** English copy is the source of truth; non-English locales deep-merge over it at runtime. */
+const MESSAGES: Record<Locale, typeof en> = { en, de: en, "es-es": en, fr: en, ja: en, ko: en, pl: en, "pt-br": en };
 
 type MdxModule = {
   default: ComponentType;
@@ -110,15 +129,15 @@ async function walkMdx(directory: string): Promise<string[]> {
 
 export function validateContentConfiguration() {
   const navigationKeys = NAVIGATION_CONFIG.filter((item) => item.isContentType).map((item) => item.key);
-  const groupKeys = Object.keys(CONTENT_GROUPS);
+  const groupKeys = Object.keys(GROUP_TITLES);
   for (const key of navigationKeys) {
     const navigation = NAVIGATION_CONFIG.find((item) => item.key === key);
     if (navigation?.path !== `/${key}`) throw new Error(`Navigation path mismatch for content type: ${key}`);
     if (!(key in en.nav)) throw new Error(`Missing nav translation for content type: ${key}`);
     if (!(key in en)) throw new Error(`Missing top-level translation config for content type: ${key}`);
-    if (!(key in CONTENT_GROUPS)) throw new Error(`Missing content group mapping for content type: ${key}`);
+    if (!(key in GROUP_TITLES)) throw new Error(`Missing content group mapping for content type: ${key}`);
     const copy = en[key as keyof typeof en] as { title?: string };
-    if (copy.title !== CONTENT_GROUPS[key].titles.en) throw new Error(`Content title mismatch for content type: ${key}`);
+    if (copy.title !== GROUP_TITLES[key].titles.en) throw new Error(`Content title mismatch for content type: ${key}`);
   }
   if (navigationKeys.length !== groupKeys.length || groupKeys.some((key) => !navigationKeys.includes(key as ContentType))) {
     throw new Error("Navigation content types and content group mappings are not synchronized");
@@ -181,10 +200,10 @@ export async function getAllContent(contentType: string, locale: Locale): Promis
 }
 
 export async function getContentCategories(locale: Locale): Promise<ContentCategory[]> {
-  const messages = MESSAGES[locale] ?? MESSAGES.en;
+  const messages = MESSAGES[locale];
   const categories = await Promise.all(CONTENT_TYPES.map(async (contentType) => {
     const copy = (messages as Record<string, unknown>)[contentType] as CategoryMetadata;
-    const group = CONTENT_GROUPS[contentType];
+    const group = GROUP_TITLES[contentType];
     const items = await getAllContent(contentType, locale);
     return {
       ...copy,
@@ -213,6 +232,18 @@ export async function getContentNavigation(locale: Locale, limit = MAX_SIDEBAR_A
       hasMoreArticles: articles.length > limit
     };
   }));
+}
+
+/**
+ * Wiki Navigation sidebar: dynamically scans the MDX content library and
+ * returns categories ordered by GROUP_ORDER. Articles inside a category are
+ * date-ordered by getAllContent; recent updates across categories are served
+ * by getAllPublishedContent (date/lastModified descending).
+ */
+export async function getDynamicNavigation(locale: Locale, limit = MAX_SIDEBAR_ARTICLES_PER_CATEGORY): Promise<ContentNavigationCategory[]> {
+  const navigation = await getContentNavigation(locale, limit);
+  const order = new Map(GROUP_ORDER.map((slug, index) => [slug, index]));
+  return [...navigation].sort((a, b) => (order.get(a.slug as ContentType) ?? Number.MAX_SAFE_INTEGER) - (order.get(b.slug as ContentType) ?? Number.MAX_SAFE_INTEGER));
 }
 
 export async function getAllPublishedContent(locale: Locale): Promise<ContentItem[]> {

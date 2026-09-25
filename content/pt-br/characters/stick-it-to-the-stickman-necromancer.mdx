@@ -1,0 +1,99 @@
+export const metadata = {
+  title: "Necromante de Stick It to the Stickman: guia de desbloqueio",
+  description: "O Necromante de Stick It to the Stickman exige 50 de Sangue e o centro de avaliação de funcionários. Veja a rota e a correção do bug de navegação.",
+  category: "characters",
+  date: "2026-09-24",
+}
+
+O Necromante de Stick It to the Stickman é um desbloqueio tardio com um portão famosamente confuso: jogadores relatam ter o Sangue, chegar à tela certa e ainda assim não conseguir selecioná-lo. O tópico da comunidade desse personagem é metade guia de rota e metade grupo de apoio de bugs. A boa notícia é que os dois problemas têm respostas conhecidas da comunidade.
+
+Este guia do Necromante de Stick It to the Stickman separa as duas coisas. A rota vem da discussão salva, e os problemas de navegação vêm das respostas do mesmo tópico, onde vários jogadores descrevem exatamente o mesmo estado de travamento. Onde o tópico fica em silêncio, esta página diz isso em vez de adivinhar.
+
+A versão curta: ele custa 50 de Sangue, mora no centro de avaliação de funcionários, e um bug de navegação conhecido pode torná-lo invisível na tela de desbloqueio mesmo quando você tem os recursos. Planeje ao redor do bug, não através dele.
+
+## A rota de desbloqueio
+
+O desbloqueio do Necromante fica no centro de avaliação de funcionários, que exige 50 de Sangue do Centro de distribuição. Respostas da comunidade colocam o Necromante no mesmo caminho de melhorias que o Cowboy, o que faz da tela de desbloqueio uma ramificação: Vampiro de um lado, Cowboy e Necromante do outro, e a primeira resposta do tópico diz isso com clareza, junto com as melhorias que levam até lá.
+
+O Sangue vem do sistema de doação do Centro de distribuição, então o farm real é o mesmo que o Vampiro usa. Jogadores no tópico descrevem guardar Sangue além do limite do Vampiro especificamente para pagar os 50 do Necromante.
+
+O detalhe do Cowboy importa porque explica o layout da tela de desbloqueio: os dois personagens compartilham uma ramificação, e o Necromante fica mais adiante nela. Jogadores que não conseguem vê-lo geralmente estão uma posição de tela aquém. Respostas do tópico também confirmam a fonte do Sangue: sangue da coisa de entrega, como diz um autor, ou seja, o loop de doação que você já usa para o Vampiro.
+
+| Requisito | Detalhe do tópico |
+| --- | --- |
+| 50 de Sangue | Necessários para desbloquear o Necromante |
+| Centro de avaliação de funcionários | Onde a tela de desbloqueio fica |
+| Mesmo caminho do Cowboy | A ramificação da tela de desbloqueio |
+| Fonte do Sangue | Doações do Centro de distribuição |
+
+## O bug de navegação
+
+A reviravolta do tópico chega nas respostas: um jogador com 55 de Sangue relata que o jogo não o deixa navegar até o Necromante, com o seletor pulando do Vampiro para o Cowboy e ignorando o Necromante por completo. Outros respondem que têm o mesmo problema, o que faz disso um padrão em vez da configuração de uma pessoa só.
+
+A correção que funcionou para pelo menos um jogador: desbloquear os outros personagens primeiro. Um jogador relata que desbloquear os outros personagens, como o Vampiro, resolveu o problema de navegação, e o jogo então o deixou subir e selecionar o Necromante. As respostas da comunidade o tratam como contorno, não como correção oficial.
+
+A regularidade do padrão sugere que o estado de navegação do seletor depende de quais personagens já estão desbloqueados, que é exatamente o que o contorno implica. Uma run do Necromante de Stick It to the Stickman que esbarre nesse bug deve parar no contorno antes de farmar mais, porque Sangue extra não muda o estado do seletor.
+
+| Sintoma | Contorno relatado |
+| --- | --- |
+| Seletor pula o Necromante | Desbloqueie o Vampiro e outros primeiro |
+| Sangue disponível mas travado | Reentre no centro de avaliação |
+| Travado após atualizações | Cheque tópicos recentes por notas de patch |
+| Desbloqueio funciona mas parece atrasado | A comunidade relata que a escolha acaba liberando |
+
+## Planejando o farm de Sangue
+
+Cinquenta de Sangue é o custo de recurso único mais alto do elenco de personagens, então planeje o farm como um projeto. Os jogadores do tópico descrevem chegar a 50 pelo loop de doação do Centro de distribuição, o mesmo loop que financia os 20 do Vampiro, e o custo combinado dos dois personagens é o verdadeiro alvo de fim de jogo. Runs de doação se acumulam rápido uma vez desbloqueado o loop, e o custo combinado de Sangue de Vampiro mais Necromante é o verdadeiro alvo de fim de jogo em todo tópico do Necromante de Stick It to the Stickman.
+
+Como o Sangue é carregado entre runs, o farm não tem estado de falha, apenas um cronômetro. O conselho da comunidade é doar com consistência e evitar gastar Sangue com qualquer outra coisa até o Necromante ser desbloqueado. Autores que guardaram além de 50 descrevem o momento da seleção como a verdadeira luta de chefe: o Sangue é só a taxa de entrada.
+
+| Decisão de farm | Conselho da comunidade |
+| --- | --- |
+| Guardar ou gastar | Guarde tudo até 50 |
+| Ordem dos desbloqueios | Vampiro primeiro, depois Necromante |
+| Ponto de farm | Loop de doação do Centro de distribuição |
+| Se travar | Desbloqueie os personagens restantes primeiro |
+
+## O que o tópico deixa em aberto
+
+O tópico não confirma se o bug de navegação foi corrigido oficialmente, e suas respostas abrangem meses, então o bug pode depender da versão — o que significa que seu build importa mais do que seu total de Sangue. O resumo honesto é que alguns jogadores o desbloqueiam limpo, outros esbarram no pulo, e o contorno funciona para alguns desses.
+
+Antes de farmar 50 de Sangue, cheque os tópicos de discussão atuais para ver se a tela do centro de avaliação se comporta bem no seu build. Um plano do Necromante de Stick It to the Stickman que pule essa checagem arrisca farmar em direção a uma tela que você não consegue navegar. Trate o tópico como um documento vivo: as respostas do topo são o contorno, e as mais novas são o relatório de status.
+
+| Antes de farmar | Por quê |
+| --- | --- |
+| Cheque tópicos recentes | O status do bug muda por patch |
+| Confirme o contador de Sangue visível | A tela mostra seu progresso |
+| Desbloqueie o Vampiro primeiro | A comunidade diz que ajuda a navegação |
+| Mantenha um objetivo reserva | O Cowboy fica no mesmo caminho |
+
+## Ordem de desbloqueio que evita o bug
+
+O contorno implica uma ordem: desbloqueie o Vampiro e os outros personagens primeiro, e depois volte ao centro de avaliação com 50 de Sangue. Jogadores que seguem essa ordem relatam menos problemas de seletor, o que sugere que a tela se comporta quando seus vizinhos estão desbloqueados, ainda que nenhum post de desenvolvedor confirme a causa.
+
+| Passo da ordem | Por quê |
+| --- | --- |
+| 1. Vampiro | O tópico diz vizinhos primeiro |
+| 2. Outros personagens disponíveis | Completa o elenco da tela |
+| 3. Guardar 50 de Sangue | A taxa de entrada do Necromante |
+| 4. Voltar ao centro de avaliação | Selecioná-lo no mesmo caminho |
+
+## FAQ
+
+### Como consigo o Necromante em Stick It to the Stickman?
+
+Chegue ao centro de avaliação de funcionários com 50 de Sangue do Centro de distribuição e selecione-o na tela de desbloqueio. Ele fica no mesmo caminho de melhorias que o Cowboy, e o desbloqueio completo é alcançável na tela onde o Cowboy desbloqueia.
+
+### Por que não consigo selecionar o Necromante?
+
+É o bug de navegação conhecido do tópico: o seletor pula do Vampiro para o Cowboy e o ignora. Desbloquear os outros personagens, como o Vampiro, resolveu para pelo menos um jogador, e várias respostas no tópico do Necromante de Stick It to the Stickman relatam o mesmo estado de travamento.
+
+### De quanto Sangue o Necromante precisa?
+
+Cinquenta de Sangue, guardados do loop de doação do Centro de distribuição, a mesma fonte que o desbloqueio do Vampiro usa para seus 20. É o custo de personagem mais alto que o tópico documenta, e runs de doação são a única fonte nomeada no tópico.
+
+### Onde fica a tela de desbloqueio do Necromante de Stick It to the Stickman?
+
+No centro de avaliação de funcionários, no mesmo caminho que o Cowboy. Se ele não deixar você selecioná-lo, tente desbloquear os outros personagens primeiro e depois volte. As respostas de contorno são a ajuda mais bem avaliada do tópico, e o link no fim desta página abre a troca completa.
+
+A [discussão do Necromante salva](https://steamcommunity.com/app/2085540/discussions/0/600790905291732878/) traz a troca completa, incluindo as respostas de contorno.

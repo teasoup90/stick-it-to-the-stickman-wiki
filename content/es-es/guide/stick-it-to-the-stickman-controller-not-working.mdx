@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Mando de Stick It to the Stickman no funciona: arreglos",
+  description: "¿El mando de Stick It to the Stickman no funciona? Prueba estos arreglos probados para el jugador dos, mandos muertos y conflictos cooperativos.",
+  category: "guide",
+  date: "2026-09-24",
+}
+
+Cuando aparecen mensajes de «el mando de Stick It to the Stickman no funciona» en los foros, el problema real rara vez es el juego. La mayoría de los reportes llevan a tres causas: el mando se detectó como el jugador equivocado, el pad es viejo y fallón, o el jugador intenta unirse a un amigo lejano sin la herramienta correcta. Los arreglos de abajo cubren los tres casos.
+
+Esta guía de «el mando de Stick It to the Stickman no funciona» recoge los arreglos que los hilos comunitarios usan de verdad, en el orden en que probarlos. Está construida desde la discusión Steam guardada y sus respuestas, cada solución marcada como experiencia comunitaria, y se salta consejos que nadie en el hilo pudo verificar.
+
+La buena noticia: una respuesta de desarrollador en el hilo guardado confirma que los arreglos comunitarios se ven y se aprecian, y el sistema de entrada ha añadido desde entonces la asignación correcta de dispositivos. La mayoría de los problemas de mando tienen hoy una solución en la pantalla de ajustes, y la era de los rituales de reconexión quedó casi atrás.
+
+## Empieza por las comprobaciones obvias
+
+Antes de nada ingenioso, descarta lo básico. Los hilos listan siempre los mismos primeros pasos: reconecta el pad, revisa la selección de dispositivo de entrada y prueba el pad en otro juego para confirmar que funciona.
+
+Si el mando funciona en otro sitio pero no aquí, el problema es la asignación, no el hardware. Si falla en todas partes, es un problema de pad y salta directo a la sección de hardware. En cualquier caso, la respuesta se encuentra en cinco minutos, y esta página es la lista de comprobación: trabájala de arriba abajo sin saltarte pasos.
+
+Una lista de «el mando de Stick It to the Stickman no funciona» ahorra tiempo porque los arreglos van ordenados por probabilidad: conexión, asignación, hardware. Los reportes dicen que la mayoría de los casos terminan en el paso dos.
+
+| Comprobación | Qué descarta |
+| --- | --- |
+| Reconectar el mando | Conexión suelta o estado de reposo |
+| Probar en otro juego | Pad muerto contra problema del juego |
+| Mirar los ajustes de entrada | Asignación de dispositivo incorrecta |
+| Reiniciar el juego | Estado de entrada obsoleto tras actualizaciones |
+
+## La solución del jugador dos
+
+La solución del hilo guía era hacer del mando el jugador dos, ya que el juego leía originalmente los teclados como jugador uno. Los anfitriones entraban en teclado primero y luego conectaban el mando para que el juego lo tomara como segundo dispositivo.
+
+Una respuesta añade la versión práctica: entra con el teclado, desconecta un momento el mando conectado, ve a la pestaña y vuelve a ponerlo. Los reportes describen esa secuencia exacta funcionando en builds anteriores a la actualización de asignación, y fallando en silencio en los que ya la tienen, por eso el tipo de build importa antes de desenchufar nada.
+
+| Paso de configuración | Por qué importa |
+| --- | --- |
+| Entrar en teclado primero | El teclado reclama el jugador uno |
+| Conectar el mando después | El juego le asigna el jugador dos |
+| Reconectar si lo ignora | Fuerza la redetección |
+| Verificar que ambas entradas responden | Confirma que la asignación aguantó |
+
+## Asignación de entrada en builds actuales
+
+Una respuesta posterior del autor del hilo nota que el juego ya permite asignar dispositivos de entrada a cada jugador, volviendo innecesaria la vieja solución. El autor dice que la guía se escribió para la beta, y los builds actuales lo gestionan bien desde la pantalla de ajustes.
+
+Si tu build muestra opciones de asignación, úsalas y sáltate el truco de reconexión por completo. El truco sigue siendo útil en versiones antiguas, pero en builds actuales puede crear el mismo conflicto que antes resolvía: trata ambos métodos como alternativas, nunca como un ritual combinado.
+
+Si la pantalla de ajustes muestra el pad pero el juego lo ignora, el arreglo comunitario es quitar el dispositivo, reiniciar el juego y añadirlo de nuevo limpio. Reañadirlo a mitad de sesión es la parte que causa más confusión de asignación.
+
+| Tipo de build | Qué hacer |
+| --- | --- |
+| Build actual | Asignar cada dispositivo en ajustes |
+| Build beta antiguo | Usar el truco de teclado primero y reconexión |
+| Cualquier build, solo | Confirmar que tu pad es el dispositivo uno |
+| Cualquier build, coop | Confirmar un dispositivo único por jugador |
+
+## Pads malos y arreglos de hardware
+
+Un comentarista del hilo guardado lo dijo sin rodeos: los mandos viejos son un poco problemáticos. La recomendación comunitaria es cambiar a un pad más nuevo, con un mando Logitech estilo Xbox citado como opción barata que funciona bien con el juego.
+
+Antes de comprar nada, actualiza el firmware del mando y prueba otro puerto USB o cable. Los reportes dicen que una parte sorprendente de los casos de mando muerto en este juego son en realidad cables muertos, y una conexión por cable elimina además las caídas de Bluetooth en cooperativo. Si un reporte de «el mando de Stick It to the Stickman no funciona» incluye sticks con deriva, eso es hardware, no el juego.
+
+| Problema de hardware | Arreglo comunitario |
+| --- | --- |
+| Pad viejo o desgastado | Reemplázalo; los viejos fallan |
+| Cable o puerto suelto | Prueba otro puerto y cable primero |
+| Problemas de firmware | Actualiza con el software del pad |
+| Caídas de Bluetooth | Pasa a cable durante el cooperativo |
+
+## Amigos lejanos: Remote Play y Parsec
+
+Cuando el amigo está lejos, la respuesta del hilo es una de dos herramientas: Parsec o Steam Remote Play, accesible por la superposición Shift y Tab. Ambas transmiten el juego del anfitrión al amigo, convirtiendo el juego en línea en cooperativo local desde el punto de vista del juego.
+
+Los reportes prefieren la superposición por simplicidad y Parsec por calidad de conexión en internet débil. En cualquier caso, solo el anfitrión necesita el mando funcionando; el invitado envía entradas por la transmisión, por eso un reporte de «el mando de Stick It to the Stickman no funciona» del anfitrión importa más que uno del invitado. Lee el intercambio completo en el [hilo de discusión guardado](https://steamcommunity.com/app/2085540/discussions/0/4410795530130381483/).
+
+Un último consejo comunitario para sesiones remotas: mantén a ambos jugadores en el mismo estilo de entrada cuando sea posible, porque las transmisiones mixtas de teclado y mando confunden a veces la lógica de asignación. Si aparecen rarezas a mitad de sesión, haz que el invitado reconecte por la superposición en vez de reiniciar todo el juego.
+
+| Opción remota | Ideal para |
+| --- | --- |
+| Steam Remote Play | Configuración rápida por la superposición |
+| Parsec | Mejor estabilidad en internet débil |
+| Anfitrión por cable | Menos tirones de transmisión |
+| Chat de voz en paralelo | Coordinar quién reinicia y cuándo |
+
+## FAQ
+
+### ¿Por qué no funciona mi mando en Stick It to the Stickman?
+
+La causa más común es la asignación de dispositivo: el pad se lee como el jugador equivocado. Revisa los ajustes de entrada en builds actuales, o usa el truco de teclado primero en los antiguos, y prueba el pad en otro juego antes de culpar al hardware. La mayoría de los reportes se resuelven en este paso.
+
+### ¿Cómo hago que mi mando sea el jugador dos?
+
+Entra en la sesión en teclado primero y luego conecta el mando para que el juego lo asigne al jugador dos. Los builds actuales dejan asignar dispositivos directamente en ajustes, y el truco de reconexión es sobre todo para builds beta antiguos. Una nota más: un hilo de «el mando de Stick It to the Stickman no funciona» de la era beta puede describir trucos que los builds actuales han sustituido por opciones de ajustes; prefiere hilos recientes.
+
+### ¿«El mando de Stick It to the Stickman no funciona» significa que el pad está muerto?
+
+No siempre. Prueba el pad en otro juego primero. Si funciona allí, el problema es la asignación y aplica el arreglo de la pantalla de ajustes. Los pads viejos fallan, así que reemplaza el hardware solo tras esas comprobaciones, y prueba otro cable antes.
+
+### ¿Puedo jugar con un amigo lejano?
+
+Sí. La comunidad recomienda Steam Remote Play o Parsec, que transmiten el juego del anfitrión para que un amigo lejano juegue como si fuera local. Mientras las entradas del anfitrión funcionen, la transmisión del invitado suele ir bien, lo que hace las sesiones remotas más fáciles de diagnosticar que las locales.

@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Stick It to the Stickman kontroler nie działa: poprawki",
+  description: "Stick It to the Stickman kontroler nie działa? Wypróbuj te przetestowane przez graczy poprawki dla gracza drugiego, martwych padów i konfliktów coop.",
+  category: "guide",
+  date: "2026-09-24",
+}
+
+Gdy na forach pojawiają się posty „Stick It to the Stickman kontroler nie działa", prawdziwy problem rzadko leży w grze. Większość zgłoszeń sprowadza się do trzech rzeczy: kontroler został wykryty jako zły gracz, sam pad jest stary i kapryśny albo gracz próbuje dołączyć do dalekiego znajomego bez właściwego narzędzia. Poniższe poprawki pokrywają wszystkie trzy przypadki.
+
+Ten poradnik „Stick It to the Stickman kontroler nie działa" zbiera poprawki, których wątki społeczności faktycznie używają, w kolejności, w jakiej powinieneś je wypróbować. Powstał na bazie zapisanej dyskusji Steam i jej odpowiedzi, każdy obejście jest oznaczone jako doświadczenie społeczności, a rady, których nikt w wątku nie zweryfikował, zostały pominięte.
+
+Dobra wiadomość: odpowiedź dewelopera w zapisanym wątku potwierdza, że poprawki społeczności są dostrzegane i doceniane, a system wejścia dodał od tego czasu porządne przypisywanie urządzeń. Większość problemów z kontrolerem ma dziś rozwiązanie w ekranie ustawień, a czasy tajemniczych rytuałów ponownego podłączania prawie minęły.
+
+## Zacznij od oczywistych kontroli
+
+Zanim sięgniesz po sprytne sztuczki, wyklucz podstawy. Wątki społeczności zawsze wymieniają te same pierwsze kroki: podłącz pad ponownie, sprawdź wybór urządzenia wejścia i przetestuj pad w innej grze, by potwierdzić, że w ogóle działa.
+
+Jeśli kontroler działa gdzie indziej, ale nie tutaj, problemem jest przypisanie, nie sprzęt. Jeśli zawodzi wszędzie, to problem pada – przejdź do sekcji sprzętowej poniżej. Tak czy inaczej odpowiedź znajduje się w pięć minut, a ta strona jest listą kontrolną: przerabiaj ją od góry do dołu, nie pomijając kroków.
+
+Lista kontrolna „Stick It to the Stickman kontroler nie działa" oszczędza czas, bo poprawki są uporządkowane według prawdopodobieństwa: połączenie, przypisanie, sprzęt. Raporty społeczności mówią, że większość przypadków kończy się na kroku drugim.
+
+| Kontrola | Co wyklucza |
+| --- | --- |
+| Podłącz kontroler ponownie | Luźne połączenie lub stan uśpienia |
+| Przetestuj w innej grze | Martwy pad kontra problem gry |
+| Spójrz w ustawienia wejścia | Złe przypisanie urządzenia |
+| Zrestartuj grę | Nieaktualny stan wejścia po aktualizacjach |
+
+## Obejście dla gracza drugiego
+
+Obejście z wątku poradnika polegało na uczynieniu kontrolera graczem drugim, bo gra pierwotnie czytała klawiatury jako gracza pierwszego. Hosty dołączały do sesji najpierw na klawiaturze, a potem podłączały kontroler, by gra wykryła go jako drugie urządzenie.
+
+Jedna odpowiedź dodaje praktyczną wersję: dołącz na klawiaturze, odłącz na chwilę podłączony kontroler, przejdź do karty i włóż go z powrotem. Raporty społeczności opisują tę dokładną sekwencję jako działającą na buildach sprzed aktualizacji przypisywania i cicho zawodzącą na tych, które już ją mają – dlatego typ builda ma znaczenie, zanim zaczniesz coś odpinać.
+
+| Krok konfiguracji | Dlaczego ma znaczenie |
+| --- | --- |
+| Najpierw dołącz na klawiaturze | Klawiatura zajmuje gracza pierwszego |
+| Podłącz kontroler jako drugi | Gra przypisuje go graczowi drugiemu |
+| Podłącz ponownie, jeśli ignoruje | Wymusza ponowne wykrycie |
+| Sprawdź, czy oba wejścia działają | Potwierdza, że przypisanie się przyjęło |
+
+## Przypisywanie wejścia na obecnych buildach
+
+Późniejsza odpowiedź autora wątku zauważa, że gra pozwala teraz przypisywać urządzenia wejścia każdemu graczowi, czyniąc stare obejście zbędnym. Autor mówi, że poradnik był pisany pod betę, a obecne buildy obsługują to poprawnie przez ekran ustawień.
+
+Jeśli twój build pokazuje opcje przypisywania wejścia, użyj ich i całkiem pomiń trik z ponownym podłączaniem. Trik pozostaje przydatny dla starszych wersji, ale na obecnych buildach może stworzyć dokładnie ten konflikt, który kiedyś rozwiązywał – traktuj obie metody jako alternatywy, nigdy jako łączony rytuał.
+
+Jeśli ekran ustawień pokazuje pada, ale gra go ignoruje, poprawką społeczności jest usunięcie urządzenia, restart gry i czyste dodanie go z powrotem. Dodawanie w trakcie sesji to część, która powoduje najwięcej zamieszania z przypisaniem.
+
+| Typ builda | Co zrobić |
+| --- | --- |
+| Obecny build | Przypisz każde urządzenie w ustawieniach |
+| Starszy build beta | Użyj triku klawiatura-najpierw i ponownego podłączenia |
+| Każdy build, solo | Potwierdź, że twój pad to urządzenie pierwsze |
+| Każdy build, coop | Potwierdź unikalne urządzenie na gracza |
+
+## Złe pady i poprawki sprzętowe
+
+Jeden z komentujących w zapisanym wątku powiedział to wprost: stare kontrolery są trochę problematyczne. Rekomendacją społeczności jest przesiadka na nowszy pad, a kontroler Logitech w stylu Xboxa jest wymieniany jako tania opcja, która dobrze działa z grą.
+
+Zanim cokolwiek kupisz, zaktualizuj firmware kontrolera i wypróbuj inny port USB lub kabel. Raporty mówią, że zaskakująca część przypadków martwych kontrolerów w tej grze to tak naprawdę martwe kable, a połączenie przewodowe eliminuje też zrywanie Bluetootha podczas coopu. Jeśli zgłoszenie „Stick It to the Stickman kontroler nie działa" obejmuje dryfujące gałki, to sprzęt, nie gra.
+
+| Problem sprzętowy | Poprawka społeczności |
+| --- | --- |
+| Stary lub zużyty pad | Wymień go; stare pady bywają kapryśne |
+| Luźny kabel lub port | Najpierw spróbuj innego portu i kabla |
+| Problemy z firmware | Zaktualizuj przez oprogramowanie pada |
+| Zrywanie Bluetootha | Przełącz na przewód podczas coopu |
+
+## Dalsi znajomi: Remote Play i Parsec
+
+Gdy znajomy jest daleko, odpowiedzią wątku jest jedno z dwóch narzędzi: Parsec lub Steam Remote Play, dostępne przez nakładkę Shift i Tab. Oba strumieniują grę hosta do znajomego, co z punktu widzenia gry zamienia grę online w lokalny coop.
+
+Raporty społeczności wolą nakładkę za prostotę, a Parsec za jakość połączenia na słabszym internecie. Tak czy inaczej, tylko host potrzebuje działającego kontrolera; gość wysyła wejścia przez strumień, dlatego zgłoszenie „Stick It to the Stickman kontroler nie działa" od hosta znaczy więcej niż od gościa. Całą wymianę przeczytasz w [zapisanej dyskusji](https://steamcommunity.com/app/2085540/discussions/0/4410795530130381483/).
+
+Ostatnia wskazówka społeczności na sesje zdalne: trzymaj obu graczy na tym samym stylu wejścia, gdy to możliwe, bo mieszane strumienie klawiatury i kontrolera czasem mylą logikę przypisywania gry. Jeśli w trakcie sesji pojawią się dziwactwa, niech gość połączy się ponownie przez nakładkę zamiast restartować całą grę.
+
+| Opcja zdalna | Najlepsza do |
+| --- | --- |
+| Steam Remote Play | Szybki setup przez nakładkę |
+| Parsec | Lepsza stabilność na słabym internecie |
+| Przewodowy host | Mniej przycięć strumienia |
+| Czat głosowy obok | Koordynacja, kto i kiedy resetuje |
+
+## FAQ
+
+### Dlaczego mój kontroler nie działa w Stick It to the Stickman?
+
+Najczęstsza przyczyna to przypisanie urządzenia: pad jest czytany jako zły gracz. Sprawdź ustawienia wejścia na obecnych buildach lub użyj triku klawiatura-najpierw na starszych, a pad przetestuj w innej grze, zanim oskarżysz sprzęt. Większość zgłoszeń rozwiązuje się na tym kroku.
+
+### Jak zrobić z mojego kontrolera gracza drugiego?
+
+Dołącz do sesji najpierw na klawiaturze, a potem podłącz kontroler, by gra przypisała go graczowi drugiemu. Obecne buildy pozwalają przypisywać urządzenia wprost w ustawieniach, a trik z ponownym podłączaniem jest głównie dla starszych buildów beta. Jeszcze jedna uwaga: wątek „Stick It to the Stickman kontroler nie działa" z ery bety może opisywać triki, które obecne buildy zastąpiły opcjami ustawień – preferuj świeże wątki.
+
+### Czy „Stick It to the Stickman kontroler nie działa" oznacza martwy pad?
+
+Niekoniecznie. Najpierw przetestuj pad w innej grze. Jeśli tam działa, problemem jest przypisanie i obowiązuje poprawka z ekranu ustawień. Stare pady bywają kapryśne, więc wymieniaj sprzęt dopiero po tych kontrolach, a wcześniej spróbuj innego kabla.
+
+### Czy mogę grać z dalekim znajomym?
+
+Tak. Społeczność poleca Steam Remote Play lub Parsec, które strumieniują grę hosta, by daleki znajomy grał tak, jakby był lokalnie. Dopóki wejścia hosta działają, strumień gościa zwykle jest w porządku, co sprawia, że sesje zdalne są łatwiejsze w diagnozowaniu niż lokalne.

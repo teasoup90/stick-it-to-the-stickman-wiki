@@ -1,0 +1,153 @@
+export const metadata = {
+  title: "Stick It to the Stickman Remote Play : Correctifs et Infos",
+  description: "Le remote play de Stick It to the Stickman passe par Steam Remote Play Together, et le fil enregistré montre ses particularités. Voici ce que disent devs et joueurs.",
+  category: "multiplayer",
+  date: "2026-09-24",
+}
+
+Le remote play de Stick It to the Stickman est la façon dont le coop se fait à distance : un joueur héberge et diffuse en streaming, et le second joueur rejoint en tant que bonhomme bâton invité. Les sources enregistrées confirment que la fonctionnalité existe et documentent un fil de plainte technique précoce avec une réponse de développeur.
+
+Le fil date de la période d'accès anticipé, donc certains détails ont pu changer depuis, et cette page indique quelles parties de l'histoire sont historiques. Il reste néanmoins le seul relevé enregistré du comportement du remote play, et il montre comment les devs ont traité les signalements.
+
+Ce guide remote play de Stick It to the Stickman couvre le chemin de configuration confirmé, le problème signalé et le conseil qui s'applique quelle que soit l'époque.
+
+Une note de cadrage : remote play signifie ici le système Remote Play Together de Steam, pas un mode en ligne intégré, et chaque affirmation ci-dessous suit cette distinction enregistrée.
+
+Cette distinction compte aussi pour le dépannage : quand quelque chose casse dans une session à distance, le problème peut se situer dans le jeu, dans la couche de streaming de Steam ou dans le réseau entre les deux joueurs, et le fil enregistré touche aux trois.
+
+## Ce Qu'est le Remote Play dans ce Jeu
+
+Le remote play dans le jeu signifie le Remote Play Together de Steam : l'hôte fait tourner le jeu, et l'invité le diffuse en streaming, rejoignant le mode coop après le prologue comme un second joueur local.
+
+La fiche Steam nomme Remote Play Together parmi les options coop, ce qui fait du remote play une fonctionnalité officielle plutôt qu'un contournement.
+
+L'expérience est donc du coop local avec une couche réseau : même déclencheur d'arrivée, même second bonhomme bâton, pièce différente.
+
+| Bases du remote play | Détail |
+| --- | --- |
+| Système | Steam Remote Play Together |
+| Hôte | Fait tourner le jeu localement |
+| Invité | Diffuse en streaming et rejoint |
+| Statut officiel | Nommé sur la fiche Steam |
+
+## Le Fil Qui Documente les Problèmes
+
+Le fil enregistré s'ouvre sur un joueur qui ne peut pas faire de remote play avec son ami. À chaque fois, le stream plante chez lui mais pas chez l'ami, et parfois l'écran affiche une bannière horizontale avec un conseil sur l'activation des commandes dans les options client avancées des paramètres avant de diffuser.
+
+La réponse du développeur est courte et pratique : la prochaine fois, essaie de prendre une capture d'écran, et est-ce que quelqu'un d'autre a ce problème. Cette réponse montre que l'équipe le suivait comme un vrai rapport de bug.
+
+Le fil dérive ensuite vers le joueur qui propose ses coordonnées Discord et Steam, la forme classique d'un fil de chasse aux bugs, et le relevé enregistré s'arrête là.
+
+| Fait du fil | Détail |
+| --- | --- |
+| Signalant | Joueur, époque accès anticipé |
+| Symptôme | Le stream plante côté hôte |
+| Texte de bannière | Conseil sur les options client |
+| Réponse dev | A demandé une capture d'écran |
+
+## Ce que le Conseil de la Bannière Signifie
+
+La bannière décrite par le joueur, sur l'activation des commandes pour certains jeux dans les options client avancées des paramètres avant de lancer le stream, est un conseil du client Steam sur le passage des entrées de manette via Remote Play.
+
+Elle suggère que la zone de correctif est les propres paramètres remote play du client Steam plutôt que le menu du jeu, contexte utile même si le fil ne confirme pas de résolution.
+
+La mention de l'activation des commandes pointe aussi précisément sur le problème d'entrée de l'invité : le stream montrait le jeu, mais les commandes étaient la question ouverte.
+
+| Indice de bannière | Lecture |
+| --- | --- |
+| Mentionne les options client | Paramètre du client Steam |
+| Mentionne les commandes | Passage des entrées |
+| Avant de lancer le stream | Bascule avant la session |
+| Menus du jeu | Pas la zone de correctif nommée |
+
+## Attentes Modernes
+
+Le fil date de 2023, pendant l'accès anticipé, et le jeu a livré la 1.0 depuis. L'annonce de la version complète ne reliste pas les particularités du remote play, et la fiche Steam nomme toujours Remote Play Together, ce qui est le mot officiel actuel.
+
+Les joueurs qui configurent aujourd'hui le remote play de Stick It to the Stickman doivent donc s'attendre à la fonctionnalité et traiter les anciens rapports de crash comme un contexte historique plutôt que des bugs actuels.
+
+Ce n'est pas une garantie de fluidité ; c'est une déclaration de ce que le relevé enregistré peut et ne peut pas dire sur l'état d'après-lancement.
+
+La posture la plus sûre est celle du développeur lui-même dans le fil : si quelque chose casse, capture des preuves. Une capture d'écran de l'échec vaut plus qu'une description, raison pour laquelle le dev en a demandé une avant toute chose.
+
+| Chronologie | Statut |
+| --- | --- |
+| Fil d'accès anticipé | Rapports de crash |
+| Lancement 1.0 | Fonctionnalité toujours listée |
+| Comportement actuel | Non redocumenté |
+| Posture dev | A pris les rapports au sérieux |
+
+## Configurer une Session
+
+La configuration confirmée est le flux standard de Remote Play Together : l'hôte possède le jeu, invite l'ami via la liste d'amis Steam, et l'ami rejoint le stream. Le coop suit ensuite les règles normales, le second joueur débarquant après le prologue.
+
+Les sources enregistrées ne décrivent pas de réglages de port, d'exigences réseau ni de configuration de manette pour l'invité, donc ces détails sont laissés à la propre documentation remote play de Steam plutôt qu'inventés ici.
+
+Le seul indice enregistré qui mérite d'être répété est le conseil de la bannière : vérifie les options client avancées avant de lancer le stream si les commandes posent problème.
+
+| Étape de configuration | Statut de la source |
+| --- | --- |
+| L'hôte invite via Steam | Flux standard, non contredit |
+| L'invité rejoint le stream | Impliqué par le fil |
+| Le coop commence après le prologue | Co-Optimus confirme |
+| Ports et NAT | Non documentés |
+
+## FAQ
+
+### Stick It to the Stickman prend-il en charge le remote play ?
+
+Oui. La fiche Steam nomme Remote Play Together parmi les fonctionnalités coop.
+
+### Pourquoi le remote play plantait-il pour le joueur du fil ?
+
+Le fil ne confirme ni cause ni correctif. Le développeur a demandé une capture d'écran et d'autres rapports, et la bannière pointait vers les options du client Steam.
+
+### Le remote play est-il la même chose que le coop local ?
+
+C'est du coop local sur un stream : l'invité rejoint comme second bonhomme bâton de la même façon qu'un joueur canapé, après le prologue.
+
+### Les deux joueurs doivent-ils posséder le jeu ?
+
+Remote Play Together ne requiert normalement que l'hôte possède le jeu, mais les sources enregistrées ne l'indiquent pas spécifiquement pour ce jeu.
+
+### Où changer les options client de la bannière ?
+
+La bannière pointe vers les paramètres de Steam et les options client avancées avant de lancer le stream, donc le territoire du client Steam plutôt qu'un menu du jeu.
+
+### Le remote play de Stick It to the Stickman fonctionne-t-il après la 1.0 ?
+
+La fonctionnalité reste listée sur Steam après le lancement, mais le relevé enregistré n'a pas de fil de bug post-1.0, donc les particularités actuelles sont inconnues.
+
+### L'invité peut-il jouer avec une manette ?
+
+L'indice de commandes de la bannière implique que l'entrée de l'invité est un domaine configurable, mais le fil enregistré ne confirme pas de configuration de manette fonctionnelle.
+
+### Le remote play exige-t-il que l'hôte ait un bon débit montant ?
+
+Le remote play diffuse depuis l'hôte, donc le débit montant de l'hôte compte en général, mais le fil enregistré ne discute pas des vitesses réseau pour ce jeu.
+
+### Puis-je jouer à la démo de Stick It to the Stickman en remote play ?
+
+Remote Play Together fonctionne avec les jeux possédés, et la question de la démo n'est pas traitée dans les sources enregistrées.
+
+### Y a-t-il un mode en ligne intégré au lieu du remote play ?
+
+Le relevé enregistré nomme Remote Play Together comme l'option à distance et ne documente aucun mode en ligne intégré.
+
+### Comment signaler un bug de remote play de Stick It to the Stickman aujourd'hui ?
+
+Le fil d'accès anticipé montre l'ancien canal : poste dans les discussions avec une capture d'écran, car c'est exactement ce que le développeur a demandé.
+
+### Le remote play fonctionne-t-il entre différents comptes Steam de régions différentes ?
+
+Les sources enregistrées ne discutent pas du comportement par région, donc aucune affirmation n'est faite.
+
+### Dois-je m'attendre à de la latence dans une session à distance ?
+
+Le streaming remote play est sensible à la latence en général, mais le fil enregistré ne mesure ni ne discute la latence pour ce jeu spécifiquement.
+
+### Les sessions remote play de Stick It to the Stickman peuvent-elles utiliser des mods ?
+
+Les mods ne sont mentionnés nulle part dans le fil remote play enregistré, donc les sessions moddées ne sont pas revendiquées.
+
+Le [fil de discussion remote play](https://steamcommunity.com/app/2085540/discussions/0/3774616115121156127/) enregistré est la source des rapports de crash décrits ci-dessus et le relevé remote play définitif de Stick It to the Stickman.

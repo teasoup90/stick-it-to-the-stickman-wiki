@@ -1,0 +1,99 @@
+export const metadata = {
+  title: "Nigromante de Stick It to the Stickman: guía de desbloqueo",
+  description: "El Nigromante de Stick It to the Stickman necesita 50 de Sangre y el centro de evaluación de empleados. Aquí están la ruta y el arreglo del bug de navegación.",
+  category: "characters",
+  date: "2026-09-24",
+}
+
+El Nigromante de Stick It to the Stickman es un desbloqueo tardío con una puerta famosamente confusa: hay jugadores que reportan tener la Sangre, llegar a la pantalla correcta y aun así no poder seleccionarlo. El hilo comunitario de este personaje es mitad guía de ruta y mitad grupo de apoyo de bugs. La buena noticia es que ambos problemas tienen respuestas comunitarias conocidas.
+
+Esta guía del Nigromante de Stick It to the Stickman separa las dos cosas. La ruta viene de la discusión guardada, y los problemas de navegación vienen de las respuestas del mismo hilo, donde varios jugadores describen exactamente el mismo estado de bloqueo. Donde el hilo calla, esta página lo dice en lugar de adivinar.
+
+La versión corta: cuesta 50 de Sangre, vive en el centro de evaluación de empleados, y un bug de navegación conocido puede hacerlo invisible en la pantalla de desbloqueo incluso cuando tienes los recursos. Planea alrededor del bug, no a través de él.
+
+## La ruta de desbloqueo
+
+El desbloqueo del Nigromante está en el centro de evaluación de empleados, que exige 50 de Sangre del Centro logístico. Las respuestas de la comunidad colocan al Nigromante en el mismo camino de mejoras que el Cowboy, lo que convierte la pantalla de desbloqueo en una rama: el Vampiro por un lado, el Cowboy y el Nigromante por el otro, y la primera respuesta del hilo lo dice con claridad, junto con las mejoras que llevan hasta allí.
+
+La Sangre viene del sistema de donación del Centro logístico, así que el farmeo real es el mismo que usa el Vampiro. Los jugadores del hilo describen ahorrar Sangre más allá del umbral del Vampiro específicamente para pagar los 50 del Nigromante.
+
+El detalle del Cowboy importa porque explica el diseño de la pantalla de desbloqueo: los dos personajes comparten una rama, y el Nigromante está más adelante en ella. Los jugadores que no pueden verlo suelen quedarse a una posición de pantalla. Las respuestas del hilo también confirman la fuente de la Sangre: sangre de la cosa de entrega, como dice un autor, es decir, el bucle de donación que ya usas para el Vampiro.
+
+| Requisito | Detalle del hilo |
+| --- | --- |
+| 50 de Sangre | Necesarias para desbloquear al Nigromante |
+| Centro de evaluación de empleados | Donde vive la pantalla de desbloqueo |
+| Mismo camino que el Cowboy | La rama de la pantalla de desbloqueo |
+| Fuente de Sangre | Donaciones del Centro logístico |
+
+## El bug de navegación
+
+El giro del hilo llega en las respuestas: un jugador con 55 de Sangre reporta que el juego no le deja navegar hasta el Nigromante, con el selector saltando del Vampiro al Cowboy y omitiendo al Nigromante por completo. Otros responden que tienen el mismo problema, lo que lo convierte en un patrón en lugar de la configuración de una sola persona.
+
+El arreglo que funcionó para al menos un jugador: desbloquear primero a los otros personajes. Un jugador reporta que desbloquear a los otros personajes, como el Vampiro, arregló el problema de navegación, y el juego le dejó entonces moverse y seleccionar al Nigromante. Las respuestas de la comunidad lo tratan como una solución temporal, no como un arreglo oficial.
+
+La regularidad del patrón sugiere que el estado de navegación del selector depende de qué personajes ya están desbloqueados, que es exactamente lo que implica la solución temporal. Una run del Nigromante de Stick It to the Stickman que tope con este bug debería pararse en la solución temporal antes de farmear más, porque Sangre extra no cambia el estado del selector.
+
+| Síntoma | Solución temporal reportada |
+| --- | --- |
+| El selector salta al Nigromante | Desbloquea primero al Vampiro y a los otros |
+| Sangre disponible pero bloqueado | Vuelve a entrar al centro de evaluación |
+| Atascado tras actualizaciones | Revisa hilos recientes por notas de parche |
+| Desbloqueo exitoso pero se siente tardío | La comunidad reporta que al final deja elegir |
+
+## Planear el farmeo de Sangre
+
+Cincuenta de Sangre es el coste de recurso único más alto del roster de personajes, así que planea el farmeo como un proyecto. Los jugadores del hilo describen llegar a 50 mediante el bucle de donación del Centro logístico, el mismo bucle que financia los 20 del Vampiro, y el coste combinado de ambos personajes es el verdadero objetivo de final de juego. Las runs de donación se acumulan rápido una vez desbloqueado el bucle, y el coste combinado de Sangre de Vampiro más Nigromante es el verdadero objetivo de final de juego en todo hilo del Nigromante de Stick It to the Stickman.
+
+Como la Sangre se arrastra entre runs, el farmeo no tiene estado de fallo, solo un temporizador. El consejo comunitario es donar con constancia y evitar gastar Sangre en otra cosa hasta desbloquear al Nigromante. Los autores que ahorraron más de 50 describen el momento de la selección como la verdadera pelea de jefe: la Sangre es solo la cuota de entrada.
+
+| Decisión de farmeo | Consejo comunitario |
+| --- | --- |
+| Ahorrar o gastar | Ahorra todo hasta 50 |
+| Orden de desbloqueos | Primero Vampiro, luego Nigromante |
+| Lugar de farmeo | Bucle de donación del Centro logístico |
+| Si te atascas | Desbloquea primero a los personajes restantes |
+
+## Lo que el hilo deja abierto
+
+El hilo no confirma si el bug de navegación se arregló oficialmente, y sus respuestas abarcan meses, así que el bug puede depender de la versión, lo que significa que tu build importa más que tu total de Sangre. El resumen honesto es que algunos jugadores lo desbloquean limpio, otros topan con el salto, y la solución temporal funciona para algunos de esos.
+
+Antes de farmear 50 de Sangre, revisa los hilos de discusión actuales para ver si la pantalla del centro de evaluación se comporta bien en tu build. Un plan del Nigromante de Stick It to the Stickman que se salte esa revisión arriesga farmear hacia una pantalla que no puedes navegar. Trata el hilo como un documento vivo: las respuestas de arriba son la solución temporal, y las más recientes son el informe de estado.
+
+| Antes de farmear | Por qué |
+| --- | --- |
+| Revisa hilos recientes | El estado del bug cambia por parche |
+| Confirma el contador de Sangre visible | La pantalla muestra tu progreso |
+| Desbloquea primero al Vampiro | La comunidad dice que ayuda a la navegación |
+| Guarda un objetivo de respaldo | El Cowboy está en el mismo camino |
+
+## Orden de desbloqueo que evita el bug
+
+La solución temporal implica un orden: desbloquea primero al Vampiro y a los otros personajes, y luego vuelve al centro de evaluación con 50 de Sangre. Los jugadores que siguen ese orden reportan menos problemas de selector, lo que sugiere que la pantalla se comporta una vez desbloqueados sus vecinos, aunque ningún post de desarrollador confirma la causa.
+
+| Paso del orden | Por qué |
+| --- | --- |
+| 1. Vampiro | El hilo dice primero los vecinos |
+| 2. Otros personajes disponibles | Completa el roster de la pantalla |
+| 3. Ahorrar 50 de Sangre | La cuota de entrada del Nigromante |
+| 4. Volver al centro de evaluación | Seleccionarlo en el mismo camino |
+
+## FAQ
+
+### ¿Cómo consigo al Nigromante en Stick It to the Stickman?
+
+Llega al centro de evaluación de empleados con 50 de Sangre del Centro logístico y selecciónalo en la pantalla de desbloqueo. Está en el mismo camino de mejoras que el Cowboy, y el desbloqueo completo es accesible en la pantalla donde se desbloquea el Cowboy.
+
+### ¿Por qué no puedo seleccionar al Nigromante?
+
+Es el bug de navegación conocido del hilo: el selector salta del Vampiro al Cowboy y lo omite. Desbloquear a los otros personajes, como el Vampiro, lo arregló para al menos un jugador, y varias respuestas del hilo del Nigromante de Stick It to the Stickman reportan el mismo estado de bloqueo.
+
+### ¿Cuánta Sangre necesita el Nigromante?
+
+Cincuenta de Sangre, ahorradas del bucle de donación del Centro logístico, la misma fuente que usa el desbloqueo del Vampiro para sus 20. Es el coste de personaje más alto que documenta el hilo, y las runs de donación son la única fuente nombrada en el hilo.
+
+### ¿Dónde está la pantalla de desbloqueo del Nigromante de Stick It to the Stickman?
+
+En el centro de evaluación de empleados, en el mismo camino que el Cowboy. Si no te deja seleccionarlo, prueba a desbloquear primero a los otros personajes y luego vuelve. Las respuestas de solución temporal son la ayuda mejor valorada del hilo, y el enlace al final de esta página abre el intercambio completo.
+
+La [discusión del Nigromante guardada](https://steamcommunity.com/app/2085540/discussions/0/600790905291732878/) contiene el intercambio completo, incluidas las respuestas de solución temporal.

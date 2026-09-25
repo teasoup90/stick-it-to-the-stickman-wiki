@@ -1,0 +1,153 @@
+export const metadata = {
+  title: "Stick It to the Stickman Remote Play: Fixes and Info",
+  description: "Stick It to the Stickman remote play runs through Steam Remote Play Together, and the saved thread shows its quirks. Here is what the devs and players say.",
+  category: "multiplayer",
+  date: "2026-09-24",
+}
+
+Stick It to the Stickman remote play is the way co-op happens over distance: one player hosts and streams, and the second player joins as a guest stickman. The saved sources confirm the feature exists and document one early technical complaint thread with a developer response.
+
+The thread dates from the early access period, so some details may have changed since, and this page says which parts of the story are historical. Still, it is the only saved record of remote play behavior, and it shows how the devs handled the reports.
+
+This Stick It to the Stickman remote play guide covers the confirmed setup path, the reported problem, and the advice that applies regardless of era.
+
+One framing note: remote play here means Steam's Remote Play Together system, not a built-in online mode, and every claim below follows that saved distinction.
+
+That distinction matters for troubleshooting too: when something breaks in a remote session, the problem can sit in the game, in Steam's streaming layer, or in the network between the two players, and the saved thread touches all three.
+
+## What Remote Play Is in This Game
+
+Remote Play in the game means Steam's Remote Play Together: the host runs the game, and the guest streams it, joining the co-op mode after the prologue like a local second player.
+
+The Steam listing names Remote Play Together among the co-op options, which makes remote play an official feature rather than a workaround.
+
+The experience is therefore local coop with a network layer: same drop-in trigger, same second stickman, different room.
+
+| Remote play basics | Detail |
+| --- | --- |
+| System | Steam Remote Play Together |
+| Host | Runs the game locally |
+| Guest | Streams and joins |
+| Official status | Named on the Steam listing |
+
+## The Thread That Documents the Problems
+
+The saved thread opens with a player who cannot remote play with their friend. Every time, the stream crashes for them but not for the friend, and sometimes the screen shows a horizontal banner with a tip about enabling controls in the settings advanced client options before streaming.
+
+The developer reply is short and practical: next time it happens, try to take a screenshot, and is anyone else having this issue. That response tells you the team was tracking it as a real bug report.
+
+The thread then drifts into the player offering their Discord and Steam details, which is the classic shape of a bug hunt thread, and the saved record ends there.
+
+| Thread fact | Detail |
+| --- | --- |
+| Reporter | Player, early access era |
+| Symptom | Stream crashes on host side |
+| Banner text | Tip about client options |
+| Dev response | Asked for screenshot |
+
+## What the Banner Tip Means
+
+The banner the player describes, about enabling controls for some games in the settings advanced client options before starting the stream, is Steam client advice about controller input passing through Remote Play.
+
+It suggests the fix area is the Steam client's own remote play settings rather than the game's menu, which is useful context even though the thread does not confirm a resolution.
+
+The mention of enabling controls also points at the guest input problem specifically: the stream was showing the game, but the controls were the open question.
+
+| Banner clue | Reading |
+| --- | --- |
+| Mentions client options | Steam client setting |
+| Mentions controls | Input pass-through |
+| Before starting stream | Pre-session toggle |
+| Game menus | Not the named fix area |
+
+## Modern Expectations
+
+The thread is from 2023, during early access, and the game has shipped 1.0 since. The full release announcement does not relist remote play quirks, and the Steam listing still names Remote Play Together, which is the current official word.
+
+Players setting up Stick It to the Stickman remote play today should therefore expect the feature, and treat the old crash reports as historical context rather than current bugs.
+
+That is not a guarantee of smoothness; it is a statement of what the saved record can and cannot say about the post-launch state.
+
+The safest posture is the developer's own from the thread: if something breaks, capture evidence. A screenshot of the failure is worth more than a description, which is why the dev asked for one before anything else.
+
+| Timeline | Status |
+| --- | --- |
+| Early access thread | Crash reports |
+| 1.0 launch | Feature still listed |
+| Current behavior | Not re-documented |
+| Dev posture | Took reports seriously |
+
+## Setting Up a Session
+
+The confirmed setup is the standard Remote Play Together flow: the host owns the game, invites the friend through the Steam friends list, and the friend joins the stream. The co-op itself then follows the normal rules, with the second player dropping in after the prologue.
+
+The saved sources do not describe port settings, network requirements, or controller configuration for the guest, so those details are left to Steam's own remote play documentation rather than invented here.
+
+The one saved hint worth repeating is the banner's advice: check the advanced client options before starting the stream if controls are the problem.
+
+| Setup step | Source status |
+| --- | --- |
+| Host invites via Steam | Standard flow, not contradicted |
+| Guest joins stream | Implied by the thread |
+| Co-op starts after prologue | Co-Optimus confirms |
+| Ports and NAT | Not documented |
+
+## FAQ
+
+### Does Stick It to the Stickman support remote play?
+
+Yes. The Steam listing names Remote Play Together among the co-op features.
+
+### Why did remote play crash for the thread's player?
+
+The thread does not confirm a cause or fix. The developer asked for a screenshot and more reports, and the banner pointed at Steam client options.
+
+### Is remote play the same as local coop?
+
+It is local coop over a stream: the guest joins as a second stickman the same way a couch player would, after the prologue.
+
+### Do both players need to own the game?
+
+Remote Play Together normally requires only the host to own the game, but the saved sources do not state this for the game specifically.
+
+### Where do I change the client options from the banner?
+
+The banner points at Steam's settings and advanced client options before starting the stream, which is Steam client territory rather than an in-game menu.
+
+### Is Stick It to the Stickman remote play working after 1.0?
+
+The feature remains listed on Steam after launch, but the saved record has no post-1.0 bug thread, so current quirks are unknown.
+
+### Can the guest play with a controller?
+
+The banner's controls hint implies guest input is a configurable area, but the saved thread does not confirm a working controller setup.
+
+### Does remote play need the host to have good upload speed?
+
+Remote Play streams from the host, so host upload matters in general, but the saved thread does not discuss network speeds for this game.
+
+### Can I remote play the Stick It to the Stickman demo?
+
+Remote Play Together works with owned games, and the demo question is not addressed in the saved sources.
+
+### Is there a built-in online mode instead of remote play?
+
+The saved record names Remote Play Together as the distance option and documents no built-in online mode.
+
+### How do I report a Stick It to the Stickman remote play bug today?
+
+The early access thread shows the old channel: post in the discussions with a screenshot, because the developer asked for exactly that.
+
+### Does remote play work between different Steam accounts in different regions?
+
+The saved sources do not discuss region behavior, so no claim is made.
+
+### Should I expect lag in a remote session?
+
+Remote Play streaming is latency sensitive in general, but the saved thread does not measure or discuss lag for this game specifically.
+
+### Can Stick It to the Stickman remote play sessions use mods?
+
+Mods are not mentioned anywhere in the saved remote play thread, so modded sessions are unclaimed.
+
+The saved [remote play discussion thread](https://steamcommunity.com/app/2085540/discussions/0/3774616115121156127/) is the source for the crash reports described above, and the definitive Stick It to the Stickman remote play record.

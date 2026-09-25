@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Stick It to the Stickman manette ne marche pas : correctifs",
+  description: "Manette Stick It to the Stickman qui ne marche pas ? Essayez ces correctifs testés par les joueurs pour le joueur deux, les pads morts et les conflits coop.",
+  category: "guide",
+  date: "2026-09-24",
+}
+
+Quand des messages « Stick It to the Stickman manette ne marche pas » apparaissent sur les forums, le vrai problème est rarement le jeu. La plupart des signalements remontent à trois causes : la manette est détectée comme le mauvais joueur, le pad lui-même est vieux et capricieux, ou le joueur essaie de rejoindre un ami distant sans le bon outil. Les correctifs ci-dessous couvrent les trois cas.
+
+Ce guide « Stick It to the Stickman manette ne marche pas » rassemble les correctifs que les fils communautaires utilisent vraiment, dans l'ordre où les essayer. Il est construit à partir de la discussion Steam sauvegardée et de ses réponses, chaque contournement étant étiqueté comme expérience communautaire, et il saute les conseils que personne dans le fil n'a pu vérifier.
+
+La bonne nouvelle : une réponse de développeur dans le fil sauvegardé confirme que les correctifs communautaires sont vus et appréciés, et le système d'entrée a depuis ajouté l'assignation correcte des périphériques. La plupart des problèmes de manette ont maintenant une solution dans l'écran des réglages, et l'ère des rituels de reconnexion obscurs est presque finie.
+
+## Commencez par les vérifications évidentes
+
+Avant tout astuce, éliminez les bases. Les fils listent toujours les mêmes premières étapes : rebranchez le pad, vérifiez la sélection du périphérique d'entrée et testez le pad dans un autre jeu pour confirmer qu'il fonctionne.
+
+Si la manette marche ailleurs mais pas ici, le problème est l'assignation, pas le matériel. Si elle échoue partout, c'est un problème de pad et passez directement à la section matériel. Dans tous les cas, la réponse se trouve en cinq minutes, et cette page est la checklist : travaillez-la de haut en bas sans sauter d'étapes.
+
+Une checklist « Stick It to the Stickman manette ne marche pas » fait gagner du temps parce que les correctifs sont ordonnés par probabilité : connexion, assignation, matériel. Les rapports disent que la plupart des cas s'arrêtent à l'étape deux.
+
+| Vérification | Ce qu'elle écarte |
+| --- | --- |
+| Rebrancher la manette | Connexion lâche ou état de veille |
+| Tester dans un autre jeu | Pad mort contre problème de jeu |
+| Regarder les réglages d'entrée | Mauvaise assignation de périphérique |
+| Redémarrer le jeu | État d'entrée périmé après mise à jour |
+
+## Le contournement du joueur deux
+
+Le contournement du fil guide était de faire de la manette le joueur deux, car le jeu lisait à l'origine les claviers comme joueur un. Les hôtes rejoignaient la session au clavier d'abord, puis connectaient la manette pour que le jeu la détecte comme second périphérique.
+
+Une réponse ajoute la version pratique : rejoignez au clavier, déconnectez la manette connectée un moment, allez dans l'onglet et remettez-la. Les rapports décrivent cette séquence exacte fonctionnant sur les builds d'avant la mise à jour d'assignation, et échouant silencieusement sur ceux qui l'ont déjà, d'où l'importance du type de build avant de débrancher quoi que ce soit.
+
+| Étape du setup | Pourquoi elle compte |
+| --- | --- |
+| Rejoindre au clavier d'abord | Le clavier réclame le joueur un |
+| Connecter la manette ensuite | Le jeu lui assigne le joueur deux |
+| Rebrancher si ignorée | Force la redétection |
+| Vérifier que les deux entrées répondent | Confirme que l'assignation a tenu |
+
+## L'assignation d'entrée sur les builds actuels
+
+Une réponse ultérieure de l'auteur du fil note que le jeu permet maintenant d'assigner les périphériques d'entrée à chaque joueur, rendant l'ancien contournement inutile. L'auteur dit que le guide était écrit pour la bêta, et que les builds actuels gèrent cela correctement via l'écran des réglages.
+
+Si votre build montre des options d'assignation d'entrée, utilisez-les et sautez entièrement le truc du rebranchement. Le truc reste utile pour les anciennes versions, mais sur les builds actuels il peut créer le conflit même qu'il résolvait : traitez les deux méthodes comme des alternatives, jamais comme un rituel combiné.
+
+Si l'écran des réglages montre le pad mais que le jeu l'ignore, le correctif communautaire est de retirer le périphérique, redémarrer le jeu et le rajouter proprement. Le rajout en pleine session est la partie qui cause le plus de confusion d'assignation.
+
+| Type de build | Que faire |
+| --- | --- |
+| Build actuel | Assigner chaque périphérique dans les réglages |
+| Ancien build bêta | Utiliser le truc clavier d'abord puis rebranchement |
+| Tout build, solo | Confirmer que votre pad est le périphérique un |
+| Tout build, coop | Confirmer un périphérique unique par joueur |
+
+## Pads défectueux et correctifs matériels
+
+Un commentateur du fil sauvegardé l'a dit crûment : les vieilles manettes sont un peu problématiques. La recommandation communautaire est de passer à un pad plus récent, une manette Logitech style Xbox étant citée comme option bon marché qui marche bien avec le jeu.
+
+Avant tout achat, mettez à jour le firmware de la manette et essayez un autre port USB ou câble. Les rapports disent qu'une part surprenante des cas de manettes mortes dans ce jeu sont en réalité des câbles morts, et une connexion filaire élimine aussi les coupures Bluetooth en coop. Si un signalement « Stick It to the Stickman manette ne marche pas » inclut des sticks qui dérivent, c'est du matériel, pas le jeu.
+
+| Problème matériel | Correctif communautaire |
+| --- | --- |
+| Pad vieux ou usé | Le remplacer ; les vieux pads sont capricieux |
+| Câble ou port lâche | Essayer un autre port et câble d'abord |
+| Problèmes de firmware | Mettre à jour via le logiciel du pad |
+| Coupures Bluetooth | Passer en filaire pendant la coop |
+
+## Amis distants : Remote Play et Parsec
+
+Quand l'ami est loin, la réponse du fil est l'un de deux outils : Parsec ou Steam Remote Play, accessible via l'overlay Shift et Tab. Les deux diffusent le jeu de l'hôte à l'ami, transformant le jeu en ligne en coop locale du point de vue du jeu.
+
+Les rapports préfèrent l'overlay pour la simplicité et Parsec pour la qualité de connexion sur internet faible. Dans tous les cas, seul l'hôte a besoin d'une manette qui marche ; l'invité envoie ses entrées via le flux, c'est pourquoi un signalement « Stick It to the Stickman manette ne marche pas » de l'hôte compte plus qu'un de l'invité. Lisez l'échange complet sur le [fil de discussion sauvegardé](https://steamcommunity.com/app/2085540/discussions/0/4410795530130381483/).
+
+Un dernier conseil pour les sessions distantes : gardez si possible les deux joueurs sur le même style d'entrée, car les flux mixtes clavier-manette confondent parfois la logique d'assignation. Si des bizarreries apparaissent en session, faites reconnecter l'invité via l'overlay plutôt que redémarrer tout le jeu.
+
+| Option distante | Idéale pour |
+| --- | --- |
+| Steam Remote Play | Setup rapide via l'overlay |
+| Parsec | Meilleure stabilité sur internet faible |
+| Setup hôte filaire | Moins de saccades de flux |
+| Chat vocal en parallèle | Coordonner qui réinitialise quand |
+
+## FAQ
+
+### Pourquoi ma manette ne marche pas dans Stick It to the Stickman ?
+
+La cause la plus courante est l'assignation de périphérique : le pad est lu comme le mauvais joueur. Vérifiez les réglages d'entrée sur les builds actuels, ou utilisez le truc clavier d'abord sur les anciens, et testez le pad dans un autre jeu avant d'accuser le matériel. La plupart des signalements se résolvent à cette étape.
+
+### Comment faire de ma manette le joueur deux ?
+
+Rejoignez la session au clavier d'abord, puis connectez la manette pour que le jeu l'assigne au joueur deux. Les builds actuels laissent assigner les périphériques directement dans les réglages, et le truc du rebranchement est surtout pour les anciens builds bêta. Autre note : un fil « Stick It to the Stickman manette ne marche pas » de l'ère bêta peut décrire des trucs remplacés par des options de réglages, préférez les fils récents.
+
+### « Stick It to the Stickman manette ne marche pas » signifie-t-il que le pad est mort ?
+
+Pas d'habitude. Testez le pad dans un autre jeu d'abord. S'il y marche, le souci est l'assignation et le correctif de l'écran des réglages s'applique. Les vieux pads sont signalés capricieux, alors ne remplacez le matériel qu'après ces vérifications, et essayez un autre câble avant.
+
+### Puis-je jouer avec un ami lointain ?
+
+Oui. La communauté recommande Steam Remote Play ou Parsec, qui diffusent le jeu de l'hôte pour qu'un ami distant joue comme en local. Tant que les entrées de l'hôte marchent, le flux de l'invité est en général bon, ce qui rend les sessions distantes plus simples à dépanner que les locales.
