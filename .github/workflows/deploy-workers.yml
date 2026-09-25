@@ -72,7 +72,7 @@ jobs:
           html="$(curl --fail --silent --show-error --location --max-time 20 https://stickittothestickmanwiki.space/en/)"
           grep -q 'G-G3FQCN10G3' <<<"${html}"
           grep -q 'ynizhnx86x' <<<"${html}"
-          curl --fail --silent --show-error --location --max-time 20 https://stickittothestickmanwiki.space/robots.txt \
-            | grep -q 'Allow: /'
-          curl --fail --silent --show-error --location --max-time 20 https://stickittothestickmanwiki.space/sitemap.xml \
-            | grep -q 'https://stickittothestickmanwiki.space'
+          robots="$(curl --fail --silent --show-error --location --max-time 20 https://stickittothestickmanwiki.space/robots.txt)"
+          grep -q 'Allow: /' <<<"${robots}"
+          sitemap="$(curl --fail --silent --show-error --location --max-time 20 https://stickittothestickmanwiki.space/sitemap.xml)"
+          grep -q 'https://stickittothestickmanwiki.space' <<<"${sitemap}"
