@@ -8,7 +8,7 @@ import type { Locale } from "@/i18n/routing";
 export async function SiteFooter({ locale }: { locale: string }) {
   const t = await getTranslations({ locale });
   const categories = await getContentCategories(locale as Locale);
-  const localize = (path: string) => locale === "en" ? path : `/${locale}${path}`;
+  const localize = (path: string) => `/${locale}${path === "/" ? "" : path}`;
 
   return (
     <footer className="mt-20 border-t border-border bg-card/50">

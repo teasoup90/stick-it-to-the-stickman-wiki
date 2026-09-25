@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: { absolute: title },
     description,
-    alternates: { canonical: locale === routing.defaultLocale ? "/" : `/${locale}`, languages: Object.fromEntries(routing.locales.map((item) => [item, item === routing.defaultLocale ? "/" : `/${item}`])) },
-    openGraph: { type: "website", title, description, url: SITE_URL, siteName: site("wikiName"), images: [{ url: image, width: 1280, height: 720, alt: site("wikiName") }] },
+    alternates: { canonical: `/${locale}`, languages: Object.fromEntries(routing.locales.map((item) => [item, `/${item}`])) },
+    openGraph: { type: "website", title, description, url: `${SITE_URL}/${locale}`, siteName: site("wikiName"), images: [{ url: image, width: 1280, height: 720, alt: site("wikiName") }] },
     twitter: { card: "summary_large_image", title, description, images: [image] }
   };
 }

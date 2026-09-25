@@ -29,7 +29,7 @@ export function LanguageSwitcher({ locale, label }: { locale: Locale; label: str
 
   function switchLocale(nextLocale: Locale) {
     const basePath = pathWithoutLocale(pathname);
-    const localizedPath = nextLocale === routing.defaultLocale ? basePath : `/${nextLocale}${basePath === "/" ? "" : basePath}`;
+    const localizedPath = `/${nextLocale}${basePath === "/" ? "" : basePath}`;
     router.push(localizedPath);
   }
 

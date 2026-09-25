@@ -40,7 +40,7 @@ type CategoryItem = { slug: string; title: string; description: string; href: st
 type ArticleItem = { title: string; navTitle?: string; description: string; badge?: string; image?: string; href: string; date: string };
 
 function ConfiguredAction({ action, locale }: { action: HomeAction; locale: string }) {
-  const href = action.externalLink ? EXTERNAL_LINKS[action.externalLink] : action.href ? (locale === "en" ? action.href : `/${locale}${action.href}`) : undefined;
+  const href = action.externalLink ? EXTERNAL_LINKS[action.externalLink] : action.href ? `/${locale}${action.href === "/" ? "" : action.href}` : undefined;
   const className = action.variant === "primary"
     ? "inline-flex h-9 items-center rounded-lg border border-border bg-card px-4 text-xs font-semibold transition hover:bg-muted"
     : "inline-flex h-9 items-center rounded-lg px-4 text-xs font-semibold text-muted-foreground transition hover:bg-muted hover:text-foreground";
@@ -51,7 +51,7 @@ function ConfiguredAction({ action, locale }: { action: HomeAction; locale: stri
 }
 
 export function HomePageClient({ home, locale, categories, recent, popular }: { home: HomeCopy; locale: string; categories: CategoryItem[]; recent: ArticleItem[]; popular: ArticleItem[] }) {
-  const localize = (path: string) => locale === "en" ? path : `/${locale}${path}`;
+  const localize = (path: string) => `/${locale}${path === "/" ? "" : path}`;
   const t = useTranslations();
   const gameName = t("site.shortName");
   const exploreIcons = [Shield, Swords, Map, ScrollText, Trophy, Flame];

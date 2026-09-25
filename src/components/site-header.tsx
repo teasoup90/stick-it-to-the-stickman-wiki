@@ -16,7 +16,7 @@ export function SiteHeader({ locale, navigation }: { locale: Locale; navigation:
   const t = useTranslations("nav");
   const site = useTranslations("site");
   const [open, setOpen] = useState(false);
-  const localize = (path: string) => locale === "en" ? path : `/${locale}${path}`;
+  const localize = (path: string) => `/${locale}${path === "/" ? "" : path}`;
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">

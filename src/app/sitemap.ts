@@ -35,7 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return Array.from(new Set(sourcePaths)).map((pathname) => {
       const topSegment = pathname.split("/")[1] ?? "";
       return {
-        url: `${SITE_URL}${locale === routing.defaultLocale ? "" : `/${locale}`}${pathname}`,
+        url: `${SITE_URL}/${locale}${pathname}`,
         lastModified: articleModified.get(pathname) ?? latestArticleModified,
         changeFrequency: WEEKLY_CONTENT_TYPES.has(topSegment) ? "weekly" as const : "monthly" as const,
         priority: pathname === "" ? 1 : pathname.split("/").length <= 2 ? 0.8 : 0.7

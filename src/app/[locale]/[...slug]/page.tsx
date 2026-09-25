@@ -16,7 +16,7 @@ import { AdsterraBanner, DesktopSidebarAds, DismissibleStickyBanner } from "@/co
 type Messages = typeof en;
 
 function localizeHref(pathname: string, locale: string) {
-  return locale === "en" ? pathname : `/${locale}${pathname === "/" ? "" : pathname}`;
+  return `/${locale}${pathname === "/" ? "" : pathname}`;
 }
 
 async function languageAlternates(contentType: string, slug: string[]) {
