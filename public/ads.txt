@@ -1,1 +1,1 @@
-# Advertising authorization placeholder. Do not remove.
+google.com, pub-5012066948602254, DIRECT, f08c47fec0942fa0
