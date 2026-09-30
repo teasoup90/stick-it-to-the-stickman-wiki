@@ -1,5 +1,7 @@
 export const AD_CONFIG = {
   nativeBanner: process.env.NEXT_PUBLIC_AD_NATIVE_BANNER,
+  // Script host from the Adsterra "GET CODE" snippet for this site's Native Banner (placement 31400430).
+  nativeScriptHost: process.env.NEXT_PUBLIC_AD_NATIVE_SCRIPT_HOST || "pl31500929.profitableratecpmnetwork.com",
   banner728x90: process.env.NEXT_PUBLIC_AD_BANNER_728X90,
   banner300x250: process.env.NEXT_PUBLIC_AD_BANNER_300X250,
   banner468x60: process.env.NEXT_PUBLIC_AD_BANNER_468X60,

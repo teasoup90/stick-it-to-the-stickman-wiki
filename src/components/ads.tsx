@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X } from "lucide-react";
-import { hasAdKey } from "@/config/ads";
+import { AD_CONFIG, hasAdKey } from "@/config/ads";
 
 type BannerProps = {
   adKey?: string;
@@ -20,9 +20,6 @@ function bannerFrameSrc(adKey: string, width: number, height: number) {
   return `/ads/banner/?${params.toString()}`;
 }
 
-function nativeDocument(adKey: string) {
-  return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head><body style="margin:0;overflow:hidden"><script type="text/javascript" src="https://www.highperformanceformat.com/${adKey}/invoke.js"></script></body></html>`;
-}
 
 function AdvertisementLabel({ label }: { label: string }) {
   return <p className="mb-1 text-center text-[10px] font-medium uppercase tracking-[0.14em] text-muted-foreground">{label}</p>;
@@ -48,20 +45,25 @@ export function AdsterraBanner({ adKey, width, height, label = "Advertisement", 
   );
 }
 
+// Native Banner follows the Adsterra snippet: async invoke.js from the site's
+// script host plus a `container-<key>` div, rendered directly in the page.
 export function AdsterraNativeBanner({ adKey, label = "Advertisement" }: { adKey?: string; label?: string }) {
-  if (!hasAdKey(adKey)) return null;
+  const ready = hasAdKey(adKey);
+  useEffect(() => {
+    if (!ready) return;
+    const src = `https://${AD_CONFIG.nativeScriptHost}/${adKey}/invoke.js`;
+    if (document.querySelector(`script[src="${src}"]`)) return;
+    const script = document.createElement("script");
+    script.async = true;
+    script.setAttribute("data-cfasync", "false");
+    script.src = src;
+    document.body.appendChild(script);
+  }, [ready, adKey]);
+  if (!ready) return null;
   return (
     <div className="my-8 flex flex-col items-center" data-ad-placement="native">
       <AdvertisementLabel label={label} />
-      <iframe
-        title={label}
-        srcDoc={nativeDocument(adKey!)}
-        loading="lazy"
-        scrolling="no"
-        sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
-        className="block h-[90px] w-full max-w-[728px] border-0 bg-transparent"
-        style={{ aspectRatio: "4 / 1", height: "auto" }}
-      />
+      <div id={`container-${adKey}`} className="w-full max-w-[728px]" />
     </div>
   );
 }
