@@ -13,8 +13,11 @@ type BannerProps = {
   className?: string;
 };
 
-function bannerDocument(adKey: string, width: number, height: number) {
-  return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head><body style="margin:0;overflow:hidden"><script>window.atOptions={key:${JSON.stringify(adKey)},format:"iframe",height:${height},width:${width},params:{}};</script><script type="text/javascript" src="https://www.highperformanceformat.com/${adKey}/invoke.js"></script></body></html>`;
+// Banners load through a same-origin frame page (public/ads/banner/index.html)
+// so the Adsterra loader sees this site's real domain.
+function bannerFrameSrc(adKey: string, width: number, height: number) {
+  const params = new URLSearchParams({ k: adKey, w: String(width), h: String(height) });
+  return `/ads/banner/?${params.toString()}`;
 }
 
 function nativeDocument(adKey: string) {
@@ -33,12 +36,12 @@ export function AdsterraBanner({ adKey, width, height, label = "Advertisement", 
       <AdvertisementLabel label={label} />
       <iframe
         title={label}
-        srcDoc={bannerDocument(key, width, height)}
+        src={bannerFrameSrc(key, width, height)}
         width={width}
         height={height}
         loading={eager ? "eager" : "lazy"}
         scrolling="no"
-        sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
         className="block max-w-full border-0 bg-transparent"
       />
     </div>

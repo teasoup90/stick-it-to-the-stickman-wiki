@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width">
+<title>Advertisement</title>
+<style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style>
+</head>
+<body>
+<script>
+  // Same-origin ad frame: the Adsterra loader must run on a real page of this
+  // domain. A sandboxed srcdoc iframe has an opaque origin and serves no ads.
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var key = params.get("k") || "";
+    var width = parseInt(params.get("w"), 10);
+    var height = parseInt(params.get("h"), 10);
+    if (!/^[a-f0-9]{32}$/.test(key) || !(width > 0) || !(height > 0)) return;
+    window.atOptions = { key: key, format: "iframe", height: height, width: width, params: {} };
+    document.write('<script type="text/javascript" src="https://www.highperformanceformat.com/' + key + '/invoke.js"><\/script>');
+  })();
+</script>
+</body>
+</html>
