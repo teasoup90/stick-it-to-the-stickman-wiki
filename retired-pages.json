@@ -1,0 +1,12 @@
+{
+  "schema_version": "retired-pages-v1",
+  "pages": [
+    {
+      "category": "progression",
+      "slug": "stick-it-to-the-stickman-unlockables",
+      "to": "/characters/stick-it-to-the-stickman-webslinger/",
+      "reason": "duplicate of the Webslinger route with a conflicting end point; owner approved 2026-10-11 (feat-208)",
+      "retired_at": "2026-10-11T11:36:24.923Z"
+    }
+  ]
+}
