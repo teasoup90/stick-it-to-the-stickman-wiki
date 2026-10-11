@@ -45,25 +45,37 @@ export function AdsterraBanner({ adKey, width, height, label = "Advertisement", 
   );
 }
 
-// Native Banner follows the Adsterra snippet: async invoke.js from the site's
-// script host plus a `container-<key>` div, rendered directly in the page.
+// Native Banner loads through its own same-origin frame page (public/ads/native/index.html), like the banners.
+// It used to run directly in the page; on phones its loader pulled in a second script that sent the whole page to
+// another site with no click (2026-10-11). Inside the sandboxed frame that script cannot navigate this page. The frame
+// reports layout only (filled + height); the slot stays collapsed until a creative appears.
 export function AdsterraNativeBanner({ adKey, label = "Advertisement" }: { adKey?: string; label?: string }) {
   const ready = hasAdKey(adKey);
+  const [fill, setFill] = useState({ filled: false, height: 0 });
   useEffect(() => {
-    if (!ready) return;
-    const src = `https://${AD_CONFIG.nativeScriptHost}/${adKey}/invoke.js`;
-    if (document.querySelector(`script[src="${src}"]`)) return;
-    const script = document.createElement("script");
-    script.async = true;
-    script.setAttribute("data-cfasync", "false");
-    script.src = src;
-    document.body.appendChild(script);
-  }, [ready, adKey]);
+    const receive = (event: MessageEvent) => {
+      const data = event.data;
+      if (event.origin !== window.location.origin || data?.type !== "gameops-ad-fill" || data.slot !== "native" || typeof data.filled !== "boolean" || !Number.isFinite(data.height) || data.height < 0 || data.height > 2048) return;
+      setFill({ filled: data.filled, height: data.height });
+    };
+    window.addEventListener("message", receive);
+    return () => window.removeEventListener("message", receive);
+  }, []);
   if (!ready) return null;
+  const params = new URLSearchParams({ k: adKey!, s: "native", d: AD_CONFIG.nativeScriptHost });
   return (
-    <div className="my-8 flex flex-col items-center" data-ad-placement="native">
-      <AdvertisementLabel label={label} />
-      <div id={`container-${adKey}`} className="w-full max-w-[728px]" />
+    <div className="my-8 flex flex-col items-center" data-ad-placement="native" data-ad-filled={fill.filled}
+      style={fill.filled ? undefined : { height: 0, overflow: "hidden", marginTop: 0, marginBottom: 0 }}>
+      {fill.filled && <AdvertisementLabel label={label} />}
+      <iframe
+        title={label}
+        src={`/ads/native/?${params.toString()}`}
+        loading="eager"
+        scrolling="no"
+        style={{ height: fill.filled ? fill.height : 600 }}
+        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+        className="block w-full max-w-[728px] border-0 bg-transparent"
+      />
     </div>
   );
 }

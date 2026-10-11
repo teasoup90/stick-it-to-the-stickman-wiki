@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width">
+<title>Advertisement</title>
+<style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style>
+</head>
+<body>
+<script>
+  // Same-origin frame for the Native Banner (template v3.4.1). The Native Banner loader used to run directly in the
+  // page. On phones it pulled in a second script (aqml.org) that sent the whole page to another site with no click
+  // (2026-10-11: 7 of 9 mobile loads of a home page were taken away; desktop was not). Inside this sandboxed frame the
+  // loader still sees this site's domain, but a script in here cannot navigate the page that embeds it.
+  // Query: k=key, s=slot id, d=script host (per unit, e.g. pl31591814.profitableratecpmnetwork.com).
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var key = params.get("k") || "";
+    var slot = params.get("s") || "";
+    var host = params.get("d") || "";
+    if (!/^[a-f0-9]{32}$/.test(key) || !/^pl\d+\.[a-z0-9-]+\.(com|net)$/i.test(host)) return;
+    // Serve only inside this site's own pages, never top-level or framed by another origin
+    // (public/_headers also sends frame-ancestors 'self' for /ads/*).
+    if (window.parent === window) return;
+    try { if (window.parent.location.origin !== window.location.origin) return; } catch (error) { return; }
+    var container = document.createElement("div");
+    container.id = "container-" + key;
+    document.body.appendChild(container);
+    // Reports layout only (filled + height) so the page can size the frame and collapse an unfilled slot.
+    var previous = "";
+    function report() {
+      var nodes = Array.prototype.filter.call(container.querySelectorAll("*"), function (n) {
+        var r = n.getBoundingClientRect();
+        return r.width > 10 && r.height > 10;
+      });
+      var filled = nodes.length > 0;
+      var h = filled ? Math.min(2048, Math.ceil(container.getBoundingClientRect().bottom + window.scrollY)) : 0;
+      var signature = filled + ":" + h;
+      if (signature === previous) return;
+      previous = signature;
+      window.parent.postMessage({ type: "gameops-ad-fill", slot: slot, filled: filled, height: h }, window.location.origin);
+    }
+    new MutationObserver(report).observe(document.documentElement, { childList: true, subtree: true, attributes: true });
+    window.addEventListener("load", report, true);
+    window.addEventListener("resize", report);
+    var timer = setInterval(report, 500);
+    setTimeout(function () { clearInterval(timer); }, 30000);
+    var script = document.createElement("script");
+    script.async = true;
+    script.setAttribute("data-cfasync", "false");
+    script.src = "https://" + host + "/" + key + "/invoke.js";
+    document.body.appendChild(script);
+  })();
+</script>
+</body>
+</html>
