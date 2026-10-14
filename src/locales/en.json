@@ -506,7 +506,7 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "updated": "September 24, 2026",
+      "updated": "October 15, 2026",
       "sections": [
         {
           "title": "Who we are",
@@ -533,8 +533,12 @@
           "body": "We may update this policy as the site evolves. Material changes will be reflected on this page with a new date."
         },
         {
+          "title": "Adsterra advertising",
+          "body": "Some ads on this site are served by Adsterra. Adsterra and the advertisers it works with may use cookies, web beacons and similar technologies to show ads, limit how often the same ad appears and measure results. They act under their own privacy policies (adsterra.com/privacy-policy); we do not receive the data they collect."
+        },
+        {
           "title": "Contact",
-          "body": "For privacy questions about this site, contact the site operator through the public contact channels for stickittothestickmanwiki.space."
+          "body": "For privacy questions, write to contact@stickittothestickmanwiki.space."
         }
       ]
     },
