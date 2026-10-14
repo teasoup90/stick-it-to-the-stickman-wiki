@@ -506,35 +506,39 @@
     },
     "privacy": {
       "title": "Política de privacidad",
-      "updated": "24 de septiembre de 2026",
+      "updated": "15 de octubre de 2026",
       "sections": [
         {
           "title": "Quiénes somos",
-          "body": "El wiki de Stick It to the Stickman (stickittothestickmanwiki.space) es un sitio de información independiente, hecho por fans, sobre el videojuego Stick It to the Stickman. No estamos afiliados al desarrollador del juego, Free Lives, ni a su editor, Devolver Digital."
+          "body": "Stick It to the Stickman Wiki (stickittothestickmanwiki.space) es un sitio de información independiente creado por fans sobre el videojuego Stick It to the Stickman. No estamos afiliados con el desarrollador del juego Free Lives ni con su editor Devolver Digital."
         },
         {
           "title": "Información que recopilamos",
-          "body": "No exigimos cuentas ni te pedimos información personal. Como la mayoría de los sitios web, nuestro proveedor de alojamiento puede registrar registros técnicos estándar (como la dirección IP, el tipo de navegador y las páginas visitadas) utilizados para seguridad y estadísticas agregadas."
+          "body": "No requerimos cuentas y no te pedimos que envíes información personal. Como la mayoría de los sitios web, nuestro proveedor de alojamiento puede registrar registros técnicos estándar (como dirección IP, tipo de navegador y páginas visitadas) utilizados para seguridad y estadísticas agregadas."
         },
         {
           "title": "Cookies y publicidad de terceros",
-          "body": "Este sitio puede mostrar publicidad de terceros que utiliza cookies o tecnologías similares para servir y medir anuncios. Los proveedores de anuncios operan bajo sus propias políticas de privacidad; puedes gestionar las cookies desde la configuración de tu navegador."
+          "body": "Este sitio puede mostrar publicidad de terceros que utiliza cookies o tecnologías similares para servir y medir anuncios. Los proveedores de anuncios operan bajo sus propias políticas de privacidad; puedes gestionar las cookies a través de la configuración de tu navegador."
         },
         {
           "title": "Enlaces externos",
-          "body": "Las páginas de este sitio enlazan a sitios web externos como la tienda de Steam, el sitio web oficial del juego y Devolver Digital. No somos responsables del contenido ni de las prácticas de privacidad de los sitios de terceros."
+          "body": "Las páginas de este sitio enlazan a sitios web externos como la tienda de Steam, el sitio web oficial del juego y Devolver Digital. No somos responsables del contenido ni de las prácticas de privacidad de sitios de terceros."
         },
         {
           "title": "Niños",
-          "body": "Este sitio es una referencia de juegos para público general y no está dirigido a niños menores de 13 años."
+          "body": "Este sitio es una referencia de juego para público general y no está dirigido a niños menores de 13 años."
         },
         {
           "title": "Cambios",
-          "body": "Podemos actualizar esta política a medida que el sitio evoluciona. Los cambios importantes se reflejarán en esta página con una nueva fecha."
+          "body": "Podemos actualizar esta política a medida que el sitio evolucione. Los cambios materiales se reflejarán en esta página con una nueva fecha."
+        },
+        {
+          "title": "Publicidad de Adsterra",
+          "body": "Algunos anuncios en este sitio son servidos por Adsterra. Adsterra y los anunciantes con los que trabaja pueden usar cookies, balizas web y tecnologías similares para mostrar anuncios, limitar la frecuencia con la que aparece el mismo anuncio y medir resultados. Actúan bajo sus propias políticas de privacidad (adsterra.com/privacy-policy); no recibimos los datos que recopilan."
         },
         {
           "title": "Contacto",
-          "body": "Para preguntas de privacidad sobre este sitio, contacta con el operador del sitio a través de los canales de contacto públicos de stickittothestickmanwiki.space."
+          "body": "Para preguntas sobre privacidad, escribe a contact@stickittothestickmanwiki.space."
         }
       ]
     },

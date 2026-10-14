@@ -506,35 +506,39 @@
     },
     "privacy": {
       "title": "Polityka prywatności",
-      "updated": "24 września 2026",
+      "updated": "15 października 2026",
       "sections": [
         {
           "title": "Kim jesteśmy",
-          "body": "Stick It to the Stickman Wiki (stickittothestickmanwiki.space) to niezależna, tworzona przez fanów strona informacyjna o grze wideo Stick It to the Stickman. Nie jesteśmy powiązani z deweloperem gry, Free Lives, ani z jej wydawcą, Devolver Digital."
+          "body": "Stick It to the Stickman Wiki (stickittothestickmanwiki.space) to niezależna, tworzona przez fanów strona informacyjna o grze wideo Stick It to the Stickman. Nie jesteśmy powiązani z producentem gry Free Lives ani jej wydawcą Devolver Digital."
         },
         {
           "title": "Jakie informacje zbieramy",
-          "body": "Nie wymagamy kont i nie prosimy o dane osobowe. Jak większość stron, nasz dostawca hostingu może zapisywać standardowe logi techniczne (takie jak adres IP, typ przeglądarki i odwiedzone strony) wykorzystywane do celów bezpieczeństwa i zbiorczych statystyk."
+          "body": "Nie wymagamy zakładania kont i nie prosimy o podawanie danych osobowych. Jak większość stron internetowych, nasz dostawca hostingu może rejestrować standardowe logi techniczne (takie jak adres IP, typ przeglądarki i odwiedzane strony) wykorzystywane do celów bezpieczeństwa i statystyk zbiorczych."
         },
         {
-          "title": "Ciasteczka i reklamy zewnętrzne",
-          "body": "Ta strona może wyświetlać reklamy zewnętrzne, które wykorzystują ciasteczka lub podobne technologie do serwowania i pomiaru reklam. Dostawcy reklam działają według własnych polityk prywatności; ciasteczkami możesz zarządzać w ustawieniach przeglądarki."
+          "title": "Pliki cookie i reklamy zewnętrzne",
+          "body": "Ta strona może wyświetlać reklamy zewnętrzne, które wykorzystują pliki cookie lub podobne technologie do wyświetlania i pomiaru reklam. Dostawcy reklam działają zgodnie z własnymi politykami prywatności; możesz zarządzać plikami cookie w ustawieniach swojej przeglądarki."
         },
         {
           "title": "Linki zewnętrzne",
-          "body": "Strony tego serwisu prowadzą do zewnętrznych witryn, takich jak sklep Steam, oficjalna strona gry i Devolver Digital. Nie odpowiadamy za treści ani praktyki prywatności stron trzecich."
+          "body": "Strony w tym serwisie zawierają linki do zewnętrznych witryn, takich jak sklep Steam, oficjalna strona gry i Devolver Digital. Nie ponosimy odpowiedzialności za treści ani praktyki prywatności stron trzecich."
         },
         {
           "title": "Dzieci",
-          "body": "Ta strona jest ogólnodostępną referencją o grach i nie jest kierowana do dzieci poniżej 13 lat."
+          "body": "Ta strona jest ogólnodostępnym źródłem informacji o grze i nie jest skierowana do dzieci poniżej 13 roku życia."
         },
         {
           "title": "Zmiany",
           "body": "Możemy aktualizować tę politykę wraz z rozwojem strony. Istotne zmiany będą odzwierciedlane na tej stronie z nową datą."
         },
         {
+          "title": "Reklamy Adsterra",
+          "body": "Niektóre reklamy na tej stronie są dostarczane przez Adsterra. Adsterra i współpracujący z nią reklamodawcy mogą wykorzystywać pliki cookie, sygnalizatory WWW i podobne technologie do wyświetlania reklam, ograniczania częstotliwości wyświetlania tej samej reklamy i pomiaru wyników. Działają oni zgodnie z własnymi politykami prywatności (adsterra.com/privacy-policy); nie otrzymujemy danych, które zbierają."
+        },
+        {
           "title": "Kontakt",
-          "body": "W sprawach dotyczących prywatności na tej stronie skontaktuj się z operatorem serwisu przez publiczne kanały kontaktu stickittothestickmanwiki.space."
+          "body": "W sprawach dotyczących prywatności napisz na adres contact@stickittothestickmanwiki.space."
         }
       ]
     },

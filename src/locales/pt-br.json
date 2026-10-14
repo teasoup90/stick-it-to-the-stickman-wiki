@@ -505,36 +505,40 @@
       ]
     },
     "privacy": {
-      "title": "Política de privacidade",
-      "updated": "24 de setembro de 2026",
+      "title": "Política de Privacidade",
+      "updated": "15 de outubro de 2026",
       "sections": [
         {
           "title": "Quem somos",
-          "body": "O wiki Stick It to the Stickman (stickittothestickmanwiki.space) é um site de informações independente, feito por fãs, sobre o jogo Stick It to the Stickman. Não somos afiliados à desenvolvedora do jogo, Free Lives, nem à sua publicadora, Devolver Digital."
+          "body": "A Stick It to the Stickman Wiki (stickittothestickmanwiki.space) é um site de informações independente, feito por fãs, sobre o videogame Stick It to the Stickman. Não somos afiliados ao desenvolvedor do jogo, Free Lives, nem à sua publicadora, Devolver Digital."
         },
         {
           "title": "Informações que coletamos",
-          "body": "Não exigimos contas e não pedimos informações pessoais. Como a maioria dos sites, nosso provedor de hospedagem pode registrar logs técnicos padrão (como endereço IP, tipo de navegador e páginas visitadas) usados para segurança e estatísticas agregadas."
+          "body": "Não exigimos contas e não pedimos que você envie informações pessoais. Como a maioria dos sites, nosso provedor de hospedagem pode registrar logs técnicos padrão (como endereço IP, tipo de navegador e páginas visitadas) usados para segurança e estatísticas agregadas."
         },
         {
           "title": "Cookies e publicidade de terceiros",
-          "body": "Este site pode exibir publicidade de terceiros que usa cookies ou tecnologias semelhantes para veicular e medir anúncios. Os provedores de anúncios operam sob suas próprias políticas de privacidade; você pode gerenciar os cookies nas configurações do seu navegador."
+          "body": "Este site pode exibir publicidade de terceiros que utiliza cookies ou tecnologias semelhantes para veicular e medir anúncios. Os provedores de anúncios operam sob suas próprias políticas de privacidade; você pode gerenciar cookies através das configurações do seu navegador."
         },
         {
           "title": "Links externos",
-          "body": "As páginas deste site levam a sites externos, como a loja Steam, o site oficial do jogo e a Devolver Digital. Não somos responsáveis pelo conteúdo nem pelas práticas de privacidade de sites de terceiros."
+          "body": "Páginas deste site possuem links para sites externos, como a loja Steam, o site oficial do jogo e a Devolver Digital. Não somos responsáveis pelo conteúdo ou pelas práticas de privacidade de sites de terceiros."
         },
         {
           "title": "Crianças",
-          "body": "Este site é uma referência de jogos para o público geral e não é direcionado a crianças menores de 13 anos."
+          "body": "Este site é uma referência de jogo para público geral e não é direcionado a crianças menores de 13 anos."
         },
         {
           "title": "Alterações",
-          "body": "Podemos atualizar esta política conforme o site evolui. Mudanças relevantes serão refletidas nesta página com uma nova data."
+          "body": "Podemos atualizar esta política conforme o site evolui. Alterações relevantes serão refletidas nesta página com uma nova data."
+        },
+        {
+          "title": "Publicidade da Adsterra",
+          "body": "Alguns anúncios neste site são veiculados pela Adsterra. A Adsterra e os anunciantes com quem trabalha podem usar cookies, web beacons e tecnologias semelhantes para exibir anúncios, limitar a frequência com que o mesmo anúncio aparece e medir resultados. Eles atuam sob suas próprias políticas de privacidade (adsterra.com/privacy-policy); não recebemos os dados que eles coletam."
         },
         {
           "title": "Contato",
-          "body": "Para dúvidas de privacidade sobre este site, entre em contato com o operador do site pelos canais públicos de contato de stickittothestickmanwiki.space."
+          "body": "Para questões de privacidade, escreva para contact@stickittothestickmanwiki.space."
         }
       ]
     },
