@@ -119,6 +119,13 @@
       "to": "/guide/stick-it-to-the-stickman-guide/",
       "reason": "merged into /guide/stick-it-to-the-stickman-guide/ (owner 2026-10-19, Stickman step 2, feat-273)",
       "retired_at": "2026-10-18T17:34:56.795Z"
+    },
+    {
+      "category": "resources",
+      "slug": "stick-it-to-the-stickman-water-currency",
+      "to": "/resources/stick-it-to-the-stickman-currencies/",
+      "reason": "merged into /resources/stick-it-to-the-stickman-currencies/ (owner 2026-10-19, Stickman step 2, feat-273)",
+      "retired_at": "2026-10-18T17:35:21.951Z"
     }
   ]
 }
