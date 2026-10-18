@@ -1,161 +1,44 @@
 export const metadata = {
-  title: "Stick It to the Stickman Multiplayer: Co-Op Explained",
-  description: "Stick It to the Stickman multiplayer means drop-in co-op after the prologue, plus split-screen, Remote Play Together. Here is what saved sources confirm.",
+  title: "Stick It to the Stickman Multiplayer and Co-op",
+  description: "Two-player co-op in Stick It to the Stickman: couch co-op, Steam Remote Play Together, and what players report when streaming fails.",
   category: "multiplayer",
-  date: "2026-09-24",
+  date: "2026-10-18"
 }
 
-Stick It to the Stickman multiplayer is co-op through and through: a second player can drop into your run and fight the office with their own stickman. The saved sources describe no competitive mode at all, which makes the multiplayer story refreshingly simple to explain.
+Yes — Stick It to the Stickman has co-op, and it is built around two players. The [official Steam page](https://store.steampowered.com/app/2085540/Stick_It_to_the_Stickman/) lists Shared/Split Screen Co-op, Shared/Split Screen and Remote Play Together in its feature list, and the store description invites you to "add friends to your payroll with couch co-op and remote play." There is no separate online mode to sign into; both routes run through the same two-player setup.
 
-The strongest source is the game's Co-Optimus profile, which records the co-op features of the PC version, and it is supported by the official Steam listing's shared and split-screen co-op tags. Between the two, this Stick It to the Stickman multiplayer guide can answer the question without hedging.
+## How many players can join?
 
-One clarification up front: multiplayer and co-op mean the same thing in this game's saved record. There is no PvP ladder, arena, or versus mode documented anywhere in the saved sources.
+Two. As of 2026-10-18, the official Steam page's feature list advertises shared/split screen co-op and Remote Play Together but does not advertise support for more than two players, and the game's own updates talk about co-op in pairs — the [13 October 2026 patch notes](https://store.steampowered.com/news/app/2085540) mention that "The Shareholder Dance scene now works with 2 players." Single-player is listed separately, so solo runs are unaffected.
 
-What the sources do document is a physics brawler built for two bodies colliding through the same office, and every section below stays inside that documented picture.
+## Couch co-op on one machine
 
-The practical version of all this: if you want multiplayer, you want the co-op campaign, and the only real choice is whether your second player sits on the couch or streams in from somewhere else.
+Two people, one PC, one copy. The Steam page's "Shared/Split Screen Co-op" tag is the local option, and the store text calls it couch co-op. The store page tags the game with controller support, which is the usual way a second player joins a shared-screen PC game, but the page does not spell out the in-game steps for adding player two — so be wary of any specific menu path quoted elsewhere that you can't reproduce.
 
-## How the Co-Op Works
+One handy addition for local sessions: the 13 October 2026 patch added an "Unstuck" button to every game mode, which is worth knowing about if a run softlocks with a friend sitting next to you.
 
-The Co-Optimus profile gives the exact trigger: after the prologue, a second player can jump in and help fight all your coworkers with his own stick man. That single sentence answers when, how, and with what.
+## Remote Play Together
 
-The drop-in nature matters: the second player joins an existing run rather than starting a separate save, and they get their own stickman rather than controlling a shared one.
+Remote Play Together is listed on the official Steam page, and the store description mentions "remote play" alongside couch co-op. That is Steam's own streaming feature: the host runs the game and streams it to an invited friend, who does not need their own copy. In practice it means a friend can join your local co-op session from another machine.
 
-That also means the first player remains the host of the run, and the co-op session lives inside whatever run was already in progress when the second stickman appeared.
+Because the game leans on Steam's streaming rather than its own netcode, most remote-play problems people hit are Steam streaming problems rather than game bugs — but not all of them.
 
-| Co-op detail | What the source says |
-| --- | --- |
-| Trigger | After the prologue |
-| Join style | Drop in mid-run |
-| Character | His own stick man |
-| Goal | Fight your coworkers together |
+## When remote play won't connect
 
-## Which Co-Op Features Are Listed
+The game's Steam Discussions thread ["i cant remote play with my friend"](https://steamcommunity.com/app/2085540/discussions/0/3774616115121156127/) collects the recurring complaints across February 2023 to September 2025. Players describe the stream crashing on the guest's side while the host is fine, a banner about "streaming mode" that left one player unable to control anything and told they would have to sit next to the host and use arrow keys, and — in the September 2025 posts — the game reaching its loading screen and closing with no error message after an automatic update, reproduced by two different people.
 
-Co-Optimus lists the core features as a co-op campaign with downloadable-only delivery, plus an OSX version note. The profile tags the game with couch co-op adjacent categories and describes the co-op experience as campaign play.
+Treat those as Early Access–era reports: the game left Early Access on 23 September 2026, so they may not match the build you are running.
 
-The Steam listing adds shared and split-screen co-op, plus Remote Play Together, and the game description mentions couch co-op explicitly. That spread means local play is the heart of the Stick It to the Stickman multiplayer offering.
+If you are stuck now, a few general Steam Remote Play checks are worth trying before blaming the game. They are ordinary Steam troubleshooting, not features the developers have documented for this title:
 
-Between the two sources, the feature list is consistent: campaign co-op first, couch play second, and streamed play as the distance option.
+- Make sure the host's Steam client is fully updated and the guest is invited fresh rather than reconnecting to a stale session.
+- Look at the host's Remote Play Together settings for input and controller sharing — a guest with no control is often a permission setting, not a crash.
+- If the stream dies at launch, try switching hardware encoding off or lowering the stream resolution in Steam's Remote Play settings, and test once with both players on the same network to see whether the problem follows the connection.
 
-| Feature | Saved source |
-| --- | --- |
-| Co-op campaign | Co-Optimus profile |
-| Drop-in after prologue | Co-Optimus experience text |
-| Split-screen | Steam listing |
-| Remote Play Together | Steam listing |
+## Custom levels are a different story
 
-## What Is Not Available
+The Level Builder is a solo-friendly tool with a real co-op caveat: the [4 December 2025 Level Builder announcement](https://store.steampowered.com/news/app/2085540) stated that "Level Builder levels are not currently available for 2 players." As of 2026-10-18, the official Steam page lists the Level Builder and Steam Workshop but does not say whether that restriction has since been lifted, so if a custom level refuses to load with a friend, that note is the likely reason.
 
-The saved record contains no versus mode, no online matchmaking ladder for head-to-head play, and no separate multiplayer menu description. Players asking about competitive Stick It to the Stickman multiplayer are asking about a mode the sources do not document.
+## What this page doesn't cover
 
-Community discussion reinforces this: the multiplayer threads are about co-op problems and remote play, never about ranked or casual PvP.
-
-The absence matters because the game's genre invites the question: beat-em-ups often ship versus modes, and this one, on the saved record, does not.
-
-| Mode type | Saved record |
-| --- | --- |
-| Co-op campaign | Documented |
-| Split-screen | Documented |
-| PvP or versus | Not documented |
-| Online ladder | Not documented |
-
-## The Co-Op Experience in Practice
-
-The co-op experience, in Co-Optimus's own words, is fighting all your coworkers with a second stickman at your side. The game's physics brawler combat means the second player is not a sidekick system but a full second fighter.
-
-That has a real consequence: the office chaos scales with the players. Community reports describe co-op runs as messier and funnier than solo runs, with two physics bodies colliding into the same fight.
-
-Weapons, moves, and the climb all stay shared, so the second player experiences the same campaign rather than a truncated guest mode.
-
-The saved sources also describe the game's own marketing line in the same breath as the co-op: the brawler fantasy is about firing coworkers and climbing the ladder, and the second stickman is part of that fantasy rather than an afterthought bolted on later.
-
-| Solo vs co-op | Difference |
-| --- | --- |
-| Fighters | One stickman vs two |
-| Chaos | More collisions in co-op |
-| Progression | Same campaign |
-| Trigger | Prologue gates the join |
-
-## Multiplayer Across Platforms
-
-The co-op features listed are for the PC version, and the Co-Optimus profile notes an OSX version is available. Cross-platform co-op between Windows and macOS is not claimed by the saved sources, so that question stays open.
-
-For anyone planning a session, the safe assumption is same-platform play on PC, with Remote Play Together covering the online case.
-
-Console multiplayer is simply not in the saved record, so this page makes no console claims of any kind.
-
-| Platform question | Saved answer |
-| --- | --- |
-| PC co-op | Documented |
-| Mac version exists | OSX note on profile |
-| Cross-play | Not claimed |
-| Console co-op | Not documented |
-
-## FAQ
-
-### Does Stick It to the Stickman have multiplayer?
-
-Yes, co-op multiplayer. After the prologue, a second player can drop in with their own stickman and fight through the campaign together.
-
-### Is there online multiplayer?
-
-The saved record documents local and Remote Play Together co-op, with no online matchmaking for versus play claimed.
-
-### How do I start co-op?
-
-Finish the prologue first. The Co-Optimus profile states the second player joins after that point.
-
-### Is the multiplayer split-screen?
-
-The official Steam listing identifies shared and split-screen co-op, so yes, split-screen is part of the Stick It to the Stickman multiplayer package.
-
-### Can two players use their own characters?
-
-Each player controls their own stickman, per the Co-Optimus description of the second player fighting with his own stick man.
-
-### Is co-op available on Mac?
-
-An OSX version is noted on the Co-Optimus profile, but specific Mac co-op behavior is not described in the saved sources.
-
-### Does co-op unlock anything extra?
-
-The saved sources describe the co-op experience but not exclusive co-op unlocks, so none are claimed here.
-
-### Is the co-op harder than solo?
-
-The sources do not describe a difficulty change with a second player, so co-op difficulty scaling is unclaimed.
-
-### Can I pause in co-op?
-
-Pause behavior with two players is not described in the saved sources.
-
-### Is Stick It to the Stickman multiplayer free?
-
-The co-op is part of the game itself, with no separate multiplayer purchase mentioned anywhere in the saved sources.
-
-### Does the game support crossplay between Windows and Mac?
-
-Not claimed in the saved sources, which list the platforms separately without describing crossplay.
-
-### How do I invite a friend for co-op?
-
-The saved sources describe the drop-in moment but not the invite flow, so specific menu steps are not claimed.
-
-### Can the second player keep their own unlocks?
-
-The sources say the second player fights with their own stick man but do not describe unlock persistence for the guest.
-
-### Does the prologue take long to reach in co-op?
-
-The prologue length is not described in the saved sources, so no estimate is claimed here.
-
-### Are there multiplayer achievements?
-
-The saved sources do not list co-op achievements, so none are claimed.
-
-### Is the Stick It to the Stickman multiplayer mode split evenly between the two players?
-
-The sources describe a shared campaign with two fighters but do not discuss balance between them, so evenness is not claimed.
-
-The saved [Co-Optimus profile for the game](https://www.co-optimus.com/game/12308/pc/stick-it-to-the-stick-mam.html) is the source for the co-op details above, and the definitive Stick It to the Stickman multiplayer reference.
+The Steam page's multiplayer features are local ones — shared/split screen co-op plus Remote Play Together. As of 2026-10-18, the official Steam page does not describe public online matchmaking, so if you were hoping to queue into strangers, this is not that game.
