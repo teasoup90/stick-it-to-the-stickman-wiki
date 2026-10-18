@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllContentPaths } from "@/lib/content";
-import { routing } from "@/i18n/routing";
+import { isIndexedLocale, routing } from "@/i18n/routing";
 import { SITE_URL } from "@/config/site";
 import { CONTENT_TYPES } from "@/config/navigation";
 
@@ -15,7 +15,7 @@ const WEEKLY_CONTENT_TYPES = new Set(["updates", "news"]);
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const validContentTypes = new Set<string>(CONTENT_TYPES);
   const staticPaths = ["", "/about", "/privacy-policy", "/terms-of-service", "/copyright"];
-  return (await Promise.all(routing.locales.map(async (locale) => {
+  return (await Promise.all(routing.locales.filter(isIndexedLocale).map(async (locale) => {
     const articlePaths = (await getAllContentPaths(locale)).filter((item) => validContentTypes.has(item.contentType));
     const sourcePaths = [
       ...staticPaths,

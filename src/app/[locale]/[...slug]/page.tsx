@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { BookOpen, ChevronRight, Swords } from "lucide-react";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { JsonLd } from "@/components/json-ld";
-import { routing, type Locale } from "@/i18n/routing";
+import { isIndexedLocale, routing, type Locale } from "@/i18n/routing";
 import { getAllContent, getAllContentPaths, getContent, getContentCategories, getContentNavigation, getRelatedContent, type ContentNavigationCategory } from "@/lib/content";
 import en from "@/locales/en.json";
 import { BRAND_ASSETS, SITE_URL, absoluteUrl } from "@/config/site";
@@ -20,7 +20,7 @@ function localizeHref(pathname: string, locale: string) {
 }
 
 async function languageAlternates(contentType: string, slug: string[]) {
-  const available = (await Promise.all(routing.locales.map(async (locale) => (
+  const available = (await Promise.all(routing.locales.filter(isIndexedLocale).map(async (locale) => (
     await getContent(contentType, slug, locale) ? locale : null
   )))).filter((locale): locale is Locale => Boolean(locale));
   return Object.fromEntries(available.map((locale) => [locale, localizeHref(`/${contentType}/${slug.join("/")}`, locale)]));
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
     return {
       title: { absolute: fullTitle },
       description,
-      alternates: { canonical: pathname, languages: Object.fromEntries(routing.locales.map((item) => [item, localizeHref(`/${contentType}`, item)])) },
+      alternates: { canonical: pathname, languages: Object.fromEntries(routing.locales.filter(isIndexedLocale).map((item) => [item, localizeHref(`/${contentType}`, item)])) },
       openGraph: { type: "website", title: fullTitle, description, url: absoluteUrl(pathname), siteName, images: [image] },
       twitter: { card: "summary_large_image", title: fullTitle, description, images: [image] }
     };

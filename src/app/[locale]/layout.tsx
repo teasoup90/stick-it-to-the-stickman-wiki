@@ -9,7 +9,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { JsonLd } from "@/components/json-ld";
 import { SiteIntegrations } from "@/components/site-integrations";
-import { routing, type Locale } from "@/i18n/routing";
+import { routing, type Locale, isIndexedLocale } from "@/i18n/routing";
 import { getContentCategories } from "@/lib/content";
 import { BRAND_ASSETS, SITE_URL, absoluteUrl } from "@/config/site";
 import en from "@/locales/en.json";
@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     icons: { icon: [{ url: "/favicon.ico" }, { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" }], apple: "/apple-touch-icon.png" },
     openGraph: { type: "website", locale, title: messages.site.wikiName, description: messages.site.description, siteName: messages.site.wikiName, url: SITE_URL, images: [{ url: image, width: 1280, height: 720, alt: messages.site.wikiName }] },
     twitter: { card: "summary_large_image", title: messages.site.wikiName, description: messages.site.description, images: [image] },
+    ...(isIndexedLocale(locale) ? {} : { robots: { index: false, follow: true } }),
     ...(validAdsensePublisherId ? { other: { "google-adsense-account": validAdsensePublisherId } } : {})
   };
 }

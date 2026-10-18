@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/json-ld";
 import { BRAND_ASSETS, SITE_URL, absoluteUrl } from "@/config/site";
 import { getContentNavigation, getPopularContent, getRecentContent } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
-import { routing } from "@/i18n/routing";
+import { isIndexedLocale, routing } from "@/i18n/routing";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: { absolute: title },
     description,
-    alternates: { canonical: `/${locale}`, languages: Object.fromEntries(routing.locales.map((item) => [item, `/${item}`])) },
+    alternates: { canonical: `/${locale}`, languages: Object.fromEntries(routing.locales.filter(isIndexedLocale).map((item) => [item, `/${item}`])) },
     openGraph: { type: "website", title, description, url: `${SITE_URL}/${locale}`, siteName: site("wikiName"), images: [{ url: image, width: 1280, height: 720, alt: site("wikiName") }] },
     twitter: { card: "summary_large_image", title, description, images: [image] }
   };
