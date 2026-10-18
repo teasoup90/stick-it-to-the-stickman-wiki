@@ -105,6 +105,13 @@
       "to": "/community/stick-it-to-the-stickman-community/",
       "reason": "merged into /community/stick-it-to-the-stickman-community/ (owner 2026-10-19, Stickman step 2, feat-273)",
       "retired_at": "2026-10-18T17:34:08.398Z"
+    },
+    {
+      "category": "guide",
+      "slug": "stick-it-to-the-stickman-tips",
+      "to": "/guide/stick-it-to-the-stickman-guide/",
+      "reason": "merged into /guide/stick-it-to-the-stickman-guide/ (owner 2026-10-19, Stickman step 2, feat-273)",
+      "retired_at": "2026-10-18T17:34:32.728Z"
     }
   ]
 }
