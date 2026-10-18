@@ -91,6 +91,13 @@
       "to": "/updates/stick-it-to-the-stickman-latest-update/",
       "reason": "merged into /updates/stick-it-to-the-stickman-latest-update/ (owner 2026-10-19, Stickman step 2, feat-273)",
       "retired_at": "2026-10-18T17:33:17.228Z"
+    },
+    {
+      "category": "community",
+      "slug": "stick-it-to-the-stickman-reddit",
+      "to": "/community/stick-it-to-the-stickman-community/",
+      "reason": "merged into /community/stick-it-to-the-stickman-community/ (owner 2026-10-19, Stickman step 2, feat-273)",
+      "retired_at": "2026-10-18T17:33:42.996Z"
     }
   ]
 }
