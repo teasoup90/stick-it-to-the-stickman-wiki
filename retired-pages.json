@@ -56,6 +56,13 @@
       "to": "/multiplayer/stick-it-to-the-stickman-multiplayer/",
       "reason": "merged into /multiplayer/stick-it-to-the-stickman-multiplayer/ (owner 2026-10-19, Stickman step 2, feat-273)",
       "retired_at": "2026-10-18T17:30:59.903Z"
+    },
+    {
+      "category": "multiplayer",
+      "slug": "stick-it-to-the-stickman-remote-play",
+      "to": "/multiplayer/stick-it-to-the-stickman-multiplayer/",
+      "reason": "merged into /multiplayer/stick-it-to-the-stickman-multiplayer/ (owner 2026-10-19, Stickman step 2, feat-273)",
+      "retired_at": "2026-10-18T17:31:28.504Z"
     }
   ]
 }
