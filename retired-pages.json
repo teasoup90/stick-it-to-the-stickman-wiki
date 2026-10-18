@@ -84,6 +84,13 @@
       "to": "/updates/stick-it-to-the-stickman-latest-update/",
       "reason": "merged into /updates/stick-it-to-the-stickman-latest-update/ (owner 2026-10-19, Stickman step 2, feat-273)",
       "retired_at": "2026-10-18T17:32:50.337Z"
+    },
+    {
+      "category": "updates",
+      "slug": "stick-it-to-the-stickman-demo",
+      "to": "/updates/stick-it-to-the-stickman-latest-update/",
+      "reason": "merged into /updates/stick-it-to-the-stickman-latest-update/ (owner 2026-10-19, Stickman step 2, feat-273)",
+      "retired_at": "2026-10-18T17:33:17.228Z"
     }
   ]
 }
