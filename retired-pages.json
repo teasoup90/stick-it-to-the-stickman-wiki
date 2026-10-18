@@ -112,6 +112,13 @@
       "to": "/guide/stick-it-to-the-stickman-guide/",
       "reason": "merged into /guide/stick-it-to-the-stickman-guide/ (owner 2026-10-19, Stickman step 2, feat-273)",
       "retired_at": "2026-10-18T17:34:32.728Z"
+    },
+    {
+      "category": "guide",
+      "slug": "stick-it-to-the-stickman-modes",
+      "to": "/guide/stick-it-to-the-stickman-guide/",
+      "reason": "merged into /guide/stick-it-to-the-stickman-guide/ (owner 2026-10-19, Stickman step 2, feat-273)",
+      "retired_at": "2026-10-18T17:34:56.795Z"
     }
   ]
 }
