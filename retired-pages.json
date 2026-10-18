@@ -63,6 +63,13 @@
       "to": "/multiplayer/stick-it-to-the-stickman-multiplayer/",
       "reason": "merged into /multiplayer/stick-it-to-the-stickman-multiplayer/ (owner 2026-10-19, Stickman step 2, feat-273)",
       "retired_at": "2026-10-18T17:31:28.504Z"
+    },
+    {
+      "category": "updates",
+      "slug": "stick-it-to-the-stickman-next-update",
+      "to": "/updates/stick-it-to-the-stickman-latest-update/",
+      "reason": "merged into /updates/stick-it-to-the-stickman-latest-update/ (owner 2026-10-19, Stickman step 2, feat-273)",
+      "retired_at": "2026-10-18T17:31:55.814Z"
     }
   ]
 }
