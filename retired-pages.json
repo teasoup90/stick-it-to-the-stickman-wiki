@@ -21,6 +21,13 @@
       "to": "/platforms/stick-it-to-the-stickman-platforms/",
       "reason": "merged into /platforms/stick-it-to-the-stickman-platforms/ (owner 2026-10-19, Stickman step 2, feat-273)",
       "retired_at": "2026-10-18T17:28:28.866Z"
+    },
+    {
+      "category": "platforms",
+      "slug": "stick-it-to-the-stickman-ps5",
+      "to": "/platforms/stick-it-to-the-stickman-platforms/",
+      "reason": "merged into /platforms/stick-it-to-the-stickman-platforms/ (owner 2026-10-19, Stickman step 2, feat-273)",
+      "retired_at": "2026-10-18T17:28:59.277Z"
     }
   ]
 }
