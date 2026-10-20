@@ -43,7 +43,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
     const contentType = slug[0];
     const title = category.title;
     const description = category.description;
-    const fullTitle = composeDocumentTitle(title, siteName);
+    // 2026-10-20: only the home page carries "<game> Wiki"; category pages use the short game name so they stop splitting that query with the home page.
+    const fullTitle = composeDocumentTitle(title, messages.site.shortName || siteName);
     const pathname = localizeHref(`/${contentType}`, locale);
     const image = absoluteUrl(contentType === "bosses" ? BRAND_ASSETS.bosses : BRAND_ASSETS.hero);
     return {
